@@ -1,0 +1,1244 @@
+{
+  "date": "2026-11-07",
+  "version": "1.0.0-rc17",
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "status": "42/42 item entries reviewed against new PC evidence; confirmed differences corrected",
+  "coverage": {
+    "items": 42,
+    "nativeConstructorsIncludingInternal": 44,
+    "nativePairQueries": 7744,
+    "nativeCommonTargetQueries": 4680,
+    "fullPcEquivalence": false
+  },
+  "changes": [
+    {
+      "ids": [
+        12
+      ],
+      "summary": "幸运枪：新版好运阈值改为 ≥251，即749/1000好运、251/1000恶运；旧地图版本保留旧算法。",
+      "test": "tests/v126-items-a.test.mjs"
+    },
+    {
+      "ids": [
+        26
+      ],
+      "summary": "睡意枪：大雄可以吸走静香的睡意；攻击接收者的限制保留。",
+      "test": "tests/items-part-b.test.mjs；tests/target-items.test.mjs"
+    },
+    {
+      "ids": [
+        14,
+        38
+      ],
+      "summary": "机械小矮人与竹蜻蜓按新版规则互斥，禁止使用且不扣库存。",
+      "test": "tests/v126-item-common.test.mjs"
+    },
+    {
+      "ids": [
+        8,
+        30
+      ],
+      "summary": "交换布：交换位置时清除目标的玩具军队。",
+      "test": "tests/v126-item-common.test.mjs"
+    },
+    {
+      "ids": [
+        33,
+        35
+      ],
+      "summary": "处境掉换枪：交换处境时清除目标的怨恨头带。",
+      "test": "tests/v126-item-common.test.mjs"
+    }
+  ],
+  "rows": [
+    {
+      "id": 0,
+      "name": "复原光线",
+      "effectAndTiming": "降低身旁建筑一级；特殊炮台/导弹等级1降至地基0，保留地主，立即结束行动",
+      "target": "邻格第一块已购且level>0土地，允许自己的土地",
+      "interaction": "时间布会清归属；复原不退款",
+      "newPcEvidence": {
+        "addresses": "0x491253；0x490ccc",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json",
+          "research/v126-restore-impact.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "land-items、v126-items-a",
+      "changes": "无产品修改：原level>0门限正确；补特殊建筑真实使用命令6组合",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "把身旁已购土地的建筑降低一级，土地仍归原主人。也可以用于自己的建筑。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 1,
+      "name": "机器人小姐",
+      "effectAndTiming": "5天免租",
+      "target": "自己",
+      "interaction": "免租掩码0xffffffdf；互斥按新版完整表",
+      "newPcEvidence": {
+        "addresses": "0x491448；0x4915cf",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "v126-item-common、effects",
+      "changes": "未发现本范围差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "为期五天，停靠对手地产免交租。其他费用照常支付。持续时间在自己的正常回合开始时更新。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 2,
+      "name": "时间布",
+      "effectAndTiming": "清除邻地建筑和归属，立即生效",
+      "target": "其他玩家已购邻地；自己的地拒绝",
+      "interaction": "包含炮台/导弹，不返还原主钱款",
+      "newPcEvidence": {
+        "addresses": "0x491d4d；0x491953",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "land-items、v126-items-a",
+      "changes": "补特殊建筑清除的存档回放测试",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "把身旁其他玩家的土地恢复成可购买的空地，清除建筑和归属。不能用于自己的土地。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 3,
+      "name": "南北极徽章",
+      "effectAndTiming": "成对磁铁5天、排斥走向",
+      "target": "指定可攻击对手，不能重复配对",
+      "interaction": "普通攻击资格与相机转移；能力值0x400000",
+      "newPcEvidence": {
+        "addresses": "0x491f17；0x492184；0x4922be",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "clones-magnet、v126-item-common",
+      "changes": "以新版原生构造确认mask/value",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "给自己和选定对手戴上相同徽章，持续五天。走近配对角色时会被排斥，尝试转身；没有允许的退路时停止移动。已戴徽章的角色不能再次被选中；咒语相机可转移目标。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 4,
+      "name": "传染伤风纸电话",
+      "effectAndTiming": "对手昏睡3天",
+      "target": "可攻击对手；大雄不能攻击静香",
+      "interaction": "共用目标资格、冲突表及相机；无需命中概率",
+      "newPcEvidence": {
+        "addresses": "0x4923ed；0x4929b4",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "target-items、v126-item-common",
+      "changes": "未发现本范围差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "把伤风传染给指定对手，使其昏睡三天。对手须能成为攻击目标；无需空气枪的命中判定。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 5,
+      "name": "日期转换仪",
+      "effectAndTiming": "本月提前结算，标记已领取；日期不变",
+      "target": "自己；0x80月结已领标记拒绝重用",
+      "interaction": "清冲突效果；正常月结跳过已领的地产/步行奖励",
+      "newPcEvidence": {
+        "addresses": "0x492bcd；0x492dcf",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "economic-items、monthly",
+      "changes": "复核新版使用门限；完整月结内部数值另有公共证据",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "立即领取本人的月结豆沙包，日期不变。地产奖励和累计步行点数提前结算，每月仅能使用一次；当月正常月结不再发放这两项奖励。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 6,
+      "name": "缩形隧道",
+      "effectAndTiming": "道路隧道持续5天，按方向缩小/恢复",
+      "target": "空闲普通道路，按轴向入口筛选",
+      "interaction": "与大小、头带、分身、机械活动体互动；方向片段已另行新版机器执行",
+      "newPcEvidence": {
+        "addresses": "0x492ff8；0x493971；0x4934a3",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "tunnel、pc-navigation",
+      "changes": "未发现已核查方向/门限差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "在绿色道路上放置五天的缩形隧道。由大口穿过会缩小五天、步幅减半；缩小后从相反方向穿过可恢复。侧面不能进入，携带分身或怨恨头带时不能穿过。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 7,
+      "name": "咒语相机",
+      "effectAndTiming": "相机记录目标，遇可转移攻击使用；10作为不递减哨兵",
+      "target": "一名可攻击对手",
+      "interaction": "只转移一次、无效目标保留；军队直接效果不走普通目标链",
+      "newPcEvidence": {
+        "addresses": "0x49419a；0x4945b3；0x4946d8",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "target-items、v126-item-common",
+      "changes": "新版构造duration10、mask和值与共同机制核对",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "先拍摄一名对手。此后受到可反射的攻击时，将攻击转给照片中的角色并消耗相机；若该角色无法承受此攻击，相机保留。交换布、处境掉换枪和朋友圈不受反射影响。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 8,
+      "name": "玩具军队",
+      "effectAndTiming": "5天待命；支付普通地租后直接令地主睡5天并消耗",
+      "target": "实际地主",
+      "interaction": "地主已睡/机械活动体时保留；反向租金不触发",
+      "newPcEvidence": {
+        "addresses": "0x494bd0；0x443bb1（已有新PC租金证据）",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "target-items、special-buildings、effects",
+      "changes": "未发现已核查报复链差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "五天内支付正常地租后，军队攻击该土地的地主，使其昏睡五天，然后消耗。地主已经在睡眠中时保留军队；颠倒笔支付的反向租金不会触发。",
+      "confirmedCorrections": [
+        "交换布：交换位置时清除目标的玩具军队。"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "颠倒笔",
+      "effectAndTiming": "5天租金方向反转",
+      "target": "自己；停靠普通地产时生效",
+      "interaction": "租金免除、地主不能收租优先；军队不因反向租金发动",
+      "newPcEvidence": {
+        "addresses": "0x495267；0x495279；0x443bb1",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "economic-items、v126-item-common",
+      "changes": "新版value0x40000及租金负号分支确认",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "五天内停靠其他玩家地产时，租金方向颠倒，由原收款方支付豆沙包给你。双方的免租、不能收租状态仍有效；欠款由实际付款者处理。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 10,
+      "name": "友情药袋",
+      "effectAndTiming": "5天免租与免攻击",
+      "target": "自己",
+      "interaction": "mask0xfffffbdf；新版互斥表决定与机器人小姐/人见人爱替换",
+      "newPcEvidence": {
+        "addresses": "0x4953b7；0x4953c9",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "effects、v126-item-common",
+      "changes": "未发现本范围差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "为期五天，停靠对手地产免交租，也不能被选为攻击目标。会替换机器人小姐、人见人爱丸的状态。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 11,
+      "name": "石头帽",
+      "effectAndTiming": "8天免付租且本人地产不能收租",
+      "target": "自己",
+      "interaction": "mask0xffffffdb；与攻击/效果替换按新版表",
+      "newPcEvidence": {
+        "addresses": "0x495941；0x495953；0x495a3d",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "effects、v126-item-common",
+      "changes": "未发现本范围差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "生效八天，免交租，但自己的地产也不能收租。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 12,
+      "name": "幸运枪",
+      "effectAndTiming": "8天随机好运/恶运；新PC749/1000好运、251/1000恶运",
+      "target": "自己",
+      "interaction": "好运值0x24000、恶运0x18000，影响租金和仙人；旧存档保持旧阈值",
+      "newPcEvidence": {
+        "addresses": "0x495b30；0x495e9e cmp eax,250 / jle；0x49619f",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json",
+          "research/v126-lucky-shot-assembly.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "v126-items-a：1000机器样本+100条命令/存档/回放",
+      "changes": "修复新版仍使用旧版>=751阈值，改>=251；说明同步",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "随机得到八天好运或恶运：好运可收双倍租且仙人赐好事件；恶运需付双倍租且遇坏事件。原PC 1.26版实际为749/1000好运、251/1000恶运；旧版存档保留旧规则。",
+      "confirmedCorrections": [
+        "幸运枪：新版好运阈值改为 ≥251，即749/1000好运、251/1000恶运；旧地图版本保留旧算法。"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "可到任何地方大炮",
+      "effectAndTiming": "把本人发射到目标道路；保留合法旧朝向否则抽方向；结束行动",
+      "target": "空闲普通道路，排除特殊区域/占用",
+      "interaction": "不把其他玩家当目标；传送后跟随者重定位",
+      "newPcEvidence": {
+        "addresses": "0x4962a6；0x496423；0x496d10",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "road-items、clones-magnet",
+      "changes": "未发现已核查目标门限差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-a.json",
+      "currentRule": "选择一处没有角色或道具占用的普通道路，把自己传送过去。特殊区域不能选择；使用后结束本次行动。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 14,
+      "name": "机械小矮人",
+      "effectAndTiming": "睡眠时保存本体，创建代行体，醒来删代行体并恢复本体；待命计数99不递减。",
+      "target": "自身",
+      "interaction": "effects.mjs:fallAsleep/wakePlayer；原Tools 113–120姿势；新PC与竹蜻蜓双向禁止并存由root公共表修正。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x438bc6",
+          "0x438dc9",
+          "0x497242"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/clones-magnet.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "root修新PC竹蜻蜓互斥表",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "在身上待命直到睡眠发生。睡着后由小矮人代替行动，可买地和升级，期间不能使用道具、进入商店或小游戏；醒来后小矮人消失，回到沉睡本体所在的位置。不能与竹蜻蜓同时生效。",
+      "confirmedCorrections": [
+        "机械小矮人与竹蜻蜓按新版规则互斥，禁止使用且不扣库存。"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "狸猫套装",
+      "effectAndTiming": "攻击状态挂目标；先判行人免租和真实地主不能收租，再改收款人为套装施用者；使用收款人加倍能力，地产租金基值保留。",
+      "target": "合法攻击目标",
+      "interaction": "effects.mjs:rentRecipient；engine.mjs:chargeDestinationRent，含自己地产及分身。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x4975e1",
+          "0x443bb1"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/economic-items.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "使指定对手产生错觉五天，其停靠普通地产时将租金交给你，连其自己的地产也会缴租。免租和地产不能收租的状态仍然有效。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 16,
+      "name": "疯狂时间器",
+      "effectAndTiming": "启动全局每日轮数2、剩余5天；状态寿命读全局剩余日数，非普通人物倒计时。",
+      "target": "自身",
+      "interaction": "engine.mjs slowDays/dayCycle；本轮未重执行全局日历循环，沿用原日历机码夹具。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x497824",
+          "0x497961",
+          "0x4978cd"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/economic-items.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "全体玩家行动两轮才过一天，持续五个游戏日。期间不能再次使用疯狂时间器；道路道具仍按日期计时。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 17,
+      "name": "恶运钻石",
+      "effectAndTiming": "选定对手后挂施用者本人，持续8次时钟，保存转移目标。",
+      "target": "选择攻击目标，状态挂施用者",
+      "interaction": "engine.mjs REDIRECT_ITEMS；hermit.mjs消费与转移；旧原仙人细分夹具覆盖坏事件，当前新PC只核对激活挂载/期限，未宣称全部仙人子类新旧一致。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x497c5f"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/target-items.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "本轮未逐一执行全部仙人子类重定向路径；已有旧PC夹具与新激活依据，不能宣称全子类一致",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "选择一名对手。八天内第一次遇到可转移的单人坏仙人事件时，将事件传给该角色，钻石随即消耗。对方不符合事件条件时，坏事件仍由自己承受。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 18,
+      "name": "隐形眼药水",
+      "effectAndTiming": "五天清除能力位0x20免租，激活时将角色可见性设为1。",
+      "target": "自身",
+      "interaction": "effects.mjs免租已匹配；角色视觉透明度没有在此专项逐帧校验。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x497e43",
+          "0x48f524",
+          "0x443bb1"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "生效五天，停靠对手地产免交租。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 19,
+      "name": "人见人爱丸",
+      "effectAndTiming": "五天清除0x400，被攻击选择回调拒绝。",
+      "target": "自身",
+      "interaction": "effects.mjs:canBeAttacked，互斥由root新PC全表验证。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x4980e9",
+          "0x48f524",
+          "0x48f317"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "为期五天，不能被选为攻击目标。会替换友情药袋，替换后不再享有药袋的免租效果。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 20,
+      "name": "储钱蜜蜂",
+      "effectAndTiming": "五天添加0x80000征罚保护；额外回调为表情/动画与台词，不是额外现金奖惩。",
+      "target": "自身",
+      "interaction": "effects.mjs:protectedFromFine；此专项不声称原蜜蜂全部动画帧已复刻。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x4984ca",
+          "0x498567",
+          "0x48f524"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "生效五天，保护手持豆沙包，不受征罚圈罚款影响。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 21,
+      "name": "搬迁地图",
+      "effectAndTiming": "两处不同坐标，均需有主且kind1；交换16字节土地所有权记录和建筑记录坐标/外形；地价不随楼交换。",
+      "target": "两处不同有主kind1建筑",
+      "interaction": "property-items.mjs仅owners/levels/kind；已核对主状态，原建筑外形字段另有视觉差异范围，未伪造字段。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x498ea1",
+          "0x498f46"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/building-swap.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "在地图上依次选择两座普通建筑，将它们的归属和等级交换位置。不能选择空地或特殊建筑；土地本身的地价保持不变。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 22,
+      "name": "蜗牛屋",
+      "effectAndTiming": "五天清除0x800，免仙人事件。",
+      "target": "自身",
+      "interaction": "effects.mjs:affectedByHermit；hermitCompatible检查0x800。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x499c30",
+          "0x48f524"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "生效五天，不受仙人圈事件影响。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 23,
+      "name": "灵魂守卫",
+      "effectAndTiming": "五天清除0x40/0x20/0x400/0x800并添加0x80000，即禁商店、免租免攻击免仙人免征罚。",
+      "target": "自身",
+      "interaction": "effects.mjs掩码与新PC490条样本一致；原8a–91动画循环仅取证不称逐帧一致。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x499ec6",
+          "0x48f524"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "生效五天，免租、免受攻击、仙人事件和征罚圈罚款影响；期间不能进入商店。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 24,
+      "name": "分身药水",
+      "effectAndTiming": "建立3个跟随节点；优先背后道路，阻塞时按合法方向抽签；复制后仍需按各自实际停靠点结算。",
+      "target": "自身",
+      "interaction": "clones.mjs、engine.mjs visitAt；原摆放机码4684例和独立买地/租金回归覆盖。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x49ad26"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/pc-clone-arrival.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "变出三个跟随自己的分身，持续五天。每个分身停靠的位置分别结算事件和地产；分身也会占用道路位置。身后需要有可用道路。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 25,
+      "name": "失忆棒",
+      "effectAndTiming": "目标五天清除收租能力4；租金入口在收款人转移之前检查真实地主能力。",
+      "target": "合法攻击目标",
+      "interaction": "effects.mjs:canCollectRent；免收租与狸猫转移顺序已有回归。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x49c2a1",
+          "0x48f524",
+          "0x443bb1"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "使指定对手失忆五天，期间其地产不能收取租金。对手仍会照常支付其他费用。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 26,
+      "name": "睡意枪",
+      "effectAndTiming": "来源阶段只需存活且睡眠或小矮人代行；接收阶段需不同来源、互斥/攻击可用并限制大雄攻击静香；唤醒来源后接收方睡五天。",
+      "target": "来源活着且睡眠/小矮人；接收者攻击合法且非来源",
+      "interaction": "已修canTakeSleep错误的大雄→静香来源限制；32条新PC原指令用例验证。说明同步。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x49c8b4",
+          "0x49c999"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/items-part-b.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "修复来源阶段错误角色限制并更新说明",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "先选一名有睡意的对手，再选另一名可攻击的对手。前者醒来，后者昏睡五天；接收者的咒语相机可以转移效果。大雄可以吸走静香的睡意，但不能把睡意交给她。",
+      "confirmedCorrections": [
+        "睡意枪：大雄可以吸走静香的睡意；攻击接收者的限制保留。"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "朋友圈",
+      "effectAndTiming": "五天攻击状态附着目标；攻击者身上朋友圈原施用者不可成为其攻击目标，单向保护，不改变租金。",
+      "target": "合法攻击目标",
+      "interaction": "effects.mjs:canAttackPlayer；通用新PC门限由root4680例验证。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x49d11e",
+          "0x48f317"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/economic-items.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false,
+      "partReport": "docs/audits/items-2026-11-07-part-b.json",
+      "currentRule": "与指定对手建立五天的友情，使对方不能以你为目标使用攻击道具。对方仍可攻击其他角色，租金照常计算。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 28,
+      "name": "护身符",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967295,
+        "0x78": 131072
+      },
+      "effectAndTiming": "5 owner-turn duration, value 0x20000; charm survives event use",
+      "target": "self",
+      "interaction": "hermit good/bad selection uses capability; no one-shot consumption",
+      "implementation": "app/src/hermit.mjs",
+      "tests": "hermit/protection",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "生效五天，期间仙人宝箱保证好运，开箱不会消耗护身符。剩余时间在自己的正常回合开始时更新。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 29,
+      "name": "盲点星星",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 8,
+        "0x70": 8,
+        "0x74": 4294967259,
+        "0x78": 0
+      },
+      "effectAndTiming": "8 turns; mask ffffffdb clears rent payment and collection bits",
+      "target": "self",
+      "interaction": "both own income and own outgoing rent suppressed",
+      "implementation": "app/src/effects.mjs",
+      "tests": "effects/protection",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "生效八天，免交租，但自己的地产也不能收租。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 30,
+      "name": "交换布",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826128,
+        "0x6c": 0,
+        "0x70": 0,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "instant; swaps position and direction at native animation marker 0x6f",
+      "target": "other eligible player",
+      "interaction": "native49d7be calls both conflict cleanup, position/direction setters; retains wealth/inventory",
+      "implementation": "app/src/engine.mjs",
+      "tests": "protection",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "与指定对手交换位置和朝向。交换后结束本次行动；财产和持续状态不随位置交换，但会清除目标的玩具军队。",
+      "confirmedCorrections": [
+        "交换布：交换位置时清除目标的玩具军队。"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "失物回归机器",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967295,
+        "0x78": 524288
+      },
+      "effectAndTiming": "5 turns; value 0x80000; native49dbf1 attaches to user",
+      "target": "self",
+      "interaction": "fine protection applies via common capability, not blanket immunity to every cash loss",
+      "implementation": "app/src/effects.mjs",
+      "tests": "protection",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "生效五天，保护手持豆沙包，不受征罚圈罚款影响。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 32,
+      "name": "一分为二刀",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4095,
+        "0x78": 0
+      },
+      "effectAndTiming": "5 turns; one follower, native49e1db",
+      "target": "self; requires valid follower road",
+      "interaction": "places one follower behind actor and registers linked actor; clone interactions use same owner",
+      "implementation": "app/src/clones.mjs",
+      "tests": "clones-magnet",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "变出一个跟随自己的分身，持续五天。分身停靠的位置也会结算事件和地产。不能与分身药水同时生效。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 33,
+      "name": "处境掉换枪",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826128,
+        "0x6c": 0,
+        "0x70": 0,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "instant; native49ee9e position/direction,49f67f four financial fields,42 inventory counts,property lists",
+      "target": "other eligible player",
+      "interaction": "native43a6fc/43a73b swaps +28,+2c,+120,+30; special property actor owner updates in49f67f",
+      "implementation": "app/src/engine.mjs",
+      "tests": "swap",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "与指定对手交换位置、朝向、手持豆沙包、矿山存款、累计利息、步行点数、道具库存和地产。角色身份与持续状态不随财产交换，但会清除目标的怨恨头带。",
+      "confirmedCorrections": [
+        "处境掉换枪：交换处境时清除目标的怨恨头带。"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "倒霉咪表",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 8,
+        "0x70": 8,
+        "0x74": 4294967295,
+        "0x78": 1048576
+      },
+      "effectAndTiming": "8 turns; value0x100000; native49fec3 attaches self",
+      "target": "self",
+      "interaction": "hermit bad-event compensation; specific compensation table remains existing evidence",
+      "implementation": "app/src/hermit.mjs",
+      "tests": "hermit",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "八天内遇到坏仙人事件时获得该事件规定的豆沙包补偿，补偿随物价变化。坏事件本身仍会发生。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 35,
+      "name": "怨恨头带",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826160,
+        "0x6c": 8,
+        "0x70": 8,
+        "0x74": 4294967295,
+        "0x78": 98304
+      },
+      "effectAndTiming": "8 turns;value0x18000; new4a0296 rejects already-small targets before common attack gate",
+      "target": "other eligible non-small player",
+      "interaction": "headband affects navigation/encounters; common conflicts newly corrected by root",
+      "implementation": "app/src/effects.mjs",
+      "tests": "target-items",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "让幽灵跟随一名未缩小的对手八天，期间该角色支付双倍租金，并遇到坏仙人事件。咒语相机可以转移这个攻击。",
+      "confirmedCorrections": [
+        "处境掉换枪：交换处境时清除目标的怨恨头带。"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "空气枪",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 3,
+        "0x70": 3,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "3 turns; native4a0b43..4a0b99 exact2000 probability samples",
+      "target": "other eligible player",
+      "interaction": "Nobita100%, otherwise draw700..999 hit; failed shot consumed; reflected actual target gets correct timer",
+      "implementation": "app/src/effects.mjs",
+      "tests": "target-items/effects",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "2000 native samples exact",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "命中后使对手昏睡三天。大雄必中，其他角色命中率为 30%。对方行动前更新持续时间，到期醒来；未命中也会消耗道具和本次行动。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 37,
+      "name": "任意门",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826128,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "5 turns; placement handler4a1c57 inserts road object with selected direction",
+      "target": "free ordinary road satisfying original axes and exclusion checks",
+      "interaction": "existing pc-v126-road-direction fixture covers crossings; random destination PRNG not byte-identical PC generator",
+      "implementation": "app/src/road-items.mjs",
+      "tests": "road-items/pc-navigation",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "在没有角色、道具占用的普通道路放置一扇门，持续五天。沿门的通行方向穿过时，随机传送到另一处道路并继续前进。门的侧面不能穿过。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 38,
+      "name": "竹蜻蜓",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 3847,
+        "0x78": 2097152
+      },
+      "effectAndTiming": "5 turns;maskf07 value200000;4a314f attaches self",
+      "target": "self; new-PC blocks active mechanical dwarf",
+      "interaction": "flying ignores road interactions/encounters and walking reward, masks buy/upgrade/shop/etc",
+      "implementation": "app/src/effects.mjs",
+      "tests": "effects/movement-flow",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "五天内飞离地面，免交地租，不触发地面事件，不累计步行奖励。期间不能买地、升级、进入道具商店或拾取铃铛。不能与机械小矮人同时生效。",
+      "confirmedCorrections": [
+        "机械小矮人与竹蜻蜓按新版规则互斥，禁止使用且不扣库存。"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "缩小电筒",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294966974,
+        "0x78": 0
+      },
+      "effectAndTiming": "5 turns;maskfffffebe;4a37dd common attack plus non-small gate;4a3ac7 clears small on expiry",
+      "target": "other eligible non-small player",
+      "interaction": "half-step movement and expiry state; attachment on target4a39ba",
+      "implementation": "app/src/effects.mjs",
+      "tests": "target-items/movement-flow",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "将一名未缩小的对手缩小五天，每点骰子只移动半格；期间不能使用道具、进入道具商店或小游戏。到期恢复大小，半格位置会保留。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 40,
+      "name": "无敌炮台",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 10,
+        "0x70": 10,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "permanent: constructor10, native tick does not decrement >=10;4a3d3c writes level1 kind3",
+      "target": "own empty property only, native4a3c6d",
+      "interaction": "cannon is persistent property; restoration downgrades level1 to0, preserves owner",
+      "implementation": "app/src/special-buildings.mjs",
+      "tests": "special-buildings",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "在身旁自己的空地基上建造炮台。对手停靠时自动将其送往倒霉区域；正在代替主人行动的机械小矮人可避开炮台。设施可以反复使用。",
+      "confirmedCorrections": []
+    },
+    {
+      "id": 41,
+      "name": "自制导弹",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 10,
+        "0x70": 10,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "permanent: constructor10;4a4d6a writes level1 kind2",
+      "target": "own empty property only, native4a4c9b",
+      "interaction": "missile ownership swaps with property list; target/one-camera interactions retained",
+      "implementation": "app/src/special-buildings.mjs",
+      "tests": "special-buildings",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit.",
+      "partReport": "docs/audits/items-2026-11-07-part-c.json",
+      "currentRule": "在身旁自己的空地基上建造导弹。自己再次停靠时选择一名可攻击的对手，送其进入倒霉区域。咒语相机可以转移导弹，设施可以反复使用。",
+      "confirmedCorrections": []
+    }
+  ],
+  "limitations": [
+    "原生局部执行与反编译可验证对应规则，不代表已在PC整机逐一执行所有道具组合。",
+    "未穷尽全部仙人子类转移、任意多重状态、所有地图和动画语音的逐帧时序。",
+    "安卓验证为x86_64模拟器；尚无实体ARM手机验证。"
+  ]
+}

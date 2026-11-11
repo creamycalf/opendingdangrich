@@ -1,0 +1,29 @@
+{
+  "date":"2026-11-09",
+  "test":"tests/rc20-inventory-touch.cjs",
+  "target":"http://127.0.0.1:5185, final RC20 dist after root build",
+  "report":"test-results/rc20-inventory-touch/result.json",
+  "viewports":["320x640","915x412"],
+  "checks":[
+    "42 unique item types with44 total held items; duplicate missile count3",
+    "Native CDP touch drags scroll list to last item in both orientations (8 swipes)",
+    "Every item's name, description, original image and quantity checked against current catalog",
+    "Inspect final item, return to pocket restores selected item and scroll position",
+    "Return to game closes dialog and preserves full game state",
+    "Empty pocket renders explicit state, hides action/image, and allows return",
+    "900ms touch hold leaves no selected text and does not modify inventory; computed user-select:none",
+    "Inspect/use/back controls stay within viewport, >=40px tall, and hit-test unobscured",
+    "No whole-dialog scroll needed to reach footer, no horizontal page overflow",
+    "No page JavaScript errors or failed game asset requests"
+  ],
+  "screenshots":[
+    "test-results/rc20-inventory-touch/last-320x640.png",
+    "test-results/rc20-inventory-touch/last-915x412.png",
+    "test-results/rc20-inventory-touch/pocket-320x640.png",
+    "test-results/rc20-inventory-touch/pocket-915x412.png",
+    "test-results/rc20-inventory-touch/empty-320x640.png",
+    "test-results/rc20-inventory-touch/empty-915x412.png"
+  ],
+  "result":"passed",
+  "limits":"Chrome touch-emulated integration; validates application selection suppression, not Android system clipboard menus. Saved game fixture seeds item possession; no assertions that all item effects match original PC rules."
+}

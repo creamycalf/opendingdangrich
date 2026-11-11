@@ -1,0 +1,62 @@
+{
+  "sourceExeSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "date": "2026-11-09",
+  "scope": "仙人出现、原对白、施法、三箱方向动画、开箱、离场和实际持续状态反馈；不把此专项称为整个游戏逐帧等价",
+  "method": "REA Ghidra12.1.4静态读取新PC；仅提取资源，未执行原EXE",
+  "evidence": [
+    "research/rc21-hermit-rea.json",
+    "research/rc21-hermit-loader-rea.json",
+    "research/rc22-hermit-callbacks-rea.json",
+    "research/rc22-hermit-animation-rea.json",
+    "research/rc22-hermit-frame-update-rea.json",
+    "research/rc22-hermit-all-ctors-rea.json",
+    "research/rc22-hermit-tracks-rea.json",
+    "research/rc22-hermit-audio-status-rea.json",
+    "research/rc22-hermit-status-render-rea.json",
+    "research/rc22-hermit-status-update-rea.json",
+    "research/rc22-hermit-rea-bundle.json"
+  ],
+  "nativeFlow": {
+    "entry": "415d50/4166fd: Events0→Events1+strings0/8→Events2→frame45标记111出现三箱→strings0/9→选箱",
+    "slots": "0右、1中、2左；原坐标240/160、200/180、160/200",
+    "spawn": "9倒放31→0，0/6/12tick延迟；原代码在首箱完成后显示说明",
+    "confirmation": "SFX82→Events4 frame25标记111→未选箱正放9、第二箱延迟6tick→生成结果",
+    "result": "坏6/好7→结果对白→合箱8→消失9→完整离场5→45tick",
+    "callback": "417c2e将施法2/4结束切换到待机3",
+    "sounds": "401827：正放仅8000，倒放仅80c8；出现0:34；箱9倒放帧24:11，正放帧10:11；坏6:15/32；好7:11/13；离场5:16/33",
+    "dialogue": "strings.dat 0/8和0/9与已解码旧字符串逐字节相等后才复用文字；不是猜测翻译",
+    "eventStatus": "35构造器逐项核对，仅1,2,5,6,7,14..24创建持续状态图Sprite2 328..343；21原duration4，其余5",
+    "npcTrack": "43a8bf→414cf9：好运左列、恶运右列，Events11新增，12移除，13能力触发反馈，14/15两侧NPC，16/17移除动作；4146c0在11 frame9显示状态图。后续41445c指向slot250=12，纠正本轮早期对13的误识别",
+    "statusSounds": "Events11 frame1 SFX17，13 frame2 SFX19，16/17 frame21 SFX18；新增播17、删除只播18，不能将19误放到到期",
+    "voices": "436161仅设置文本，不存在由该入口得到的35事件独立语音号。通用人物收支/入狱反应位于事件效果回调，不能据此编造仙人台词语音。"
+  },
+  "implementation": [
+    "选择前完整出现、两段原对白、三箱错开倒放，触屏选中与明确确认分离",
+    "确认施法期间不调用engine，演出结束onChoose一次；关闭dialog取消延后回调与音效",
+    "开箱结果等待原动画完成后显示文字，确认后合箱、消失、离场、45tick收尾",
+    "应用实际appliedEvents可选metadata，逐个显示原状态图、正确NPC与新增动效/音17；无metadata不假称施加",
+    "已结算结果资源加载失败可以继续；选择资源失败可由父界面保存返回，不会代替玩家选箱",
+    "资源提取18套Events动画、420张Sprite1原图、16张Sprite2状态图，附源资源和RGBA SHA"
+  ],
+  "mobileAdaptations": [
+    "展示时钟使用30fps，未声称等于原机墙钟速度",
+    "手机选箱为大按钮；动画阶段保留原坐标关系并使用适配画幅的取景",
+    "说明开始等待三个箱均出现，相比原版首箱完成多12tick；确认等待两未选箱消失，多6tick",
+    "每个实际状态反馈46tick，原新增22帧加短停留；这是便于手机辨认的展示，非原屏幕左右全状态轨道逐像素复刻",
+    "状态图重叠/刷新/反射目标由engine提供，组件不重新推导、不改奖励、不抽随机数"
+  ],
+  "validation": {
+    "typecheck": "tsc --noEmit通过",
+    "unit": "tests/hermit-presentation.test.mjs 4项通过：方向音效、标记帧/错开顺序、完整退场、35事件状态映射",
+    "touch": "tests/rc22-hermit-touch.cjs：320x640、915x412、640x320均通过，前置对白/说明/选择/结果按钮可触；好坏分支、完整声音及新增状态音、连点一次、关闭dialog停止",
+    "lifecycle": "tests/rc22-hermit-lifecycle.cjs通过：503失败继续与确认施法中退出不结算；四名实际接收者逐个SFX17共四次，onContinue仅一次",
+    "production": "tests/rc22-hermit-production.cjs已通过dist5185：seed72好运event6及seed1恶运event24，各320x640/915x412/640x320，选箱无规则变化、重复确认一次、结果续档完全一致、实际metadata状态反馈及离场后继续。记录test-results/rc22-hermit-production/result.json和rc22-hermit-production-seed1/result.json",
+    "androidFinal": "最终安装包d9024e89a333784eea98c62bec666e695a8ea4001d6242c7fdba607f9e4da2ed，好event6/坏event24两组均通过且原存档完全恢复；每组result.json含实际安装SHA及restoredAndReloadVerified:true。初版9bcda2...的WebView解码失败已修复，独立诊断见rc22-hermit-android-loader.json",
+    "screenshots": "test-results/rc22-hermit-touch/含两段对白、选箱、好坏结果、NPC状态；test-results/rc22-hermit-production-seed1/applied-*.png为真实生产metadata驱动"
+  },
+  "remaining": [
+    "新增hermit-status-view棋盘持续效果栏和删除轨道，原PC左右多行改为手机单行横滑；当前玩家切换清基线，不把其他玩家状态误当到期。原能力触发13已查清，但需要实际触发metadata，未凭状态存在或数字变化猜测播放",
+    "即时事件房屋升级/地震等地图动画与人物语音属于其事件效果，不由本组件猜测补造"
+  ],
+  "reaLifecycle": "本agent独立会话已export bundle并保存snapshot后close；未关闭其他agent会话"
+}

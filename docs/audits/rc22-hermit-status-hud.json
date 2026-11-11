@@ -1,0 +1,43 @@
+{
+  "sourceExeSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "date": "2026-11-09",
+  "source": [
+    "research/rc22-hermit-status-remove-rea.json",
+    "research/rc22-hermit-status-remove-helpers-rea.json",
+    "research/rc22-hermit-status-remove-routes-rea.json",
+    "research/rc22-hermit-status-render-rea.json",
+    "research/rc22-hermit-status-update-rea.json"
+  ],
+  "finding": {
+    "expiry": "43a070 decrements counters via event vtable0/40b21a; zero calls415003(good,status,0)",
+    "conflictRemoval": "43a8bf/43adf1/43afa5/43b172 also call415003 for state removal",
+    "nativeDelete": "4152d9 moves corresponding NPC to row; 16/17 frame21 SFX18, frame22 callback41445c selects slot250=Events12; 12 frame3 toggles icon off and frame8 finishes; NPC completes40 frames, returns to row0 and exits upward if last in category",
+    "correction": "Events13 is not delete. 414fd5→414489 chooses slot24c=13; its only caller43a49e is capability-trigger feedback. Sound19 must not play on expiry.",
+    "positions": "Original good icon x5/NPC x26; bad icon x587/NPC x566; same relative21 pixel separation preserved in compact feedback"
+  },
+  "api": {
+    "module": "app/src/hermit-status-view.ts",
+    "mount": "mountHermitStatusView(host,{onInspect:({id,remaining,name,good})=>void,onSound?:(clip)=>void})",
+    "update": "{player:string|number|null,events:{id,remaining}[],active?:boolean}",
+    "reset": "active:false or player:null cancels sounds/RAF/queued removals and resets baseline",
+    "destroy": "disconnects observer, stops RAF, removes component",
+    "rules": "read-only; never changes game/RNG/save"
+  },
+  "mobileLayout": {
+    "placement": "left8, landscape top84/portrait top126, max width240 height56; --hermit-status-top override",
+    "touch": "single horizontal scroll row; 46x48 buttons; only compact strip receives pointer events",
+    "inspect": "original effect name, good/bad category and actual remaining passed to existing dialog",
+    "hidden": "modal or dice overlay hides the strip and cancels pending feedback",
+    "switch": "only uninterrupted same-player snapshots produce removal; switch resets comparison and cannot mislabel another player's state as expired",
+    "animationAdaptation": "original vertical stack becomes a horizontal mobile strip. No row travel guessed from unrelated horizontal index. Last category plays upward NPC exit; remaining category finishes attack frame40"
+  },
+  "validation": {
+    "typecheck": "passed",
+    "unit": "tests/hermit-presentation.test.mjs 5 tests passed, including exact removal12 vs ability13 and sound18",
+    "touch": "tests/rc22-hermit-status-touch.cjs passed320x640/915x412/640x320:16 icons, real touch swipe to last, exact inspect callback, long press no selection, roll button reachable, countdown/switch silent, deletion only18, reset/modal/dice cancellation",
+    "artifacts": "test-results/rc22-hermit-status-touch/result.json and all/remove screenshots",
+    "production": "tests/rc22-hermit-status-production.cjs通过dist5185三尺寸：原图可见/可点，说明包含名称/好运类别/实际剩余3回合，暂停返回状态栏恢复，前后game snapshot完全相同，骰子不被遮挡；截图/JSON在test-results/rc22-hermit-status-production",
+    "androidFinal": "最终安装包d9024e89a333784eea98c62bec666e695a8ea4001d6242c7fdba607f9e4da2ed实际触摸状态图→免租/好运/5回合说明→返回，通过。test-results/rc22-hermit-production-android/status-inspect-native.png为ADB真实surface，已目视。JSON含实际安装SHA及原存档恢复/reload断言",
+    "androidFixture": "好箱真实规则已切P2且P1 effect6 remaining5保留；点查另用从此结果派生的有效P1 ready展示输入（turn0/effectTickPending=false/effectClockStarted=true），进入后再次断言remaining5。点查前后game snapshot完全一致；不冒称为P2获此效果。"
+  }
+}

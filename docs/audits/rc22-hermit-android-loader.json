@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-09",
+  "failedApkSha256": "9bcda2bee8183fb893a1d709ce43a7d46ad45b322ffae5350d638a7ff59bee7b",
+  "observed": [
+    "Android真实选箱入口加载报The source image cannot be decoded，不能进入第一段对白；不是通过测试",
+    "实际失败44张集中新增状态动画Sprite1 11224等，naturalWidth/Height仍为48x48",
+    "APK经localhost返回200 image/png；抽样PNG字节SHA与本地完全一致",
+    "原44张逐项先onload后decode，再canvas draw/getImageData，所有RGBA SHA与原提取catalog完全一致",
+    "直接decode并发420/8/420/8失败数117/47/164/20，单纯改并发8不足以修复",
+    "先onload后decode，8并发420张0失败1.91s；先fetch再decode8并发0失败3.15s；1并发onload后decode0失败14s"
+  ],
+  "interpretation": "同一WebView的源加载/解码时序问题。文件、PNG像素流和最终绘制均已排除损坏；不宣称已定位WebView内部具体实现缺陷。",
+  "fix": [
+    "共享hermit-view loader等待onload/onerror后再await decode",
+    "最多8并发，保留每图15秒加载上限",
+    "内部错误含URL供日志诊断；用户界面仅显示可读的失败/返回或继续说明",
+    "choices/result/status HUD共同使用同一原图缓存"
+  ],
+  "evidence": [
+    "test-results/rc22-hermit-android-image-diagnostic.json",
+    "test-results/rc22-hermit-android-concurrency.json",
+    "test-results/rc22-hermit-android-loadmode.json",
+    "test-results/rc22-hermit-android-onload-pixels.json"
+  ],
+  "validationBeforeRebuild": [
+    "tsc通过",
+    "tests/rc22-hermit-loader.cjs：436原图全部先load后decode，具体坏PNG URL可诊断，加载中关闭无回调",
+    "tests/rc22-hermit-lifecycle.cjs：503结果回退、确认中关闭、四人实际状态反馈全部通过",
+    "每次原生失败测试finally均恢复GameSave和整个localStorage，并reload后再次逐值比较；图像诊断为只读"
+  ],
+  "finalApk": {
+    "sha256": "d9024e89a333784eea98c62bec666e695a8ea4001d6242c7fdba607f9e4da2ed",
+    "identity": "每组运行时ADB pm path取得真实安装base.apk，再sha256sum，结果写入result.json",
+    "nativeGood": "test-results/rc22-hermit-production-android/result.json，event6完整流程通过，首对白5148ms",
+    "nativeBad": "test-results/rc22-hermit-production-android-seed1/result.json，event24完整流程通过，首对白6046ms",
+    "visuals": "所有Android截图均ADB screencap真实surface，已目视两组原图和status-inspect-native.png；不以CDP黑canvas截图判通过",
+    "storage": "两组restoredAndReloadVerified:true，原生GameSave及全部localStorage恢复后再reload逐值核验",
+    "statusInspection": "真实好箱ok后规则切到P2，P1仍event6 remaining5。点查另用该已结算snapshot派生的P1 ready展示夹具：turn0、effectTickPending=false、effectClockStarted=true，保留原event6/remaining5。实际触摸图标打开好运免租5回合说明并返回，点查前后game snapshot完全相同。不声称P2持有P1的状态。"
+  }
+}

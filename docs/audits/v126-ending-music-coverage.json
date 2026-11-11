@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-07",
+  "source": {
+    "path": "work/new-pc-v121/Doraemon.exe",
+    "sha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1"
+  },
+  "scope": "Ending, persistent leaderboard, minigame score and monthly-result music; no old-build fixture promoted to new-build evidence.",
+  "findings": [
+    {
+      "scene": "Human winner certificate",
+      "track": 4,
+      "flags": 2,
+      "evidence": [
+        "0x455888 registers 0x10e -> 0x46f0e8",
+        "0x474525 selects winning seat using strictly greater assets; human flag selects 0x10e",
+        "0x46f12e pushes 2,4 and calls 0x403f80"
+      ],
+      "implemented": "musicForGame gameover chooses smallest-seat winner and uses 4 if human. Yellow character also enters track4 before artwork branch."
+    },
+    {
+      "scene": "AI winner, all gone, no human winner",
+      "track": 6,
+      "flags": 0,
+      "evidence": [
+        "0x455888 registers 0x122 -> 0x473ca6",
+        "0x474525 transfers to 0x122 when no human winner",
+        "0x473cd5 pushes 0,6"
+      ],
+      "implemented": "musicForGame returns6; audio.ts plays6 once. Repeat semantics confirmed in research/audio-new-music-repeat-disassembly.txt and tested in test-results/audio-rc19/music-lifecycle.json."
+    },
+    {
+      "scene": "Post-certificate page",
+      "track": 4,
+      "evidence": [
+        "0x455888 registers 0x118 -> 0x470dc9 under certificate0x10e",
+        "0x470dc9 contains no replacement music call"
+      ],
+      "confidence": "inherited track4 inferred from control flow"
+    },
+    {
+      "scene": "Title persistent leaderboard/detail",
+      "track": 2,
+      "evidence": [
+        "0x460ae4 and0x463bb5 contain no music switch",
+        "Both registered under title100; title0x458e79 calls2"
+      ],
+      "confidence": "track inheritance inferred, not a new native music call",
+      "implemented": "main.ts showRanking selects2; returning to title clears the temporary scene override."
+    },
+    {
+      "scene": "Minigame score page",
+      "track": 11,
+      "flags": 0,
+      "evidence": [
+        "0x419d35 shared result vtable callback",
+        "0x419e30 push0,push11,call403f80"
+      ],
+      "implemented": "pending minigame session.stage result ->11; playing remains5"
+    },
+    {
+      "scene": "Monthly introduction and early claim",
+      "track": 9,
+      "flags": 2,
+      "evidence": [
+        "0x475a8d monthly300 entrance calls9 then constructs483140",
+        "483140 installs vtable4ba380; +0xc callback483d4c",
+        "483d4c early claim branch applies reward and returns before track10"
+      ],
+      "implemented": "converter>=0 uses9"
+    },
+    {
+      "scene": "Monthly four-player paid result page",
+      "track": 10,
+      "flags": 2,
+      "evidence": [
+        "483d4c builds per-seat property/walk/interest/cash results after entrance",
+        "484987 push2,push10,call403f80"
+      ],
+      "implemented": "Current product exposes paid result directly, so converter<0 returns10"
+    }
+  ],
+  "changes": [
+    "app/src/audio-rules.mjs: musicForGame only",
+    "tools/audit_ending_music_v126.py",
+    "tests/fixtures/v126-ending-music.json",
+    "tests/v126-ending-music.test.mjs"
+  ],
+  "validation": {
+    "native": "Unicorn executes five exact push/call slices from SHA-verified new executable, hooks music API arguments. This is not full ending scene emulation.",
+    "tests": 11,
+    "passed": 11,
+    "log": "test-results/v126-ending-music-tests.txt",
+    "regressions": [
+      "human/AI/none/tied/yellow winners",
+      "mini playing/result/collect",
+      "return title/new match",
+      "monthly normal/early claim/return"
+    ]
+  },
+  "evidenceFiles": [
+    "docs/audits/v126-ending-audio-rea.json",
+    "docs/audits/v126-ending-followup-rea.json",
+    "docs/audits/v126-ranking-audio-rea.json",
+    "docs/audits/v126-monthly-music-rea.json",
+    "research/v126-certificate.json",
+    "research/v126-certificate-flow.json"
+  ],
+  "remaining": [
+    "Original0x473ca6 uses bitmap0x79 and8 letter sprites for animated GAME OVER; product still uses its existing text results dialog.",
+    "Original monthly9 introduction followed by10 results is not recreated as a two-stage animation; product directly displays paid results with10.",
+    "No Android listening assertion performed in this child task; root integrates audio engine and APK checks."
+  ]
+}

@@ -1,0 +1,26 @@
+#modal:has(.hermitChoices),#modal:has(.hermitResult){width:min(700px,98vw);max-height:calc(100dvh - 12px);padding:12px;overflow:hidden}
+#modalContent:has(.hermitChoices),#modalContent:has(.hermitResult){display:flex;flex-direction:column;min-height:0;max-height:calc(100dvh - 40px);gap:4px}
+#modalContent:has(.hermitChoices)>h2,#modalContent:has(.hermitResult)>h2{margin:0;font-size:20px}
+#modalContent:has(.hermitChoices)>p,#modalContent:has(.hermitResult)>p{margin:0;font-size:13px;line-height:1.5}
+#modalContent:has(.hermitChoices)>button,#modalContent:has(.hermitResult)>button{order:3;min-height:44px;margin:0;flex:none}
+.hermitChoices,.hermitResult{min-height:0;display:flex;flex-direction:column;gap:4px;overflow:hidden}
+.hermitScene{display:grid;grid-template-columns:80px minmax(0,1fr);gap:8px;align-items:center;min-height:0;flex:none}
+.hermitActor{width:80px;height:110px;max-width:100%;image-rendering:pixelated}
+.hermitChests{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;min-width:0}
+#modal .hermitChest{position:relative;display:flex;flex-direction:column;align-items:center;min-width:0;min-height:110px;padding:2px;margin:0;border:2px solid #b59a5a;background:#fff8dd;touch-action:manipulation}
+#modal .hermitChest[aria-pressed=true]{border-color:#165f8d;background:#ffe48b;box-shadow:inset 0 0 0 1px #165f8d}
+.hermitChest canvas{width:100%;height:120px;object-fit:contain;image-rendering:pixelated;pointer-events:none}
+.hermitChest span{font-size:13px;line-height:1.4;pointer-events:none}
+#modal .hermitStatus{font-size:12px;line-height:1.4;margin:0;text-align:center;flex:none}
+#modal .hermitOpen,#modal .hermitContinue{min-height:44px;margin:0;flex:none}
+.hermitResultScene{display:flex;align-items:center;justify-content:center;gap:28px;min-height:0}
+.hermitResultChest{width:144px;height:150px;image-rendering:pixelated;max-height:30dvh;object-fit:contain}
+#modal .hermitResultText{white-space:pre-line;overflow:auto;overscroll-behavior:contain;touch-action:pan-y;margin:0;max-height:35dvh;font-size:15px;line-height:1.6}
+.hermitChoices *,.hermitResult *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.hermitChoices canvas,.hermitResult canvas{background:transparent}
+.hermitStage{width:100%;height:180px;max-height:32dvh;object-fit:contain;image-rendering:pixelated;flex:none}
+.hermitChoices [hidden],.hermitResult [hidden]{display:none!important}
+.hermitResultChest.hermitStage{width:100%;height:180px;max-height:32dvh}
+@media(orientation:landscape) and (max-height:420px){.hermitStage,.hermitResultChest.hermitStage{height:105px;max-height:29dvh}}
+@media(max-width:480px){.hermitScene{grid-template-columns:minmax(0,1fr);gap:0}.hermitScene>.hermitActor{justify-self:center;height:75px;width:65px}.hermitChests{gap:5px}.hermitChest canvas{height:105px}.hermitChest span{font-size:12px}}
+@media(orientation:landscape) and (max-height:420px){#modal:has(.hermitChoices),#modal:has(.hermitResult){padding:8px}.hermitChest canvas{height:64px}.hermitActor{height:75px;width:65px}.hermitScene{grid-template-columns:65px minmax(0,1fr)}#modal .hermitChest{min-height:88px}.hermitResultChest{height:95px;width:110px}#modal .hermitResultText{max-height:20dvh;font-size:13px}#modalContent:has(.hermitChoices)>h2,#modalContent:has(.hermitResult)>h2{font-size:18px}}

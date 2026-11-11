@@ -1,0 +1,6834 @@
+{
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "oldSha256": "f190b35370d3efe3024b5105a90f85abf07f5915e7b7a431d93b756de03f65f3",
+  "nativeFactory": "0x48d830",
+  "substitutions": {
+    "allocation": [
+      "0x48cd91",
+      "0x4ac674"
+    ],
+    "freeDebug": [
+      "0x48ce5c",
+      "0x4abd0e",
+      "0x4ac622"
+    ]
+  },
+  "items": [
+    {
+      "id": 0,
+      "vtable": "0x4ba5b0",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 0,
+        "0x70": 0,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48d4e0",
+          "new": "0x48eed0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48f2cb",
+          "new": "0x490ccc",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x48f725",
+          "new": "0x49113c",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48d7b1",
+          "new": "0x48f1a1",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48d83a",
+          "new": "0x48f22a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a3460",
+          "new": "0x4a5fa0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x48f83c",
+          "new": "0x491253",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48e28f",
+          "new": "0x48fc90",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "vtable": "0x4ba624",
+      "fields": {
+        "0x68": 17826128,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967263,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48d4e0",
+          "new": "0x48eed0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48eae2",
+          "new": "0x4904e3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x48ed31",
+          "new": "0x490732",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48efa2",
+          "new": "0x4909a3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48fbb8",
+          "new": "0x4915cf",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a35a0",
+          "new": "0x4a6120",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48fdbf",
+          "new": "0x4917d6",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x48fa31",
+          "new": "0x491448",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48fa43",
+          "new": "0x49145a",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "vtable": "0x4ba698",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 0,
+        "0x70": 0,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48d4e0",
+          "new": "0x48eed0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48ff3c",
+          "new": "0x491953",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x49021f",
+          "new": "0x491c36",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48d7b1",
+          "new": "0x48f1a1",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48d83a",
+          "new": "0x48f22a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a34b0",
+          "new": "0x4a5ff0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x490336",
+          "new": "0x491d4d",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48e28f",
+          "new": "0x48fc90",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "vtable": "0x4ba70c",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4095,
+        "0x78": 4194304
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x490575",
+          "new": "0x491f8c",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x490715",
+          "new": "0x49212c",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48e6bf",
+          "new": "0x4900c0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x49076d",
+          "new": "0x492184",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48e91b",
+          "new": "0x49031c",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x4908a7",
+          "new": "0x4922be",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a3500",
+          "new": "0x4a6040",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x490500",
+          "new": "0x491f17",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48e28f",
+          "new": "0x48fc90",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x49072e",
+          "new": "0x492145",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "vtable": "0x4ba780",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 3,
+        "0x70": 3,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x490a4b",
+          "new": "0x492462",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x490beb",
+          "new": "0x492602",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x8",
+          "old": "0x490c04",
+          "new": "0x49261b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x490f9d",
+          "new": "0x4929b4",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48d7b1",
+          "new": "0x48f1a1",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48d83a",
+          "new": "0x48f22a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a3720",
+          "new": "0x4a6240",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x4910dc",
+          "new": "0x492af3",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x4909d6",
+          "new": "0x4923ed",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48e28f",
+          "new": "0x48fc90",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "vtable": "0x4ba7f4",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48e649",
+          "new": "0x49004a",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x4911fa",
+          "new": "0x492c11",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0xc",
+          "old": "0x4913b8",
+          "new": "0x492dcf",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48e91b",
+          "new": "0x49031c",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48e98a",
+          "new": "0x49038b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a36c0",
+          "new": "0x4a61e0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x4911b6",
+          "new": "0x492bcd",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48e28f",
+          "new": "0x48fc90",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "vtable": "0x4ba868",
+      "fields": {
+        "0x68": 17826112,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967038,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x4915f3",
+          "new": "0x49300a",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x49189f",
+          "new": "0x4932b6",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x491ca2",
+          "new": "0x4936b9",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0xc",
+          "old": "0x491f5a",
+          "new": "0x493971",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x10",
+          "old": "0x49233d",
+          "new": "0x493d54",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48d83a",
+          "new": "0x48f22a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a3570",
+          "new": "0x4a6070",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x4915e1",
+          "new": "0x492ff8",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x49220c",
+          "new": "0x493c23",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x491a8c",
+          "new": "0x4934a3",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "vtable": "0x4ba8dc",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 10,
+        "0x70": 10,
+        "0x74": 4294967295,
+        "0x78": 8192
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x49284d",
+          "new": "0x494264",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x4",
+          "old": "0x492a27",
+          "new": "0x49443e",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48e6bf",
+          "new": "0x4900c0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x492b9c",
+          "new": "0x4945b3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48e91b",
+          "new": "0x49031c",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x492cc1",
+          "new": "0x4946d8",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a36c0",
+          "new": "0x4a61e0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x492783",
+          "new": "0x49419a",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x4927f8",
+          "new": "0x49420f",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "vtable": "0x4ba950",
+      "fields": {
+        "0x68": 17826144,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967295,
+        "0x78": 4096
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48d4e0",
+          "new": "0x48eed0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48eae2",
+          "new": "0x4904e3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x48ed31",
+          "new": "0x490732",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48efa2",
+          "new": "0x4909a3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x14",
+          "old": "0x4931b9",
+          "new": "0x494bd0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a35a0",
+          "new": "0x4a6120",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x49368e",
+          "new": "0x4950a5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x49303f",
+          "new": "0x494a56",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x493051",
+          "new": "0x494a68",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "vtable": "0x4ba9c4",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4095,
+        "0x78": 262144
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48e649",
+          "new": "0x49004a",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48e6bf",
+          "new": "0x4900c0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x493862",
+          "new": "0x495279",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48e91b",
+          "new": "0x49031c",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48e98a",
+          "new": "0x49038b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a35d0",
+          "new": "0x4a60a0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x493850",
+          "new": "0x495267",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48e28f",
+          "new": "0x48fc90",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "vtable": "0x4baa38",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294966239,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48e649",
+          "new": "0x49004a",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48e6bf",
+          "new": "0x4900c0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x4939b2",
+          "new": "0x4953c9",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48e91b",
+          "new": "0x49031c",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48e98a",
+          "new": "0x49038b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a36c0",
+          "new": "0x4a61e0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x4939a0",
+          "new": "0x4953b7",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48e28f",
+          "new": "0x48fc90",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "vtable": "0x4baaac",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 8,
+        "0x70": 8,
+        "0x74": 4294967259,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48e649",
+          "new": "0x49004a",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x48e6bf",
+          "new": "0x4900c0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x493f2e",
+          "new": "0x495953",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48e91b",
+          "new": "0x49031c",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48e98a",
+          "new": "0x49038b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a3600",
+          "new": "0x4a60d0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x493fdc",
+          "new": "0x495a01",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x493f1c",
+          "new": "0x495941",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x494018",
+          "new": "0x495a3d",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "vtable": "0x4bab20",
+      "fields": {
+        "0x68": 17826096,
+        "0x6c": 8,
+        "0x70": 8,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x48d4e0",
+          "new": "0x48eed0",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x49410b",
+          "new": "0x495b30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0xc",
+          "old": "0x49466d",
+          "new": "0x496092",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48d7b1",
+          "new": "0x48f1a1",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48d83a",
+          "new": "0x48f22a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a3720",
+          "new": "0x4a6240",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x4940f9",
+          "new": "0x495b1e",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x49477a",
+          "new": "0x49619f",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4a33f0",
+          "new": "0x4a5f30",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "vtable": "0x4bab94",
+      "fields": {
+        "0x68": 17826112,
+        "0x6c": 0,
+        "0x70": 0,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "virtualMethods": [
+        {
+          "offset": "0x0",
+          "old": "0x494893",
+          "new": "0x4962b8",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x4",
+          "old": "0x48d570",
+          "new": "0x48ef60",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x8",
+          "old": "0x494b35",
+          "new": "0x49655a",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0xc",
+          "old": "0x49526e",
+          "new": "0x496d10",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x10",
+          "old": "0x48d7b1",
+          "new": "0x48f1a1",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x14",
+          "old": "0x48d83a",
+          "new": "0x48f22a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x18",
+          "old": "0x4a3720",
+          "new": "0x4a6240",
+          "prefixRelocationMatch": false
+        },
+        {
+          "offset": "0x1c",
+          "old": "0x48d24a",
+          "new": "0x48ec3a",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x20",
+          "old": "0x48d278",
+          "new": "0x48ec68",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x24",
+          "old": "0x48d454",
+          "new": "0x48ee44",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x28",
+          "old": "0x48dad2",
+          "new": "0x48f4d3",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x2c",
+          "old": "0x4a33b0",
+          "new": "0x4a5ef0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x30",
+          "old": "0x4a33d0",
+          "new": "0x4a5f10",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x34",
+          "old": "0x48dadf",
+          "new": "0x48f4e0",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x38",
+          "old": "0x48db23",
+          "new": "0x48f524",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x3c",
+          "old": "0x48db78",
+          "new": "0x48f579",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x40",
+          "old": "0x48db8a",
+          "new": "0x48f58b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x44",
+          "old": "0x48dbd0",
+          "new": "0x48f5d1",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x48",
+          "old": "0x494881",
+          "new": "0x4962a6",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x4c",
+          "old": "0x48dbf1",
+          "new": "0x48f5f2",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x50",
+          "old": "0x48dc4a",
+          "new": "0x48f64b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x54",
+          "old": "0x48dc75",
+          "new": "0x48f676",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x58",
+          "old": "0x48dc9a",
+          "new": "0x48f69b",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x5c",
+          "old": "0x48dd43",
+          "new": "0x48f744",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x60",
+          "old": "0x48df3f",
+          "new": "0x48f940",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x64",
+          "old": "0x48e1b4",
+          "new": "0x48fbb5",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x68",
+          "old": "0x48e28f",
+          "new": "0x48fc90",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x6c",
+          "old": "0x4949fe",
+          "new": "0x496423",
+          "prefixRelocationMatch": true
+        },
+        {
+          "offset": "0x70",
+          "old": "0x48d927",
+          "new": "0x48f317",
+          "prefixRelocationMatch": true
+        }
+      ]
+    }
+  ],
+  "evidenceMappings": [
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x4a109c",
+      "new": "0x4a380f",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x4a1247",
+      "new": null,
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x4a106a",
+      "new": "0x4a37dd",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x4a1354",
+      "new": "0x4a3ac7",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x4a0838",
+      "new": "0x4a2f9d",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x4a09ea",
+      "new": "0x4a314f",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x4a0a7d",
+      "new": "0x4a31e2",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x49d930",
+      "new": null,
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x49d9b8",
+      "new": "0x4a011d",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/itemsFlightSmallGhost.json",
+      "old": "0x49db31",
+      "new": "0x4a0296",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/specialPropertyRules.json",
+      "old": "0x48da1c",
+      "new": null,
+      "prefixOnly": true
+    },
+    {
+      "file": "research/specialPropertyRules.json",
+      "old": "0x44ea9e",
+      "new": "0x44ee0f",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/specialPropertyRules.json",
+      "old": "0x442b9d",
+      "new": "0x442e53",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/specialPropertyRules.json",
+      "old": "0x43ac76",
+      "new": "0x43adf1",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/attackRedirect.json",
+      "old": "0x490a4b",
+      "new": null,
+      "prefixOnly": true
+    },
+    {
+      "file": "research/attackRedirect.json",
+      "old": "0x49b3fb",
+      "new": null,
+      "prefixOnly": true
+    },
+    {
+      "file": "research/attackRedirect.json",
+      "old": "0x49c9bd",
+      "new": "0x49ecc7",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/attackRedirect.json",
+      "old": "0x49e26a",
+      "new": null,
+      "prefixOnly": true
+    },
+    {
+      "file": "research/attackRedirect.json",
+      "old": "0x49ad5b",
+      "new": null,
+      "prefixOnly": true
+    },
+    {
+      "file": "research/cloneGates.json",
+      "old": "0x498563",
+      "new": "0x49a50a",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/cloneGates.json",
+      "old": "0x49870a",
+      "new": "0x49a6b1",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/cloneGates.json",
+      "old": "0x49bf51",
+      "new": "0x49e1a4",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/cloneGates.json",
+      "old": "0x49c3c6",
+      "new": "0x49e619",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/cloneGates.json",
+      "old": "0x499d02",
+      "new": "0x49bf52",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/cloneGates.json",
+      "old": "0x49c83e",
+      "new": "0x49eb48",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/cloneGates.json",
+      "old": "0x48dd0b",
+      "new": "0x48f70c",
+      "prefixOnly": true
+    },
+    {
+      "file": "research/resumed-rentFull.json",
+      "old": "0x4438fb",
+      "new": "0x443bb1",
+      "prefixOnly": true
+    },
+    {
+      "file": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json",
+      "old": "0x4913b8",
+      "new": "0x492dcf",
+      "prefixOnly": true
+    },
+    {
+      "file": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json",
+      "old": "0x4548a0",
+      "new": "0x454c50",
+      "prefixOnly": true
+    },
+    {
+      "file": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json",
+      "old": "0x48db23",
+      "new": "0x48f524",
+      "prefixOnly": true
+    },
+    {
+      "file": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json",
+      "old": "0x4a3670",
+      "new": null,
+      "prefixOnly": true
+    }
+  ],
+  "limitations": "Prefix relocation match establishes entry correspondence only, not whole-function semantic equivalence.",
+  "luckyShot": {
+    "compare": "0x495e9e",
+    "jump": "0x495ea3",
+    "goodTarget": "0x495ea9",
+    "badTarget": "0x495f6e",
+    "samples": [
+      {
+        "draw": 0,
+        "lucky": false
+      },
+      {
+        "draw": 1,
+        "lucky": false
+      },
+      {
+        "draw": 2,
+        "lucky": false
+      },
+      {
+        "draw": 3,
+        "lucky": false
+      },
+      {
+        "draw": 4,
+        "lucky": false
+      },
+      {
+        "draw": 5,
+        "lucky": false
+      },
+      {
+        "draw": 6,
+        "lucky": false
+      },
+      {
+        "draw": 7,
+        "lucky": false
+      },
+      {
+        "draw": 8,
+        "lucky": false
+      },
+      {
+        "draw": 9,
+        "lucky": false
+      },
+      {
+        "draw": 10,
+        "lucky": false
+      },
+      {
+        "draw": 11,
+        "lucky": false
+      },
+      {
+        "draw": 12,
+        "lucky": false
+      },
+      {
+        "draw": 13,
+        "lucky": false
+      },
+      {
+        "draw": 14,
+        "lucky": false
+      },
+      {
+        "draw": 15,
+        "lucky": false
+      },
+      {
+        "draw": 16,
+        "lucky": false
+      },
+      {
+        "draw": 17,
+        "lucky": false
+      },
+      {
+        "draw": 18,
+        "lucky": false
+      },
+      {
+        "draw": 19,
+        "lucky": false
+      },
+      {
+        "draw": 20,
+        "lucky": false
+      },
+      {
+        "draw": 21,
+        "lucky": false
+      },
+      {
+        "draw": 22,
+        "lucky": false
+      },
+      {
+        "draw": 23,
+        "lucky": false
+      },
+      {
+        "draw": 24,
+        "lucky": false
+      },
+      {
+        "draw": 25,
+        "lucky": false
+      },
+      {
+        "draw": 26,
+        "lucky": false
+      },
+      {
+        "draw": 27,
+        "lucky": false
+      },
+      {
+        "draw": 28,
+        "lucky": false
+      },
+      {
+        "draw": 29,
+        "lucky": false
+      },
+      {
+        "draw": 30,
+        "lucky": false
+      },
+      {
+        "draw": 31,
+        "lucky": false
+      },
+      {
+        "draw": 32,
+        "lucky": false
+      },
+      {
+        "draw": 33,
+        "lucky": false
+      },
+      {
+        "draw": 34,
+        "lucky": false
+      },
+      {
+        "draw": 35,
+        "lucky": false
+      },
+      {
+        "draw": 36,
+        "lucky": false
+      },
+      {
+        "draw": 37,
+        "lucky": false
+      },
+      {
+        "draw": 38,
+        "lucky": false
+      },
+      {
+        "draw": 39,
+        "lucky": false
+      },
+      {
+        "draw": 40,
+        "lucky": false
+      },
+      {
+        "draw": 41,
+        "lucky": false
+      },
+      {
+        "draw": 42,
+        "lucky": false
+      },
+      {
+        "draw": 43,
+        "lucky": false
+      },
+      {
+        "draw": 44,
+        "lucky": false
+      },
+      {
+        "draw": 45,
+        "lucky": false
+      },
+      {
+        "draw": 46,
+        "lucky": false
+      },
+      {
+        "draw": 47,
+        "lucky": false
+      },
+      {
+        "draw": 48,
+        "lucky": false
+      },
+      {
+        "draw": 49,
+        "lucky": false
+      },
+      {
+        "draw": 50,
+        "lucky": false
+      },
+      {
+        "draw": 51,
+        "lucky": false
+      },
+      {
+        "draw": 52,
+        "lucky": false
+      },
+      {
+        "draw": 53,
+        "lucky": false
+      },
+      {
+        "draw": 54,
+        "lucky": false
+      },
+      {
+        "draw": 55,
+        "lucky": false
+      },
+      {
+        "draw": 56,
+        "lucky": false
+      },
+      {
+        "draw": 57,
+        "lucky": false
+      },
+      {
+        "draw": 58,
+        "lucky": false
+      },
+      {
+        "draw": 59,
+        "lucky": false
+      },
+      {
+        "draw": 60,
+        "lucky": false
+      },
+      {
+        "draw": 61,
+        "lucky": false
+      },
+      {
+        "draw": 62,
+        "lucky": false
+      },
+      {
+        "draw": 63,
+        "lucky": false
+      },
+      {
+        "draw": 64,
+        "lucky": false
+      },
+      {
+        "draw": 65,
+        "lucky": false
+      },
+      {
+        "draw": 66,
+        "lucky": false
+      },
+      {
+        "draw": 67,
+        "lucky": false
+      },
+      {
+        "draw": 68,
+        "lucky": false
+      },
+      {
+        "draw": 69,
+        "lucky": false
+      },
+      {
+        "draw": 70,
+        "lucky": false
+      },
+      {
+        "draw": 71,
+        "lucky": false
+      },
+      {
+        "draw": 72,
+        "lucky": false
+      },
+      {
+        "draw": 73,
+        "lucky": false
+      },
+      {
+        "draw": 74,
+        "lucky": false
+      },
+      {
+        "draw": 75,
+        "lucky": false
+      },
+      {
+        "draw": 76,
+        "lucky": false
+      },
+      {
+        "draw": 77,
+        "lucky": false
+      },
+      {
+        "draw": 78,
+        "lucky": false
+      },
+      {
+        "draw": 79,
+        "lucky": false
+      },
+      {
+        "draw": 80,
+        "lucky": false
+      },
+      {
+        "draw": 81,
+        "lucky": false
+      },
+      {
+        "draw": 82,
+        "lucky": false
+      },
+      {
+        "draw": 83,
+        "lucky": false
+      },
+      {
+        "draw": 84,
+        "lucky": false
+      },
+      {
+        "draw": 85,
+        "lucky": false
+      },
+      {
+        "draw": 86,
+        "lucky": false
+      },
+      {
+        "draw": 87,
+        "lucky": false
+      },
+      {
+        "draw": 88,
+        "lucky": false
+      },
+      {
+        "draw": 89,
+        "lucky": false
+      },
+      {
+        "draw": 90,
+        "lucky": false
+      },
+      {
+        "draw": 91,
+        "lucky": false
+      },
+      {
+        "draw": 92,
+        "lucky": false
+      },
+      {
+        "draw": 93,
+        "lucky": false
+      },
+      {
+        "draw": 94,
+        "lucky": false
+      },
+      {
+        "draw": 95,
+        "lucky": false
+      },
+      {
+        "draw": 96,
+        "lucky": false
+      },
+      {
+        "draw": 97,
+        "lucky": false
+      },
+      {
+        "draw": 98,
+        "lucky": false
+      },
+      {
+        "draw": 99,
+        "lucky": false
+      },
+      {
+        "draw": 100,
+        "lucky": false
+      },
+      {
+        "draw": 101,
+        "lucky": false
+      },
+      {
+        "draw": 102,
+        "lucky": false
+      },
+      {
+        "draw": 103,
+        "lucky": false
+      },
+      {
+        "draw": 104,
+        "lucky": false
+      },
+      {
+        "draw": 105,
+        "lucky": false
+      },
+      {
+        "draw": 106,
+        "lucky": false
+      },
+      {
+        "draw": 107,
+        "lucky": false
+      },
+      {
+        "draw": 108,
+        "lucky": false
+      },
+      {
+        "draw": 109,
+        "lucky": false
+      },
+      {
+        "draw": 110,
+        "lucky": false
+      },
+      {
+        "draw": 111,
+        "lucky": false
+      },
+      {
+        "draw": 112,
+        "lucky": false
+      },
+      {
+        "draw": 113,
+        "lucky": false
+      },
+      {
+        "draw": 114,
+        "lucky": false
+      },
+      {
+        "draw": 115,
+        "lucky": false
+      },
+      {
+        "draw": 116,
+        "lucky": false
+      },
+      {
+        "draw": 117,
+        "lucky": false
+      },
+      {
+        "draw": 118,
+        "lucky": false
+      },
+      {
+        "draw": 119,
+        "lucky": false
+      },
+      {
+        "draw": 120,
+        "lucky": false
+      },
+      {
+        "draw": 121,
+        "lucky": false
+      },
+      {
+        "draw": 122,
+        "lucky": false
+      },
+      {
+        "draw": 123,
+        "lucky": false
+      },
+      {
+        "draw": 124,
+        "lucky": false
+      },
+      {
+        "draw": 125,
+        "lucky": false
+      },
+      {
+        "draw": 126,
+        "lucky": false
+      },
+      {
+        "draw": 127,
+        "lucky": false
+      },
+      {
+        "draw": 128,
+        "lucky": false
+      },
+      {
+        "draw": 129,
+        "lucky": false
+      },
+      {
+        "draw": 130,
+        "lucky": false
+      },
+      {
+        "draw": 131,
+        "lucky": false
+      },
+      {
+        "draw": 132,
+        "lucky": false
+      },
+      {
+        "draw": 133,
+        "lucky": false
+      },
+      {
+        "draw": 134,
+        "lucky": false
+      },
+      {
+        "draw": 135,
+        "lucky": false
+      },
+      {
+        "draw": 136,
+        "lucky": false
+      },
+      {
+        "draw": 137,
+        "lucky": false
+      },
+      {
+        "draw": 138,
+        "lucky": false
+      },
+      {
+        "draw": 139,
+        "lucky": false
+      },
+      {
+        "draw": 140,
+        "lucky": false
+      },
+      {
+        "draw": 141,
+        "lucky": false
+      },
+      {
+        "draw": 142,
+        "lucky": false
+      },
+      {
+        "draw": 143,
+        "lucky": false
+      },
+      {
+        "draw": 144,
+        "lucky": false
+      },
+      {
+        "draw": 145,
+        "lucky": false
+      },
+      {
+        "draw": 146,
+        "lucky": false
+      },
+      {
+        "draw": 147,
+        "lucky": false
+      },
+      {
+        "draw": 148,
+        "lucky": false
+      },
+      {
+        "draw": 149,
+        "lucky": false
+      },
+      {
+        "draw": 150,
+        "lucky": false
+      },
+      {
+        "draw": 151,
+        "lucky": false
+      },
+      {
+        "draw": 152,
+        "lucky": false
+      },
+      {
+        "draw": 153,
+        "lucky": false
+      },
+      {
+        "draw": 154,
+        "lucky": false
+      },
+      {
+        "draw": 155,
+        "lucky": false
+      },
+      {
+        "draw": 156,
+        "lucky": false
+      },
+      {
+        "draw": 157,
+        "lucky": false
+      },
+      {
+        "draw": 158,
+        "lucky": false
+      },
+      {
+        "draw": 159,
+        "lucky": false
+      },
+      {
+        "draw": 160,
+        "lucky": false
+      },
+      {
+        "draw": 161,
+        "lucky": false
+      },
+      {
+        "draw": 162,
+        "lucky": false
+      },
+      {
+        "draw": 163,
+        "lucky": false
+      },
+      {
+        "draw": 164,
+        "lucky": false
+      },
+      {
+        "draw": 165,
+        "lucky": false
+      },
+      {
+        "draw": 166,
+        "lucky": false
+      },
+      {
+        "draw": 167,
+        "lucky": false
+      },
+      {
+        "draw": 168,
+        "lucky": false
+      },
+      {
+        "draw": 169,
+        "lucky": false
+      },
+      {
+        "draw": 170,
+        "lucky": false
+      },
+      {
+        "draw": 171,
+        "lucky": false
+      },
+      {
+        "draw": 172,
+        "lucky": false
+      },
+      {
+        "draw": 173,
+        "lucky": false
+      },
+      {
+        "draw": 174,
+        "lucky": false
+      },
+      {
+        "draw": 175,
+        "lucky": false
+      },
+      {
+        "draw": 176,
+        "lucky": false
+      },
+      {
+        "draw": 177,
+        "lucky": false
+      },
+      {
+        "draw": 178,
+        "lucky": false
+      },
+      {
+        "draw": 179,
+        "lucky": false
+      },
+      {
+        "draw": 180,
+        "lucky": false
+      },
+      {
+        "draw": 181,
+        "lucky": false
+      },
+      {
+        "draw": 182,
+        "lucky": false
+      },
+      {
+        "draw": 183,
+        "lucky": false
+      },
+      {
+        "draw": 184,
+        "lucky": false
+      },
+      {
+        "draw": 185,
+        "lucky": false
+      },
+      {
+        "draw": 186,
+        "lucky": false
+      },
+      {
+        "draw": 187,
+        "lucky": false
+      },
+      {
+        "draw": 188,
+        "lucky": false
+      },
+      {
+        "draw": 189,
+        "lucky": false
+      },
+      {
+        "draw": 190,
+        "lucky": false
+      },
+      {
+        "draw": 191,
+        "lucky": false
+      },
+      {
+        "draw": 192,
+        "lucky": false
+      },
+      {
+        "draw": 193,
+        "lucky": false
+      },
+      {
+        "draw": 194,
+        "lucky": false
+      },
+      {
+        "draw": 195,
+        "lucky": false
+      },
+      {
+        "draw": 196,
+        "lucky": false
+      },
+      {
+        "draw": 197,
+        "lucky": false
+      },
+      {
+        "draw": 198,
+        "lucky": false
+      },
+      {
+        "draw": 199,
+        "lucky": false
+      },
+      {
+        "draw": 200,
+        "lucky": false
+      },
+      {
+        "draw": 201,
+        "lucky": false
+      },
+      {
+        "draw": 202,
+        "lucky": false
+      },
+      {
+        "draw": 203,
+        "lucky": false
+      },
+      {
+        "draw": 204,
+        "lucky": false
+      },
+      {
+        "draw": 205,
+        "lucky": false
+      },
+      {
+        "draw": 206,
+        "lucky": false
+      },
+      {
+        "draw": 207,
+        "lucky": false
+      },
+      {
+        "draw": 208,
+        "lucky": false
+      },
+      {
+        "draw": 209,
+        "lucky": false
+      },
+      {
+        "draw": 210,
+        "lucky": false
+      },
+      {
+        "draw": 211,
+        "lucky": false
+      },
+      {
+        "draw": 212,
+        "lucky": false
+      },
+      {
+        "draw": 213,
+        "lucky": false
+      },
+      {
+        "draw": 214,
+        "lucky": false
+      },
+      {
+        "draw": 215,
+        "lucky": false
+      },
+      {
+        "draw": 216,
+        "lucky": false
+      },
+      {
+        "draw": 217,
+        "lucky": false
+      },
+      {
+        "draw": 218,
+        "lucky": false
+      },
+      {
+        "draw": 219,
+        "lucky": false
+      },
+      {
+        "draw": 220,
+        "lucky": false
+      },
+      {
+        "draw": 221,
+        "lucky": false
+      },
+      {
+        "draw": 222,
+        "lucky": false
+      },
+      {
+        "draw": 223,
+        "lucky": false
+      },
+      {
+        "draw": 224,
+        "lucky": false
+      },
+      {
+        "draw": 225,
+        "lucky": false
+      },
+      {
+        "draw": 226,
+        "lucky": false
+      },
+      {
+        "draw": 227,
+        "lucky": false
+      },
+      {
+        "draw": 228,
+        "lucky": false
+      },
+      {
+        "draw": 229,
+        "lucky": false
+      },
+      {
+        "draw": 230,
+        "lucky": false
+      },
+      {
+        "draw": 231,
+        "lucky": false
+      },
+      {
+        "draw": 232,
+        "lucky": false
+      },
+      {
+        "draw": 233,
+        "lucky": false
+      },
+      {
+        "draw": 234,
+        "lucky": false
+      },
+      {
+        "draw": 235,
+        "lucky": false
+      },
+      {
+        "draw": 236,
+        "lucky": false
+      },
+      {
+        "draw": 237,
+        "lucky": false
+      },
+      {
+        "draw": 238,
+        "lucky": false
+      },
+      {
+        "draw": 239,
+        "lucky": false
+      },
+      {
+        "draw": 240,
+        "lucky": false
+      },
+      {
+        "draw": 241,
+        "lucky": false
+      },
+      {
+        "draw": 242,
+        "lucky": false
+      },
+      {
+        "draw": 243,
+        "lucky": false
+      },
+      {
+        "draw": 244,
+        "lucky": false
+      },
+      {
+        "draw": 245,
+        "lucky": false
+      },
+      {
+        "draw": 246,
+        "lucky": false
+      },
+      {
+        "draw": 247,
+        "lucky": false
+      },
+      {
+        "draw": 248,
+        "lucky": false
+      },
+      {
+        "draw": 249,
+        "lucky": false
+      },
+      {
+        "draw": 250,
+        "lucky": false
+      },
+      {
+        "draw": 251,
+        "lucky": true
+      },
+      {
+        "draw": 252,
+        "lucky": true
+      },
+      {
+        "draw": 253,
+        "lucky": true
+      },
+      {
+        "draw": 254,
+        "lucky": true
+      },
+      {
+        "draw": 255,
+        "lucky": true
+      },
+      {
+        "draw": 256,
+        "lucky": true
+      },
+      {
+        "draw": 257,
+        "lucky": true
+      },
+      {
+        "draw": 258,
+        "lucky": true
+      },
+      {
+        "draw": 259,
+        "lucky": true
+      },
+      {
+        "draw": 260,
+        "lucky": true
+      },
+      {
+        "draw": 261,
+        "lucky": true
+      },
+      {
+        "draw": 262,
+        "lucky": true
+      },
+      {
+        "draw": 263,
+        "lucky": true
+      },
+      {
+        "draw": 264,
+        "lucky": true
+      },
+      {
+        "draw": 265,
+        "lucky": true
+      },
+      {
+        "draw": 266,
+        "lucky": true
+      },
+      {
+        "draw": 267,
+        "lucky": true
+      },
+      {
+        "draw": 268,
+        "lucky": true
+      },
+      {
+        "draw": 269,
+        "lucky": true
+      },
+      {
+        "draw": 270,
+        "lucky": true
+      },
+      {
+        "draw": 271,
+        "lucky": true
+      },
+      {
+        "draw": 272,
+        "lucky": true
+      },
+      {
+        "draw": 273,
+        "lucky": true
+      },
+      {
+        "draw": 274,
+        "lucky": true
+      },
+      {
+        "draw": 275,
+        "lucky": true
+      },
+      {
+        "draw": 276,
+        "lucky": true
+      },
+      {
+        "draw": 277,
+        "lucky": true
+      },
+      {
+        "draw": 278,
+        "lucky": true
+      },
+      {
+        "draw": 279,
+        "lucky": true
+      },
+      {
+        "draw": 280,
+        "lucky": true
+      },
+      {
+        "draw": 281,
+        "lucky": true
+      },
+      {
+        "draw": 282,
+        "lucky": true
+      },
+      {
+        "draw": 283,
+        "lucky": true
+      },
+      {
+        "draw": 284,
+        "lucky": true
+      },
+      {
+        "draw": 285,
+        "lucky": true
+      },
+      {
+        "draw": 286,
+        "lucky": true
+      },
+      {
+        "draw": 287,
+        "lucky": true
+      },
+      {
+        "draw": 288,
+        "lucky": true
+      },
+      {
+        "draw": 289,
+        "lucky": true
+      },
+      {
+        "draw": 290,
+        "lucky": true
+      },
+      {
+        "draw": 291,
+        "lucky": true
+      },
+      {
+        "draw": 292,
+        "lucky": true
+      },
+      {
+        "draw": 293,
+        "lucky": true
+      },
+      {
+        "draw": 294,
+        "lucky": true
+      },
+      {
+        "draw": 295,
+        "lucky": true
+      },
+      {
+        "draw": 296,
+        "lucky": true
+      },
+      {
+        "draw": 297,
+        "lucky": true
+      },
+      {
+        "draw": 298,
+        "lucky": true
+      },
+      {
+        "draw": 299,
+        "lucky": true
+      },
+      {
+        "draw": 300,
+        "lucky": true
+      },
+      {
+        "draw": 301,
+        "lucky": true
+      },
+      {
+        "draw": 302,
+        "lucky": true
+      },
+      {
+        "draw": 303,
+        "lucky": true
+      },
+      {
+        "draw": 304,
+        "lucky": true
+      },
+      {
+        "draw": 305,
+        "lucky": true
+      },
+      {
+        "draw": 306,
+        "lucky": true
+      },
+      {
+        "draw": 307,
+        "lucky": true
+      },
+      {
+        "draw": 308,
+        "lucky": true
+      },
+      {
+        "draw": 309,
+        "lucky": true
+      },
+      {
+        "draw": 310,
+        "lucky": true
+      },
+      {
+        "draw": 311,
+        "lucky": true
+      },
+      {
+        "draw": 312,
+        "lucky": true
+      },
+      {
+        "draw": 313,
+        "lucky": true
+      },
+      {
+        "draw": 314,
+        "lucky": true
+      },
+      {
+        "draw": 315,
+        "lucky": true
+      },
+      {
+        "draw": 316,
+        "lucky": true
+      },
+      {
+        "draw": 317,
+        "lucky": true
+      },
+      {
+        "draw": 318,
+        "lucky": true
+      },
+      {
+        "draw": 319,
+        "lucky": true
+      },
+      {
+        "draw": 320,
+        "lucky": true
+      },
+      {
+        "draw": 321,
+        "lucky": true
+      },
+      {
+        "draw": 322,
+        "lucky": true
+      },
+      {
+        "draw": 323,
+        "lucky": true
+      },
+      {
+        "draw": 324,
+        "lucky": true
+      },
+      {
+        "draw": 325,
+        "lucky": true
+      },
+      {
+        "draw": 326,
+        "lucky": true
+      },
+      {
+        "draw": 327,
+        "lucky": true
+      },
+      {
+        "draw": 328,
+        "lucky": true
+      },
+      {
+        "draw": 329,
+        "lucky": true
+      },
+      {
+        "draw": 330,
+        "lucky": true
+      },
+      {
+        "draw": 331,
+        "lucky": true
+      },
+      {
+        "draw": 332,
+        "lucky": true
+      },
+      {
+        "draw": 333,
+        "lucky": true
+      },
+      {
+        "draw": 334,
+        "lucky": true
+      },
+      {
+        "draw": 335,
+        "lucky": true
+      },
+      {
+        "draw": 336,
+        "lucky": true
+      },
+      {
+        "draw": 337,
+        "lucky": true
+      },
+      {
+        "draw": 338,
+        "lucky": true
+      },
+      {
+        "draw": 339,
+        "lucky": true
+      },
+      {
+        "draw": 340,
+        "lucky": true
+      },
+      {
+        "draw": 341,
+        "lucky": true
+      },
+      {
+        "draw": 342,
+        "lucky": true
+      },
+      {
+        "draw": 343,
+        "lucky": true
+      },
+      {
+        "draw": 344,
+        "lucky": true
+      },
+      {
+        "draw": 345,
+        "lucky": true
+      },
+      {
+        "draw": 346,
+        "lucky": true
+      },
+      {
+        "draw": 347,
+        "lucky": true
+      },
+      {
+        "draw": 348,
+        "lucky": true
+      },
+      {
+        "draw": 349,
+        "lucky": true
+      },
+      {
+        "draw": 350,
+        "lucky": true
+      },
+      {
+        "draw": 351,
+        "lucky": true
+      },
+      {
+        "draw": 352,
+        "lucky": true
+      },
+      {
+        "draw": 353,
+        "lucky": true
+      },
+      {
+        "draw": 354,
+        "lucky": true
+      },
+      {
+        "draw": 355,
+        "lucky": true
+      },
+      {
+        "draw": 356,
+        "lucky": true
+      },
+      {
+        "draw": 357,
+        "lucky": true
+      },
+      {
+        "draw": 358,
+        "lucky": true
+      },
+      {
+        "draw": 359,
+        "lucky": true
+      },
+      {
+        "draw": 360,
+        "lucky": true
+      },
+      {
+        "draw": 361,
+        "lucky": true
+      },
+      {
+        "draw": 362,
+        "lucky": true
+      },
+      {
+        "draw": 363,
+        "lucky": true
+      },
+      {
+        "draw": 364,
+        "lucky": true
+      },
+      {
+        "draw": 365,
+        "lucky": true
+      },
+      {
+        "draw": 366,
+        "lucky": true
+      },
+      {
+        "draw": 367,
+        "lucky": true
+      },
+      {
+        "draw": 368,
+        "lucky": true
+      },
+      {
+        "draw": 369,
+        "lucky": true
+      },
+      {
+        "draw": 370,
+        "lucky": true
+      },
+      {
+        "draw": 371,
+        "lucky": true
+      },
+      {
+        "draw": 372,
+        "lucky": true
+      },
+      {
+        "draw": 373,
+        "lucky": true
+      },
+      {
+        "draw": 374,
+        "lucky": true
+      },
+      {
+        "draw": 375,
+        "lucky": true
+      },
+      {
+        "draw": 376,
+        "lucky": true
+      },
+      {
+        "draw": 377,
+        "lucky": true
+      },
+      {
+        "draw": 378,
+        "lucky": true
+      },
+      {
+        "draw": 379,
+        "lucky": true
+      },
+      {
+        "draw": 380,
+        "lucky": true
+      },
+      {
+        "draw": 381,
+        "lucky": true
+      },
+      {
+        "draw": 382,
+        "lucky": true
+      },
+      {
+        "draw": 383,
+        "lucky": true
+      },
+      {
+        "draw": 384,
+        "lucky": true
+      },
+      {
+        "draw": 385,
+        "lucky": true
+      },
+      {
+        "draw": 386,
+        "lucky": true
+      },
+      {
+        "draw": 387,
+        "lucky": true
+      },
+      {
+        "draw": 388,
+        "lucky": true
+      },
+      {
+        "draw": 389,
+        "lucky": true
+      },
+      {
+        "draw": 390,
+        "lucky": true
+      },
+      {
+        "draw": 391,
+        "lucky": true
+      },
+      {
+        "draw": 392,
+        "lucky": true
+      },
+      {
+        "draw": 393,
+        "lucky": true
+      },
+      {
+        "draw": 394,
+        "lucky": true
+      },
+      {
+        "draw": 395,
+        "lucky": true
+      },
+      {
+        "draw": 396,
+        "lucky": true
+      },
+      {
+        "draw": 397,
+        "lucky": true
+      },
+      {
+        "draw": 398,
+        "lucky": true
+      },
+      {
+        "draw": 399,
+        "lucky": true
+      },
+      {
+        "draw": 400,
+        "lucky": true
+      },
+      {
+        "draw": 401,
+        "lucky": true
+      },
+      {
+        "draw": 402,
+        "lucky": true
+      },
+      {
+        "draw": 403,
+        "lucky": true
+      },
+      {
+        "draw": 404,
+        "lucky": true
+      },
+      {
+        "draw": 405,
+        "lucky": true
+      },
+      {
+        "draw": 406,
+        "lucky": true
+      },
+      {
+        "draw": 407,
+        "lucky": true
+      },
+      {
+        "draw": 408,
+        "lucky": true
+      },
+      {
+        "draw": 409,
+        "lucky": true
+      },
+      {
+        "draw": 410,
+        "lucky": true
+      },
+      {
+        "draw": 411,
+        "lucky": true
+      },
+      {
+        "draw": 412,
+        "lucky": true
+      },
+      {
+        "draw": 413,
+        "lucky": true
+      },
+      {
+        "draw": 414,
+        "lucky": true
+      },
+      {
+        "draw": 415,
+        "lucky": true
+      },
+      {
+        "draw": 416,
+        "lucky": true
+      },
+      {
+        "draw": 417,
+        "lucky": true
+      },
+      {
+        "draw": 418,
+        "lucky": true
+      },
+      {
+        "draw": 419,
+        "lucky": true
+      },
+      {
+        "draw": 420,
+        "lucky": true
+      },
+      {
+        "draw": 421,
+        "lucky": true
+      },
+      {
+        "draw": 422,
+        "lucky": true
+      },
+      {
+        "draw": 423,
+        "lucky": true
+      },
+      {
+        "draw": 424,
+        "lucky": true
+      },
+      {
+        "draw": 425,
+        "lucky": true
+      },
+      {
+        "draw": 426,
+        "lucky": true
+      },
+      {
+        "draw": 427,
+        "lucky": true
+      },
+      {
+        "draw": 428,
+        "lucky": true
+      },
+      {
+        "draw": 429,
+        "lucky": true
+      },
+      {
+        "draw": 430,
+        "lucky": true
+      },
+      {
+        "draw": 431,
+        "lucky": true
+      },
+      {
+        "draw": 432,
+        "lucky": true
+      },
+      {
+        "draw": 433,
+        "lucky": true
+      },
+      {
+        "draw": 434,
+        "lucky": true
+      },
+      {
+        "draw": 435,
+        "lucky": true
+      },
+      {
+        "draw": 436,
+        "lucky": true
+      },
+      {
+        "draw": 437,
+        "lucky": true
+      },
+      {
+        "draw": 438,
+        "lucky": true
+      },
+      {
+        "draw": 439,
+        "lucky": true
+      },
+      {
+        "draw": 440,
+        "lucky": true
+      },
+      {
+        "draw": 441,
+        "lucky": true
+      },
+      {
+        "draw": 442,
+        "lucky": true
+      },
+      {
+        "draw": 443,
+        "lucky": true
+      },
+      {
+        "draw": 444,
+        "lucky": true
+      },
+      {
+        "draw": 445,
+        "lucky": true
+      },
+      {
+        "draw": 446,
+        "lucky": true
+      },
+      {
+        "draw": 447,
+        "lucky": true
+      },
+      {
+        "draw": 448,
+        "lucky": true
+      },
+      {
+        "draw": 449,
+        "lucky": true
+      },
+      {
+        "draw": 450,
+        "lucky": true
+      },
+      {
+        "draw": 451,
+        "lucky": true
+      },
+      {
+        "draw": 452,
+        "lucky": true
+      },
+      {
+        "draw": 453,
+        "lucky": true
+      },
+      {
+        "draw": 454,
+        "lucky": true
+      },
+      {
+        "draw": 455,
+        "lucky": true
+      },
+      {
+        "draw": 456,
+        "lucky": true
+      },
+      {
+        "draw": 457,
+        "lucky": true
+      },
+      {
+        "draw": 458,
+        "lucky": true
+      },
+      {
+        "draw": 459,
+        "lucky": true
+      },
+      {
+        "draw": 460,
+        "lucky": true
+      },
+      {
+        "draw": 461,
+        "lucky": true
+      },
+      {
+        "draw": 462,
+        "lucky": true
+      },
+      {
+        "draw": 463,
+        "lucky": true
+      },
+      {
+        "draw": 464,
+        "lucky": true
+      },
+      {
+        "draw": 465,
+        "lucky": true
+      },
+      {
+        "draw": 466,
+        "lucky": true
+      },
+      {
+        "draw": 467,
+        "lucky": true
+      },
+      {
+        "draw": 468,
+        "lucky": true
+      },
+      {
+        "draw": 469,
+        "lucky": true
+      },
+      {
+        "draw": 470,
+        "lucky": true
+      },
+      {
+        "draw": 471,
+        "lucky": true
+      },
+      {
+        "draw": 472,
+        "lucky": true
+      },
+      {
+        "draw": 473,
+        "lucky": true
+      },
+      {
+        "draw": 474,
+        "lucky": true
+      },
+      {
+        "draw": 475,
+        "lucky": true
+      },
+      {
+        "draw": 476,
+        "lucky": true
+      },
+      {
+        "draw": 477,
+        "lucky": true
+      },
+      {
+        "draw": 478,
+        "lucky": true
+      },
+      {
+        "draw": 479,
+        "lucky": true
+      },
+      {
+        "draw": 480,
+        "lucky": true
+      },
+      {
+        "draw": 481,
+        "lucky": true
+      },
+      {
+        "draw": 482,
+        "lucky": true
+      },
+      {
+        "draw": 483,
+        "lucky": true
+      },
+      {
+        "draw": 484,
+        "lucky": true
+      },
+      {
+        "draw": 485,
+        "lucky": true
+      },
+      {
+        "draw": 486,
+        "lucky": true
+      },
+      {
+        "draw": 487,
+        "lucky": true
+      },
+      {
+        "draw": 488,
+        "lucky": true
+      },
+      {
+        "draw": 489,
+        "lucky": true
+      },
+      {
+        "draw": 490,
+        "lucky": true
+      },
+      {
+        "draw": 491,
+        "lucky": true
+      },
+      {
+        "draw": 492,
+        "lucky": true
+      },
+      {
+        "draw": 493,
+        "lucky": true
+      },
+      {
+        "draw": 494,
+        "lucky": true
+      },
+      {
+        "draw": 495,
+        "lucky": true
+      },
+      {
+        "draw": 496,
+        "lucky": true
+      },
+      {
+        "draw": 497,
+        "lucky": true
+      },
+      {
+        "draw": 498,
+        "lucky": true
+      },
+      {
+        "draw": 499,
+        "lucky": true
+      },
+      {
+        "draw": 500,
+        "lucky": true
+      },
+      {
+        "draw": 501,
+        "lucky": true
+      },
+      {
+        "draw": 502,
+        "lucky": true
+      },
+      {
+        "draw": 503,
+        "lucky": true
+      },
+      {
+        "draw": 504,
+        "lucky": true
+      },
+      {
+        "draw": 505,
+        "lucky": true
+      },
+      {
+        "draw": 506,
+        "lucky": true
+      },
+      {
+        "draw": 507,
+        "lucky": true
+      },
+      {
+        "draw": 508,
+        "lucky": true
+      },
+      {
+        "draw": 509,
+        "lucky": true
+      },
+      {
+        "draw": 510,
+        "lucky": true
+      },
+      {
+        "draw": 511,
+        "lucky": true
+      },
+      {
+        "draw": 512,
+        "lucky": true
+      },
+      {
+        "draw": 513,
+        "lucky": true
+      },
+      {
+        "draw": 514,
+        "lucky": true
+      },
+      {
+        "draw": 515,
+        "lucky": true
+      },
+      {
+        "draw": 516,
+        "lucky": true
+      },
+      {
+        "draw": 517,
+        "lucky": true
+      },
+      {
+        "draw": 518,
+        "lucky": true
+      },
+      {
+        "draw": 519,
+        "lucky": true
+      },
+      {
+        "draw": 520,
+        "lucky": true
+      },
+      {
+        "draw": 521,
+        "lucky": true
+      },
+      {
+        "draw": 522,
+        "lucky": true
+      },
+      {
+        "draw": 523,
+        "lucky": true
+      },
+      {
+        "draw": 524,
+        "lucky": true
+      },
+      {
+        "draw": 525,
+        "lucky": true
+      },
+      {
+        "draw": 526,
+        "lucky": true
+      },
+      {
+        "draw": 527,
+        "lucky": true
+      },
+      {
+        "draw": 528,
+        "lucky": true
+      },
+      {
+        "draw": 529,
+        "lucky": true
+      },
+      {
+        "draw": 530,
+        "lucky": true
+      },
+      {
+        "draw": 531,
+        "lucky": true
+      },
+      {
+        "draw": 532,
+        "lucky": true
+      },
+      {
+        "draw": 533,
+        "lucky": true
+      },
+      {
+        "draw": 534,
+        "lucky": true
+      },
+      {
+        "draw": 535,
+        "lucky": true
+      },
+      {
+        "draw": 536,
+        "lucky": true
+      },
+      {
+        "draw": 537,
+        "lucky": true
+      },
+      {
+        "draw": 538,
+        "lucky": true
+      },
+      {
+        "draw": 539,
+        "lucky": true
+      },
+      {
+        "draw": 540,
+        "lucky": true
+      },
+      {
+        "draw": 541,
+        "lucky": true
+      },
+      {
+        "draw": 542,
+        "lucky": true
+      },
+      {
+        "draw": 543,
+        "lucky": true
+      },
+      {
+        "draw": 544,
+        "lucky": true
+      },
+      {
+        "draw": 545,
+        "lucky": true
+      },
+      {
+        "draw": 546,
+        "lucky": true
+      },
+      {
+        "draw": 547,
+        "lucky": true
+      },
+      {
+        "draw": 548,
+        "lucky": true
+      },
+      {
+        "draw": 549,
+        "lucky": true
+      },
+      {
+        "draw": 550,
+        "lucky": true
+      },
+      {
+        "draw": 551,
+        "lucky": true
+      },
+      {
+        "draw": 552,
+        "lucky": true
+      },
+      {
+        "draw": 553,
+        "lucky": true
+      },
+      {
+        "draw": 554,
+        "lucky": true
+      },
+      {
+        "draw": 555,
+        "lucky": true
+      },
+      {
+        "draw": 556,
+        "lucky": true
+      },
+      {
+        "draw": 557,
+        "lucky": true
+      },
+      {
+        "draw": 558,
+        "lucky": true
+      },
+      {
+        "draw": 559,
+        "lucky": true
+      },
+      {
+        "draw": 560,
+        "lucky": true
+      },
+      {
+        "draw": 561,
+        "lucky": true
+      },
+      {
+        "draw": 562,
+        "lucky": true
+      },
+      {
+        "draw": 563,
+        "lucky": true
+      },
+      {
+        "draw": 564,
+        "lucky": true
+      },
+      {
+        "draw": 565,
+        "lucky": true
+      },
+      {
+        "draw": 566,
+        "lucky": true
+      },
+      {
+        "draw": 567,
+        "lucky": true
+      },
+      {
+        "draw": 568,
+        "lucky": true
+      },
+      {
+        "draw": 569,
+        "lucky": true
+      },
+      {
+        "draw": 570,
+        "lucky": true
+      },
+      {
+        "draw": 571,
+        "lucky": true
+      },
+      {
+        "draw": 572,
+        "lucky": true
+      },
+      {
+        "draw": 573,
+        "lucky": true
+      },
+      {
+        "draw": 574,
+        "lucky": true
+      },
+      {
+        "draw": 575,
+        "lucky": true
+      },
+      {
+        "draw": 576,
+        "lucky": true
+      },
+      {
+        "draw": 577,
+        "lucky": true
+      },
+      {
+        "draw": 578,
+        "lucky": true
+      },
+      {
+        "draw": 579,
+        "lucky": true
+      },
+      {
+        "draw": 580,
+        "lucky": true
+      },
+      {
+        "draw": 581,
+        "lucky": true
+      },
+      {
+        "draw": 582,
+        "lucky": true
+      },
+      {
+        "draw": 583,
+        "lucky": true
+      },
+      {
+        "draw": 584,
+        "lucky": true
+      },
+      {
+        "draw": 585,
+        "lucky": true
+      },
+      {
+        "draw": 586,
+        "lucky": true
+      },
+      {
+        "draw": 587,
+        "lucky": true
+      },
+      {
+        "draw": 588,
+        "lucky": true
+      },
+      {
+        "draw": 589,
+        "lucky": true
+      },
+      {
+        "draw": 590,
+        "lucky": true
+      },
+      {
+        "draw": 591,
+        "lucky": true
+      },
+      {
+        "draw": 592,
+        "lucky": true
+      },
+      {
+        "draw": 593,
+        "lucky": true
+      },
+      {
+        "draw": 594,
+        "lucky": true
+      },
+      {
+        "draw": 595,
+        "lucky": true
+      },
+      {
+        "draw": 596,
+        "lucky": true
+      },
+      {
+        "draw": 597,
+        "lucky": true
+      },
+      {
+        "draw": 598,
+        "lucky": true
+      },
+      {
+        "draw": 599,
+        "lucky": true
+      },
+      {
+        "draw": 600,
+        "lucky": true
+      },
+      {
+        "draw": 601,
+        "lucky": true
+      },
+      {
+        "draw": 602,
+        "lucky": true
+      },
+      {
+        "draw": 603,
+        "lucky": true
+      },
+      {
+        "draw": 604,
+        "lucky": true
+      },
+      {
+        "draw": 605,
+        "lucky": true
+      },
+      {
+        "draw": 606,
+        "lucky": true
+      },
+      {
+        "draw": 607,
+        "lucky": true
+      },
+      {
+        "draw": 608,
+        "lucky": true
+      },
+      {
+        "draw": 609,
+        "lucky": true
+      },
+      {
+        "draw": 610,
+        "lucky": true
+      },
+      {
+        "draw": 611,
+        "lucky": true
+      },
+      {
+        "draw": 612,
+        "lucky": true
+      },
+      {
+        "draw": 613,
+        "lucky": true
+      },
+      {
+        "draw": 614,
+        "lucky": true
+      },
+      {
+        "draw": 615,
+        "lucky": true
+      },
+      {
+        "draw": 616,
+        "lucky": true
+      },
+      {
+        "draw": 617,
+        "lucky": true
+      },
+      {
+        "draw": 618,
+        "lucky": true
+      },
+      {
+        "draw": 619,
+        "lucky": true
+      },
+      {
+        "draw": 620,
+        "lucky": true
+      },
+      {
+        "draw": 621,
+        "lucky": true
+      },
+      {
+        "draw": 622,
+        "lucky": true
+      },
+      {
+        "draw": 623,
+        "lucky": true
+      },
+      {
+        "draw": 624,
+        "lucky": true
+      },
+      {
+        "draw": 625,
+        "lucky": true
+      },
+      {
+        "draw": 626,
+        "lucky": true
+      },
+      {
+        "draw": 627,
+        "lucky": true
+      },
+      {
+        "draw": 628,
+        "lucky": true
+      },
+      {
+        "draw": 629,
+        "lucky": true
+      },
+      {
+        "draw": 630,
+        "lucky": true
+      },
+      {
+        "draw": 631,
+        "lucky": true
+      },
+      {
+        "draw": 632,
+        "lucky": true
+      },
+      {
+        "draw": 633,
+        "lucky": true
+      },
+      {
+        "draw": 634,
+        "lucky": true
+      },
+      {
+        "draw": 635,
+        "lucky": true
+      },
+      {
+        "draw": 636,
+        "lucky": true
+      },
+      {
+        "draw": 637,
+        "lucky": true
+      },
+      {
+        "draw": 638,
+        "lucky": true
+      },
+      {
+        "draw": 639,
+        "lucky": true
+      },
+      {
+        "draw": 640,
+        "lucky": true
+      },
+      {
+        "draw": 641,
+        "lucky": true
+      },
+      {
+        "draw": 642,
+        "lucky": true
+      },
+      {
+        "draw": 643,
+        "lucky": true
+      },
+      {
+        "draw": 644,
+        "lucky": true
+      },
+      {
+        "draw": 645,
+        "lucky": true
+      },
+      {
+        "draw": 646,
+        "lucky": true
+      },
+      {
+        "draw": 647,
+        "lucky": true
+      },
+      {
+        "draw": 648,
+        "lucky": true
+      },
+      {
+        "draw": 649,
+        "lucky": true
+      },
+      {
+        "draw": 650,
+        "lucky": true
+      },
+      {
+        "draw": 651,
+        "lucky": true
+      },
+      {
+        "draw": 652,
+        "lucky": true
+      },
+      {
+        "draw": 653,
+        "lucky": true
+      },
+      {
+        "draw": 654,
+        "lucky": true
+      },
+      {
+        "draw": 655,
+        "lucky": true
+      },
+      {
+        "draw": 656,
+        "lucky": true
+      },
+      {
+        "draw": 657,
+        "lucky": true
+      },
+      {
+        "draw": 658,
+        "lucky": true
+      },
+      {
+        "draw": 659,
+        "lucky": true
+      },
+      {
+        "draw": 660,
+        "lucky": true
+      },
+      {
+        "draw": 661,
+        "lucky": true
+      },
+      {
+        "draw": 662,
+        "lucky": true
+      },
+      {
+        "draw": 663,
+        "lucky": true
+      },
+      {
+        "draw": 664,
+        "lucky": true
+      },
+      {
+        "draw": 665,
+        "lucky": true
+      },
+      {
+        "draw": 666,
+        "lucky": true
+      },
+      {
+        "draw": 667,
+        "lucky": true
+      },
+      {
+        "draw": 668,
+        "lucky": true
+      },
+      {
+        "draw": 669,
+        "lucky": true
+      },
+      {
+        "draw": 670,
+        "lucky": true
+      },
+      {
+        "draw": 671,
+        "lucky": true
+      },
+      {
+        "draw": 672,
+        "lucky": true
+      },
+      {
+        "draw": 673,
+        "lucky": true
+      },
+      {
+        "draw": 674,
+        "lucky": true
+      },
+      {
+        "draw": 675,
+        "lucky": true
+      },
+      {
+        "draw": 676,
+        "lucky": true
+      },
+      {
+        "draw": 677,
+        "lucky": true
+      },
+      {
+        "draw": 678,
+        "lucky": true
+      },
+      {
+        "draw": 679,
+        "lucky": true
+      },
+      {
+        "draw": 680,
+        "lucky": true
+      },
+      {
+        "draw": 681,
+        "lucky": true
+      },
+      {
+        "draw": 682,
+        "lucky": true
+      },
+      {
+        "draw": 683,
+        "lucky": true
+      },
+      {
+        "draw": 684,
+        "lucky": true
+      },
+      {
+        "draw": 685,
+        "lucky": true
+      },
+      {
+        "draw": 686,
+        "lucky": true
+      },
+      {
+        "draw": 687,
+        "lucky": true
+      },
+      {
+        "draw": 688,
+        "lucky": true
+      },
+      {
+        "draw": 689,
+        "lucky": true
+      },
+      {
+        "draw": 690,
+        "lucky": true
+      },
+      {
+        "draw": 691,
+        "lucky": true
+      },
+      {
+        "draw": 692,
+        "lucky": true
+      },
+      {
+        "draw": 693,
+        "lucky": true
+      },
+      {
+        "draw": 694,
+        "lucky": true
+      },
+      {
+        "draw": 695,
+        "lucky": true
+      },
+      {
+        "draw": 696,
+        "lucky": true
+      },
+      {
+        "draw": 697,
+        "lucky": true
+      },
+      {
+        "draw": 698,
+        "lucky": true
+      },
+      {
+        "draw": 699,
+        "lucky": true
+      },
+      {
+        "draw": 700,
+        "lucky": true
+      },
+      {
+        "draw": 701,
+        "lucky": true
+      },
+      {
+        "draw": 702,
+        "lucky": true
+      },
+      {
+        "draw": 703,
+        "lucky": true
+      },
+      {
+        "draw": 704,
+        "lucky": true
+      },
+      {
+        "draw": 705,
+        "lucky": true
+      },
+      {
+        "draw": 706,
+        "lucky": true
+      },
+      {
+        "draw": 707,
+        "lucky": true
+      },
+      {
+        "draw": 708,
+        "lucky": true
+      },
+      {
+        "draw": 709,
+        "lucky": true
+      },
+      {
+        "draw": 710,
+        "lucky": true
+      },
+      {
+        "draw": 711,
+        "lucky": true
+      },
+      {
+        "draw": 712,
+        "lucky": true
+      },
+      {
+        "draw": 713,
+        "lucky": true
+      },
+      {
+        "draw": 714,
+        "lucky": true
+      },
+      {
+        "draw": 715,
+        "lucky": true
+      },
+      {
+        "draw": 716,
+        "lucky": true
+      },
+      {
+        "draw": 717,
+        "lucky": true
+      },
+      {
+        "draw": 718,
+        "lucky": true
+      },
+      {
+        "draw": 719,
+        "lucky": true
+      },
+      {
+        "draw": 720,
+        "lucky": true
+      },
+      {
+        "draw": 721,
+        "lucky": true
+      },
+      {
+        "draw": 722,
+        "lucky": true
+      },
+      {
+        "draw": 723,
+        "lucky": true
+      },
+      {
+        "draw": 724,
+        "lucky": true
+      },
+      {
+        "draw": 725,
+        "lucky": true
+      },
+      {
+        "draw": 726,
+        "lucky": true
+      },
+      {
+        "draw": 727,
+        "lucky": true
+      },
+      {
+        "draw": 728,
+        "lucky": true
+      },
+      {
+        "draw": 729,
+        "lucky": true
+      },
+      {
+        "draw": 730,
+        "lucky": true
+      },
+      {
+        "draw": 731,
+        "lucky": true
+      },
+      {
+        "draw": 732,
+        "lucky": true
+      },
+      {
+        "draw": 733,
+        "lucky": true
+      },
+      {
+        "draw": 734,
+        "lucky": true
+      },
+      {
+        "draw": 735,
+        "lucky": true
+      },
+      {
+        "draw": 736,
+        "lucky": true
+      },
+      {
+        "draw": 737,
+        "lucky": true
+      },
+      {
+        "draw": 738,
+        "lucky": true
+      },
+      {
+        "draw": 739,
+        "lucky": true
+      },
+      {
+        "draw": 740,
+        "lucky": true
+      },
+      {
+        "draw": 741,
+        "lucky": true
+      },
+      {
+        "draw": 742,
+        "lucky": true
+      },
+      {
+        "draw": 743,
+        "lucky": true
+      },
+      {
+        "draw": 744,
+        "lucky": true
+      },
+      {
+        "draw": 745,
+        "lucky": true
+      },
+      {
+        "draw": 746,
+        "lucky": true
+      },
+      {
+        "draw": 747,
+        "lucky": true
+      },
+      {
+        "draw": 748,
+        "lucky": true
+      },
+      {
+        "draw": 749,
+        "lucky": true
+      },
+      {
+        "draw": 750,
+        "lucky": true
+      },
+      {
+        "draw": 751,
+        "lucky": true
+      },
+      {
+        "draw": 752,
+        "lucky": true
+      },
+      {
+        "draw": 753,
+        "lucky": true
+      },
+      {
+        "draw": 754,
+        "lucky": true
+      },
+      {
+        "draw": 755,
+        "lucky": true
+      },
+      {
+        "draw": 756,
+        "lucky": true
+      },
+      {
+        "draw": 757,
+        "lucky": true
+      },
+      {
+        "draw": 758,
+        "lucky": true
+      },
+      {
+        "draw": 759,
+        "lucky": true
+      },
+      {
+        "draw": 760,
+        "lucky": true
+      },
+      {
+        "draw": 761,
+        "lucky": true
+      },
+      {
+        "draw": 762,
+        "lucky": true
+      },
+      {
+        "draw": 763,
+        "lucky": true
+      },
+      {
+        "draw": 764,
+        "lucky": true
+      },
+      {
+        "draw": 765,
+        "lucky": true
+      },
+      {
+        "draw": 766,
+        "lucky": true
+      },
+      {
+        "draw": 767,
+        "lucky": true
+      },
+      {
+        "draw": 768,
+        "lucky": true
+      },
+      {
+        "draw": 769,
+        "lucky": true
+      },
+      {
+        "draw": 770,
+        "lucky": true
+      },
+      {
+        "draw": 771,
+        "lucky": true
+      },
+      {
+        "draw": 772,
+        "lucky": true
+      },
+      {
+        "draw": 773,
+        "lucky": true
+      },
+      {
+        "draw": 774,
+        "lucky": true
+      },
+      {
+        "draw": 775,
+        "lucky": true
+      },
+      {
+        "draw": 776,
+        "lucky": true
+      },
+      {
+        "draw": 777,
+        "lucky": true
+      },
+      {
+        "draw": 778,
+        "lucky": true
+      },
+      {
+        "draw": 779,
+        "lucky": true
+      },
+      {
+        "draw": 780,
+        "lucky": true
+      },
+      {
+        "draw": 781,
+        "lucky": true
+      },
+      {
+        "draw": 782,
+        "lucky": true
+      },
+      {
+        "draw": 783,
+        "lucky": true
+      },
+      {
+        "draw": 784,
+        "lucky": true
+      },
+      {
+        "draw": 785,
+        "lucky": true
+      },
+      {
+        "draw": 786,
+        "lucky": true
+      },
+      {
+        "draw": 787,
+        "lucky": true
+      },
+      {
+        "draw": 788,
+        "lucky": true
+      },
+      {
+        "draw": 789,
+        "lucky": true
+      },
+      {
+        "draw": 790,
+        "lucky": true
+      },
+      {
+        "draw": 791,
+        "lucky": true
+      },
+      {
+        "draw": 792,
+        "lucky": true
+      },
+      {
+        "draw": 793,
+        "lucky": true
+      },
+      {
+        "draw": 794,
+        "lucky": true
+      },
+      {
+        "draw": 795,
+        "lucky": true
+      },
+      {
+        "draw": 796,
+        "lucky": true
+      },
+      {
+        "draw": 797,
+        "lucky": true
+      },
+      {
+        "draw": 798,
+        "lucky": true
+      },
+      {
+        "draw": 799,
+        "lucky": true
+      },
+      {
+        "draw": 800,
+        "lucky": true
+      },
+      {
+        "draw": 801,
+        "lucky": true
+      },
+      {
+        "draw": 802,
+        "lucky": true
+      },
+      {
+        "draw": 803,
+        "lucky": true
+      },
+      {
+        "draw": 804,
+        "lucky": true
+      },
+      {
+        "draw": 805,
+        "lucky": true
+      },
+      {
+        "draw": 806,
+        "lucky": true
+      },
+      {
+        "draw": 807,
+        "lucky": true
+      },
+      {
+        "draw": 808,
+        "lucky": true
+      },
+      {
+        "draw": 809,
+        "lucky": true
+      },
+      {
+        "draw": 810,
+        "lucky": true
+      },
+      {
+        "draw": 811,
+        "lucky": true
+      },
+      {
+        "draw": 812,
+        "lucky": true
+      },
+      {
+        "draw": 813,
+        "lucky": true
+      },
+      {
+        "draw": 814,
+        "lucky": true
+      },
+      {
+        "draw": 815,
+        "lucky": true
+      },
+      {
+        "draw": 816,
+        "lucky": true
+      },
+      {
+        "draw": 817,
+        "lucky": true
+      },
+      {
+        "draw": 818,
+        "lucky": true
+      },
+      {
+        "draw": 819,
+        "lucky": true
+      },
+      {
+        "draw": 820,
+        "lucky": true
+      },
+      {
+        "draw": 821,
+        "lucky": true
+      },
+      {
+        "draw": 822,
+        "lucky": true
+      },
+      {
+        "draw": 823,
+        "lucky": true
+      },
+      {
+        "draw": 824,
+        "lucky": true
+      },
+      {
+        "draw": 825,
+        "lucky": true
+      },
+      {
+        "draw": 826,
+        "lucky": true
+      },
+      {
+        "draw": 827,
+        "lucky": true
+      },
+      {
+        "draw": 828,
+        "lucky": true
+      },
+      {
+        "draw": 829,
+        "lucky": true
+      },
+      {
+        "draw": 830,
+        "lucky": true
+      },
+      {
+        "draw": 831,
+        "lucky": true
+      },
+      {
+        "draw": 832,
+        "lucky": true
+      },
+      {
+        "draw": 833,
+        "lucky": true
+      },
+      {
+        "draw": 834,
+        "lucky": true
+      },
+      {
+        "draw": 835,
+        "lucky": true
+      },
+      {
+        "draw": 836,
+        "lucky": true
+      },
+      {
+        "draw": 837,
+        "lucky": true
+      },
+      {
+        "draw": 838,
+        "lucky": true
+      },
+      {
+        "draw": 839,
+        "lucky": true
+      },
+      {
+        "draw": 840,
+        "lucky": true
+      },
+      {
+        "draw": 841,
+        "lucky": true
+      },
+      {
+        "draw": 842,
+        "lucky": true
+      },
+      {
+        "draw": 843,
+        "lucky": true
+      },
+      {
+        "draw": 844,
+        "lucky": true
+      },
+      {
+        "draw": 845,
+        "lucky": true
+      },
+      {
+        "draw": 846,
+        "lucky": true
+      },
+      {
+        "draw": 847,
+        "lucky": true
+      },
+      {
+        "draw": 848,
+        "lucky": true
+      },
+      {
+        "draw": 849,
+        "lucky": true
+      },
+      {
+        "draw": 850,
+        "lucky": true
+      },
+      {
+        "draw": 851,
+        "lucky": true
+      },
+      {
+        "draw": 852,
+        "lucky": true
+      },
+      {
+        "draw": 853,
+        "lucky": true
+      },
+      {
+        "draw": 854,
+        "lucky": true
+      },
+      {
+        "draw": 855,
+        "lucky": true
+      },
+      {
+        "draw": 856,
+        "lucky": true
+      },
+      {
+        "draw": 857,
+        "lucky": true
+      },
+      {
+        "draw": 858,
+        "lucky": true
+      },
+      {
+        "draw": 859,
+        "lucky": true
+      },
+      {
+        "draw": 860,
+        "lucky": true
+      },
+      {
+        "draw": 861,
+        "lucky": true
+      },
+      {
+        "draw": 862,
+        "lucky": true
+      },
+      {
+        "draw": 863,
+        "lucky": true
+      },
+      {
+        "draw": 864,
+        "lucky": true
+      },
+      {
+        "draw": 865,
+        "lucky": true
+      },
+      {
+        "draw": 866,
+        "lucky": true
+      },
+      {
+        "draw": 867,
+        "lucky": true
+      },
+      {
+        "draw": 868,
+        "lucky": true
+      },
+      {
+        "draw": 869,
+        "lucky": true
+      },
+      {
+        "draw": 870,
+        "lucky": true
+      },
+      {
+        "draw": 871,
+        "lucky": true
+      },
+      {
+        "draw": 872,
+        "lucky": true
+      },
+      {
+        "draw": 873,
+        "lucky": true
+      },
+      {
+        "draw": 874,
+        "lucky": true
+      },
+      {
+        "draw": 875,
+        "lucky": true
+      },
+      {
+        "draw": 876,
+        "lucky": true
+      },
+      {
+        "draw": 877,
+        "lucky": true
+      },
+      {
+        "draw": 878,
+        "lucky": true
+      },
+      {
+        "draw": 879,
+        "lucky": true
+      },
+      {
+        "draw": 880,
+        "lucky": true
+      },
+      {
+        "draw": 881,
+        "lucky": true
+      },
+      {
+        "draw": 882,
+        "lucky": true
+      },
+      {
+        "draw": 883,
+        "lucky": true
+      },
+      {
+        "draw": 884,
+        "lucky": true
+      },
+      {
+        "draw": 885,
+        "lucky": true
+      },
+      {
+        "draw": 886,
+        "lucky": true
+      },
+      {
+        "draw": 887,
+        "lucky": true
+      },
+      {
+        "draw": 888,
+        "lucky": true
+      },
+      {
+        "draw": 889,
+        "lucky": true
+      },
+      {
+        "draw": 890,
+        "lucky": true
+      },
+      {
+        "draw": 891,
+        "lucky": true
+      },
+      {
+        "draw": 892,
+        "lucky": true
+      },
+      {
+        "draw": 893,
+        "lucky": true
+      },
+      {
+        "draw": 894,
+        "lucky": true
+      },
+      {
+        "draw": 895,
+        "lucky": true
+      },
+      {
+        "draw": 896,
+        "lucky": true
+      },
+      {
+        "draw": 897,
+        "lucky": true
+      },
+      {
+        "draw": 898,
+        "lucky": true
+      },
+      {
+        "draw": 899,
+        "lucky": true
+      },
+      {
+        "draw": 900,
+        "lucky": true
+      },
+      {
+        "draw": 901,
+        "lucky": true
+      },
+      {
+        "draw": 902,
+        "lucky": true
+      },
+      {
+        "draw": 903,
+        "lucky": true
+      },
+      {
+        "draw": 904,
+        "lucky": true
+      },
+      {
+        "draw": 905,
+        "lucky": true
+      },
+      {
+        "draw": 906,
+        "lucky": true
+      },
+      {
+        "draw": 907,
+        "lucky": true
+      },
+      {
+        "draw": 908,
+        "lucky": true
+      },
+      {
+        "draw": 909,
+        "lucky": true
+      },
+      {
+        "draw": 910,
+        "lucky": true
+      },
+      {
+        "draw": 911,
+        "lucky": true
+      },
+      {
+        "draw": 912,
+        "lucky": true
+      },
+      {
+        "draw": 913,
+        "lucky": true
+      },
+      {
+        "draw": 914,
+        "lucky": true
+      },
+      {
+        "draw": 915,
+        "lucky": true
+      },
+      {
+        "draw": 916,
+        "lucky": true
+      },
+      {
+        "draw": 917,
+        "lucky": true
+      },
+      {
+        "draw": 918,
+        "lucky": true
+      },
+      {
+        "draw": 919,
+        "lucky": true
+      },
+      {
+        "draw": 920,
+        "lucky": true
+      },
+      {
+        "draw": 921,
+        "lucky": true
+      },
+      {
+        "draw": 922,
+        "lucky": true
+      },
+      {
+        "draw": 923,
+        "lucky": true
+      },
+      {
+        "draw": 924,
+        "lucky": true
+      },
+      {
+        "draw": 925,
+        "lucky": true
+      },
+      {
+        "draw": 926,
+        "lucky": true
+      },
+      {
+        "draw": 927,
+        "lucky": true
+      },
+      {
+        "draw": 928,
+        "lucky": true
+      },
+      {
+        "draw": 929,
+        "lucky": true
+      },
+      {
+        "draw": 930,
+        "lucky": true
+      },
+      {
+        "draw": 931,
+        "lucky": true
+      },
+      {
+        "draw": 932,
+        "lucky": true
+      },
+      {
+        "draw": 933,
+        "lucky": true
+      },
+      {
+        "draw": 934,
+        "lucky": true
+      },
+      {
+        "draw": 935,
+        "lucky": true
+      },
+      {
+        "draw": 936,
+        "lucky": true
+      },
+      {
+        "draw": 937,
+        "lucky": true
+      },
+      {
+        "draw": 938,
+        "lucky": true
+      },
+      {
+        "draw": 939,
+        "lucky": true
+      },
+      {
+        "draw": 940,
+        "lucky": true
+      },
+      {
+        "draw": 941,
+        "lucky": true
+      },
+      {
+        "draw": 942,
+        "lucky": true
+      },
+      {
+        "draw": 943,
+        "lucky": true
+      },
+      {
+        "draw": 944,
+        "lucky": true
+      },
+      {
+        "draw": 945,
+        "lucky": true
+      },
+      {
+        "draw": 946,
+        "lucky": true
+      },
+      {
+        "draw": 947,
+        "lucky": true
+      },
+      {
+        "draw": 948,
+        "lucky": true
+      },
+      {
+        "draw": 949,
+        "lucky": true
+      },
+      {
+        "draw": 950,
+        "lucky": true
+      },
+      {
+        "draw": 951,
+        "lucky": true
+      },
+      {
+        "draw": 952,
+        "lucky": true
+      },
+      {
+        "draw": 953,
+        "lucky": true
+      },
+      {
+        "draw": 954,
+        "lucky": true
+      },
+      {
+        "draw": 955,
+        "lucky": true
+      },
+      {
+        "draw": 956,
+        "lucky": true
+      },
+      {
+        "draw": 957,
+        "lucky": true
+      },
+      {
+        "draw": 958,
+        "lucky": true
+      },
+      {
+        "draw": 959,
+        "lucky": true
+      },
+      {
+        "draw": 960,
+        "lucky": true
+      },
+      {
+        "draw": 961,
+        "lucky": true
+      },
+      {
+        "draw": 962,
+        "lucky": true
+      },
+      {
+        "draw": 963,
+        "lucky": true
+      },
+      {
+        "draw": 964,
+        "lucky": true
+      },
+      {
+        "draw": 965,
+        "lucky": true
+      },
+      {
+        "draw": 966,
+        "lucky": true
+      },
+      {
+        "draw": 967,
+        "lucky": true
+      },
+      {
+        "draw": 968,
+        "lucky": true
+      },
+      {
+        "draw": 969,
+        "lucky": true
+      },
+      {
+        "draw": 970,
+        "lucky": true
+      },
+      {
+        "draw": 971,
+        "lucky": true
+      },
+      {
+        "draw": 972,
+        "lucky": true
+      },
+      {
+        "draw": 973,
+        "lucky": true
+      },
+      {
+        "draw": 974,
+        "lucky": true
+      },
+      {
+        "draw": 975,
+        "lucky": true
+      },
+      {
+        "draw": 976,
+        "lucky": true
+      },
+      {
+        "draw": 977,
+        "lucky": true
+      },
+      {
+        "draw": 978,
+        "lucky": true
+      },
+      {
+        "draw": 979,
+        "lucky": true
+      },
+      {
+        "draw": 980,
+        "lucky": true
+      },
+      {
+        "draw": 981,
+        "lucky": true
+      },
+      {
+        "draw": 982,
+        "lucky": true
+      },
+      {
+        "draw": 983,
+        "lucky": true
+      },
+      {
+        "draw": 984,
+        "lucky": true
+      },
+      {
+        "draw": 985,
+        "lucky": true
+      },
+      {
+        "draw": 986,
+        "lucky": true
+      },
+      {
+        "draw": 987,
+        "lucky": true
+      },
+      {
+        "draw": 988,
+        "lucky": true
+      },
+      {
+        "draw": 989,
+        "lucky": true
+      },
+      {
+        "draw": 990,
+        "lucky": true
+      },
+      {
+        "draw": 991,
+        "lucky": true
+      },
+      {
+        "draw": 992,
+        "lucky": true
+      },
+      {
+        "draw": 993,
+        "lucky": true
+      },
+      {
+        "draw": 994,
+        "lucky": true
+      },
+      {
+        "draw": 995,
+        "lucky": true
+      },
+      {
+        "draw": 996,
+        "lucky": true
+      },
+      {
+        "draw": 997,
+        "lucky": true
+      },
+      {
+        "draw": 998,
+        "lucky": true
+      },
+      {
+        "draw": 999,
+        "lucky": true
+      }
+    ],
+    "scope": "exact native cmp/jle; RNG output injected EAX; visual code not executed"
+  }
+}

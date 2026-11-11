@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-09",
+  "scope": "Android display name and launcher resources; item-description wording only, no gameplay changes",
+  "name": "叮当大富翁",
+  "branding": {
+    "source": "Existing native vector bell motif in drawable/dingdang_icon.xml, redesigned as blue background, red collar, gold bell and die",
+    "approach": "Native Android paths; matching SVG source and browser-rasterized legacy resources. No new character likeness or substituted original game artwork.",
+    "adaptive": "Transparent 108dp foreground with separate blue background; circle mask checked visually",
+    "legacy": "Five densities, 48/72/96/144/192px, both rounded square and round variants; foreground108/162/216/324/432px",
+    "sourceScript": "tools/build-launcher-icon.mjs",
+    "preview": "docs/design/launcher-icon-preview.png"
+  },
+  "descriptions": [
+    {"id":3,"item":"南北极徽章","change":"Explain selecting one opponent, pairing both people for five days, turning away when moving into partner's road square, and camera redirecting the pair. Remove old-build no-retreat-stop wording.","evidence":["docs/audits/items-2026-11-07-part-a.json","app/src/magnet.mjs","tests/pc-navigation.test.mjs","tests/clones-magnet.test.mjs"]},
+    {"id":12,"item":"幸运枪","change":"Describe self-target and roughly75%/25% outcomes; remove old-save/PC-version implementation text from player-facing description. Native exact749/1000 and251/1000 remains in evidence/tests.","evidence":["tests/v126-items-a.test.mjs","docs/audits/items-2026-11-07-part-a.json"]},
+    {"id":0,"item":"复原光线","change":"Explain removal of cannon/missile, retaining owner, and rejection of unbuilt land.","evidence":["tests/v126-items-a.test.mjs","app/src/land-items.mjs"]}
+  ],
+  "validation": {
+    "existingRuleTests": "13 passed: clones-magnet,land-items,v126-items-a",
+    "androidResources": "Gradle :app:processDebugResources --offline --no-daemon passed",
+    "visual": "512px rounded-square and192px round previews inspected; bell and dice visible and no important artwork clipped",
+    "limits": "Final APK packaging and Android launcher installation are root integration work; no package/version/gameplay files changed."
+  }
+}

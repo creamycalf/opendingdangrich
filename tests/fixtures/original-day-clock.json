@@ -1,0 +1,166 @@
+{
+  "sourceSha256": "f190b35370d3efe3024b5105a90f85abf07f5915e7b7a431d93b756de03f65f3",
+  "scope": "Execute original daily-cycle gate and clock expiry; replace only UI/daily hooks.\nAlso runs the original friendship attack check with a one-effect caster list.\n",
+  "daily": [
+    {
+      "days": 0,
+      "cycle": 0,
+      "afterDays": 0,
+      "afterCycle": 0,
+      "afterRound": 101,
+      "cyclesPerDay": 1
+    },
+    {
+      "days": 1,
+      "cycle": 0,
+      "afterDays": 1,
+      "afterCycle": 1,
+      "afterRound": 100,
+      "cyclesPerDay": 2
+    },
+    {
+      "days": 1,
+      "cycle": 1,
+      "afterDays": 0,
+      "afterCycle": 0,
+      "afterRound": 101,
+      "cyclesPerDay": 1
+    },
+    {
+      "days": 2,
+      "cycle": 0,
+      "afterDays": 2,
+      "afterCycle": 1,
+      "afterRound": 100,
+      "cyclesPerDay": 2
+    },
+    {
+      "days": 2,
+      "cycle": 1,
+      "afterDays": 1,
+      "afterCycle": 0,
+      "afterRound": 101,
+      "cyclesPerDay": 2
+    },
+    {
+      "days": 3,
+      "cycle": 0,
+      "afterDays": 3,
+      "afterCycle": 1,
+      "afterRound": 100,
+      "cyclesPerDay": 2
+    },
+    {
+      "days": 3,
+      "cycle": 1,
+      "afterDays": 2,
+      "afterCycle": 0,
+      "afterRound": 101,
+      "cyclesPerDay": 2
+    },
+    {
+      "days": 4,
+      "cycle": 0,
+      "afterDays": 4,
+      "afterCycle": 1,
+      "afterRound": 100,
+      "cyclesPerDay": 2
+    },
+    {
+      "days": 4,
+      "cycle": 1,
+      "afterDays": 3,
+      "afterCycle": 0,
+      "afterRound": 101,
+      "cyclesPerDay": 2
+    },
+    {
+      "days": 5,
+      "cycle": 0,
+      "afterDays": 5,
+      "afterCycle": 1,
+      "afterRound": 100,
+      "cyclesPerDay": 2
+    },
+    {
+      "days": 5,
+      "cycle": 1,
+      "afterDays": 4,
+      "afterCycle": 0,
+      "afterRound": 101,
+      "cyclesPerDay": 2
+    }
+  ],
+  "friends": [
+    {
+      "attack": 4,
+      "linked": false,
+      "allowed": true
+    },
+    {
+      "attack": 4,
+      "linked": true,
+      "allowed": false
+    },
+    {
+      "attack": 15,
+      "linked": false,
+      "allowed": true
+    },
+    {
+      "attack": 15,
+      "linked": true,
+      "allowed": false
+    },
+    {
+      "attack": 25,
+      "linked": false,
+      "allowed": true
+    },
+    {
+      "attack": 25,
+      "linked": true,
+      "allowed": false
+    },
+    {
+      "attack": 27,
+      "linked": false,
+      "allowed": true
+    },
+    {
+      "attack": 27,
+      "linked": true,
+      "allowed": false
+    },
+    {
+      "attack": 30,
+      "linked": false,
+      "allowed": true
+    },
+    {
+      "attack": 30,
+      "linked": true,
+      "allowed": false
+    },
+    {
+      "attack": 33,
+      "linked": false,
+      "allowed": true
+    },
+    {
+      "attack": 33,
+      "linked": true,
+      "allowed": false
+    },
+    {
+      "attack": 36,
+      "linked": false,
+      "allowed": true
+    },
+    {
+      "attack": 36,
+      "linked": true,
+      "allowed": false
+    }
+  ]
+}

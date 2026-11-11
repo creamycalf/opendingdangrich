@@ -1,0 +1,440 @@
+{
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "date": "2026-11-07",
+  "scope": "恶运钻石与全部35仙人事件的调用分类、目标选择、消耗与全体分支。已完成本专项；不扩大为整游戏逐帧等价。",
+  "provider": "Ghidra 12.1.4; Unicorn 32-bit original code helper execution",
+  "evidence": [
+    "research/diamond-v126-all-bad.json",
+    "research/diamond-v126-helper-good.json",
+    "research/diamond-v126-eligibility.json",
+    "research/diamond-v126-minigame-event.json",
+    "tests/fixtures/v126-diamond.json"
+  ],
+  "helper": {
+    "entry": "0x43a78d",
+    "order": [
+      "查道具17及事件good标记",
+      "保存目标并先摘除钻石",
+      "检查目标存活",
+      "调用当前事件虚表+0x28资格回调",
+      "成功返回目标，失败返回0；两者均销毁钻石"
+    ],
+    "noChain": true
+  },
+  "fixes": [
+    {
+      "event": 30,
+      "change": "资格与重定向改用地图region3坐标范围，避免jail标记与实际位置不一致时误转移。",
+      "evidence": "0x412d1f"
+    },
+    {
+      "event": 22,
+      "change": "全体缩小跳过已缩小者，保留其原计时，不再重挂/刷新状态。",
+      "evidence": "0x40f83a"
+    }
+  ],
+  "tests": {
+    "passed": 20,
+    "files": [
+      "tests/diamond-v126.test.mjs",
+      "tests/hermit.test.mjs",
+      "tests/target-items.test.mjs"
+    ],
+    "coverage": [
+      "35个事件单体调用分类",
+      "15个可转移事件×死亡/护身符/蜗牛保护",
+      "7种实际全体坏事件保留钻石",
+      "单次转移不链式转移",
+      "炮台税重复接收者与房产税不转移",
+      "原helper16组合实执行确认摘除/销毁顺序",
+      "空间监狱与已缩小目标边界"
+    ]
+  },
+  "rows": [
+    {
+      "id": 0,
+      "name": "道具礼物",
+      "entry": "0x40b786",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 1,
+      "name": "每日行动两次",
+      "entry": "0x40b986",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "双倍收租",
+      "entry": "0x40bb36",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "name": "赠送土地",
+      "entry": "0x40bc86",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "name": "建筑升级",
+      "entry": "0x40c1df",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "name": "好运降临",
+      "entry": "0x40c86d",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "name": "免交租",
+      "entry": "0x40ccab",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "name": "免受攻击",
+      "entry": "0x40ce7e",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "name": "豆沙包礼物",
+      "entry": "0x40d1c3",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "name": "矿山增长提高",
+      "entry": "0x40d6a1",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "name": "全体醒来",
+      "entry": "0x40d819",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 11,
+      "name": "小游戏",
+      "entry": "0x40dbbc",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 12,
+      "name": "建筑奖励",
+      "entry": "0x40dcb2",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 13,
+      "name": "商店六折",
+      "entry": "0x40e212",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 14,
+      "name": "禁止使用道具",
+      "entry": "0x40e431",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": true,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 15,
+      "name": "暂停行动",
+      "entry": "0x40e90f",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 16,
+      "name": "无法收租",
+      "entry": "0x40eaed",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 17,
+      "name": "禁止买地",
+      "entry": "0x40ed03",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 18,
+      "name": "禁止升级",
+      "entry": "0x40ef19",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 19,
+      "name": "禁止买道具",
+      "entry": "0x40f12f",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 20,
+      "name": "禁止小游戏",
+      "entry": "0x40f345",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 21,
+      "name": "昏睡",
+      "entry": "0x40f596",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 22,
+      "name": "缩小",
+      "entry": "0x40f83a",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": true,
+      "targetRule": "通用仙人兼容并且未缩小",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 23,
+      "name": "恶运降临",
+      "entry": "0x40fe0a",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": true,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 24,
+      "name": "双倍交租",
+      "entry": "0x41038c",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": true,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 25,
+      "name": "豆沙包罚款",
+      "entry": "0x410a05",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": true,
+      "targetRule": "存活且通用仙人兼容",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 26,
+      "name": "丢失道具",
+      "entry": "0x410f59",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": true,
+      "targetRule": "通用仙人兼容并且至少有一件道具",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 27,
+      "name": "地震",
+      "entry": "0x4115f5",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": "地震抽取受害者时排除钻石持有者，不消耗或转移",
+      "verified": true
+    },
+    {
+      "id": 28,
+      "name": "矿山增长降低",
+      "entry": "0x411e84",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 29,
+      "name": "炮台税",
+      "entry": "0x412186",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "目标通用仙人兼容；场上任何存活角色有炮台即可，目标不必拥有炮台",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": "先处理转移目标，再遍历除原施用者以外的各槽；接收者可能被征两次",
+      "verified": true
+    },
+    {
+      "id": 30,
+      "name": "送往倒霉区域",
+      "entry": "0x4128dd",
+      "callsDiamond": true,
+      "allVariantBypassesDiamond": true,
+      "targetRule": "通用仙人兼容且坐标不在地图region3内",
+      "consumption": "单体调用时先消耗，目标不兼容/死亡仍消耗；全体实际变体不消耗",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 31,
+      "name": "矿山关闭",
+      "entry": "0x412f11",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 32,
+      "name": "建筑税",
+      "entry": "0x413164",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": "遍历原施用者及其他槽；不调用转移",
+      "verified": true
+    },
+    {
+      "id": 33,
+      "name": "时光机失控",
+      "entry": "0x413989",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": null,
+      "verified": true
+    },
+    {
+      "id": 34,
+      "name": "平分现金",
+      "entry": "0x413b91",
+      "callsDiamond": false,
+      "allVariantBypassesDiamond": false,
+      "targetRule": "此事件不调用钻石转移",
+      "consumption": "保留钻石",
+      "special": "平分现金影响存活角色，不调用转移",
+      "verified": true
+    }
+  ]
+}

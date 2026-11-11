@@ -1,0 +1,53 @@
+const {chromium}=require('../app/node_modules/playwright');
+const {build}=require('../app/node_modules/esbuild');
+const fs=require('node:fs'),assert=require('node:assert/strict');let browser;
+(async()=>{
+ const js=await build({stdin:{contents:"import {GameAudio} from './app/src/audio.ts';window.audioTest=new GameAudio();",resolveDir:process.cwd()},bundle:true,write:false,format:'iife'});
+ browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+ const page=await browser.newPage({viewport:{width:640,height:360},hasTouch:true}),errors=[],checks=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/audio-harness',r=>r.fulfill({contentType:'text/html',body:'<button>启用音频</button>'}));
+ await page.route('**/assets/audio/*/*.wav',async r=>{await new Promise(resolve=>setTimeout(resolve,140));await r.continue();});
+ await page.goto((process.env.TEST_ORIGIN||'http://127.0.0.1:5185')+'/audio-harness');
+ await page.addScriptTag({content:js.outputFiles[0].text});
+ await page.evaluate(async()=>{await audioTest.init();audioTest.sync({startDate:'2000-04-03',round:1,phase:'ready'},true);});
+ await page.getByRole('button').tap();await page.waitForFunction(()=>audioTest.diagnostics().playing&&audioTest.diagnostics().context==='running');
+ const state=()=>page.evaluate(()=>audioTest.diagnostics());
+ await page.evaluate(async()=>{const pending=audioTest.play({kind:'voice',character:0,bank:0,clip:13});audioTest.pause(false);await pending;});
+ assert.equal((await state()).events.at(-1).status,'started');checks.push('cold shop voice survives the no-op minigame unpause lifecycle');
+ await page.evaluate(async()=>{const pending=audioTest.play({kind:'voice',character:0,bank:0,clip:16});audioTest.set('music',.3);await pending;});
+ assert.equal((await state()).events.at(-1).status,'started');checks.push('adjusting music does not cancel pending or playing speech');
+ await page.evaluate(async()=>{const pending=audioTest.play({kind:'voice',character:0,bank:0,clip:44});audioTest.sync({startDate:'2000-04-03',round:1,phase:'ready'},true,true);audioTest.sync({startDate:'2000-04-03',round:1,phase:'ready'},true,false);await pending;});
+ assert.equal((await state()).events.at(-1).status,'cancelled');checks.push('pause cancels cold decode even after an immediate resume');
+ await page.evaluate(async()=>{const pending=audioTest.play({kind:'voice',character:0,bank:0,clip:45});audioTest.set('language','cantonese');await pending;await audioTest.play({kind:'voice',character:0,bank:0,clip:45});});
+ const language=await state();assert.equal(language.events.at(-2).status,'cancelled');assert.equal(language.events.at(-1).status,'started');assert.match(language.events.at(-1).url,/cantonese/);checks.push('language switches cancel old-language decodes and load the chosen original archive');
+ await page.evaluate(async()=>{const old=audioTest.play({kind:'voice',character:1,bank:0,clip:44});const latest=audioTest.play({kind:'voice',character:1,bank:0,clip:47});await Promise.all([old,latest]);});
+ assert.equal((await state()).events.at(-2).status,'cancelled');assert.equal((await state()).events.at(-1).status,'started');checks.push('latest speech wins without overlapping voices, as the original single voice channel');
+ await page.evaluate(()=>audioTest.scene(5));await page.waitForFunction(()=>audioTest.diagnostics().playing&&audioTest.diagnostics().track===5);
+ await page.evaluate(()=>audioTest.scene(null));await page.waitForFunction(()=>audioTest.diagnostics().playing&&audioTest.diagnostics().track===2);checks.push('standalone minigame track 5 overrides title state and restores board/title on exit');
+ await page.evaluate(()=>window.dispatchEvent(new Event('dingdangPause')));assert.equal((await state()).activeEffects,0);assert.equal((await state()).playing,false);
+ await page.evaluate(()=>window.dispatchEvent(new Event('dingdangResume')));await page.getByRole('button').tap();await page.waitForFunction(()=>audioTest.diagnostics().playing);checks.push('Android pause/resume silences transient sounds and resumes the selected music');
+ const decoded=await page.evaluate(async()=>{const c=await(await fetch('assets/audio/catalog.json')).json(),ctx=new AudioContext(),clips=[];for(const language of Object.values(c.voices))for(let character=0;character<6;character++)for(const bank of [0,1,2]){const clip=language[`${character}-${bank}-${bank===2?36:0}`];if(clip)clips.push(clip);}for(const clip of [...Object.values(c.music),...clips]){const b=await ctx.decodeAudioData(await(await fetch(clip.url)).arrayBuffer());if(b.duration<=0)throw Error(clip.url);}await ctx.close();return {music:Object.keys(c.music).length,speech:clips.length};});
+ checks.push(`${decoded.music} original OGG music tracks and ${decoded.speech} speech samples across both languages/all six recorded characters/all three banks actually decoded`);
+ const {audioTurnFixtures,map}=await import('./audio-turn-fixtures.mjs');
+ const fixtures=audioTurnFixtures();
+ await page.evaluate(()=>{audioTest.set('language','mandarin');Math.random=()=>0;});
+ for(const fixture of fixtures){
+  await page.evaluate(({fixture,map})=>{audioTest.pause(true);audioTest.pause(false);window.audioMark=audioTest.diagnostics().events.length;audioTest.command(fixture.before,fixture.after,fixture.command,map);},{fixture,map});
+  await page.waitForFunction(({clips,sfx})=>{const events=audioTest.diagnostics().events.slice(window.audioMark).filter(e=>e.status==='started');return events.filter(e=>e.kind==='voice').length===clips.length&&events.filter(e=>e.kind==='sfx').length===sfx.length;},fixture,{timeout:45000});
+  const events=await page.evaluate(()=>audioTest.diagnostics().events.slice(window.audioMark).filter(e=>e.status==='started'));
+  assert.deepEqual(events.filter(e=>e.kind==='voice').map(e=>e.clip),fixture.clips,fixture.name);
+  assert.deepEqual(events.filter(e=>e.kind==='sfx').map(e=>e.clip),fixture.sfx,fixture.name);
+  if(fixture.name.includes('破产'))assert.deepEqual(events.filter(e=>e.kind==='voice').map(e=>e.character),[0,1,3,5]);
+ }
+ checks.push(`${fixtures.length} real engine commands loaded and played their original rent/upgrade/reward/fine/hermit/bankruptcy cues, including all four bankruptcy voices in sequence`);
+ const bankruptcy=fixtures.at(-1);
+ await page.evaluate(({fixture,map})=>{audioTest.pause(true);audioTest.pause(false);window.audioMark=audioTest.diagnostics().events.length;audioTest.command(fixture.before,fixture.after,fixture.command,map);},{fixture:bankruptcy,map});
+ await page.waitForFunction(()=>audioTest.diagnostics().events.slice(window.audioMark).some(e=>e.clip===25&&e.status==='started'));
+ await page.evaluate(()=>audioTest.play({kind:'voice',character:0,bank:0,clip:47}));
+ await page.waitForTimeout(250);
+ assert.deepEqual((await state()).events.slice(await page.evaluate(()=>window.audioMark)).filter(e=>e.status==='started').map(e=>e.clip),[25,47]);
+ checks.push('a new direct dialogue cancels the rest of an earlier multi-speaker sequence');
+ assert.deepEqual(errors,[]);assert.deepEqual((await state()).errors,[]);const output='test-results/audio-'+(process.env.QA_REVISION||'rc18');fs.mkdirSync(output,{recursive:true});fs.writeFileSync(output+'/playback.json',JSON.stringify({checks,errors,diagnostics:await state()},null,2));console.log(JSON.stringify({checks,errors},null,2));await browser.close();
+})().catch(async e=>{console.error(e);await browser?.close();process.exitCode=1;});
+

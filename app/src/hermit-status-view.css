@@ -1,0 +1,12 @@
+.hermitStatusView{position:absolute;left:8px;top:var(--hermit-status-top,84px);max-width:min(240px,calc(100% - 16px));z-index:3;pointer-events:none}
+.hermitStatusView[hidden]{display:none}
+.hermitStatusTrack{display:flex;align-items:center;gap:3px;max-width:100%;height:56px;overflow-x:auto;overflow-y:hidden;overscroll-behavior:contain;touch-action:pan-x;scrollbar-width:thin;pointer-events:auto}
+.hermitStatusCard{position:relative;flex:0 0 46px;width:46px;height:48px;min-width:44px;min-height:44px;padding:1px;border:1px solid #bca44d;border-bottom:3px solid #668d22;border-radius:4px;background:#fff4cee8;pointer-events:auto;touch-action:pan-x}
+.hermitStatusCard[data-good=false]{border-bottom-color:#b9474b;background:#fff0e4e8}
+.hermitStatusCard canvas{width:40px;height:34px;max-width:100%;background:transparent;image-rendering:pixelated;pointer-events:none}
+.hermitStatusCount{position:absolute;right:2px;bottom:0;padding:0 2px;background:#fff4cc;font-size:11px;line-height:14px;pointer-events:none}
+.hermitStatusRemoval{flex:0 0 78px;width:78px;height:52px;pointer-events:none}
+.hermitStatusRemoval canvas{width:78px;height:52px;background:transparent;image-rendering:pixelated;pointer-events:none}
+.hermitStatusView *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+main:has(#diceDisplay:not([hidden])) .hermitStatusView,body:has(dialog[open]) .hermitStatusView{visibility:hidden;pointer-events:none}
+@media(orientation:portrait){.hermitStatusView{top:var(--hermit-status-top,126px)}}

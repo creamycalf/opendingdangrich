@@ -1,0 +1,307 @@
+{
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "provider": "REA/Ghidra 12.1.4 plus Unicorn isolated native instructions; allocation/free/debug explicitly substituted in constructor oracle",
+  "status": "14 items audited at documented scope; confirmed lucky-shot defect fixed",
+  "rows": [
+    {
+      "id": 0,
+      "name": "复原光线",
+      "effectAndTiming": "降低身旁建筑一级；特殊炮台/导弹等级1降至地基0，保留地主，立即结束行动",
+      "target": "邻格第一块已购且level>0土地，允许自己的土地",
+      "interaction": "时间布会清归属；复原不退款",
+      "newPcEvidence": {
+        "addresses": "0x491253；0x490ccc",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json",
+          "research/v126-restore-impact.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "land-items、v126-items-a",
+      "changes": "无产品修改：原level>0门限正确；补特殊建筑真实使用命令6组合",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 1,
+      "name": "机器人小姐",
+      "effectAndTiming": "5天免租",
+      "target": "自己",
+      "interaction": "免租掩码0xffffffdf；互斥按新版完整表",
+      "newPcEvidence": {
+        "addresses": "0x491448；0x4915cf",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "v126-item-common、effects",
+      "changes": "未发现本范围差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 2,
+      "name": "时间布",
+      "effectAndTiming": "清除邻地建筑和归属，立即生效",
+      "target": "其他玩家已购邻地；自己的地拒绝",
+      "interaction": "包含炮台/导弹，不返还原主钱款",
+      "newPcEvidence": {
+        "addresses": "0x491d4d；0x491953",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "land-items、v126-items-a",
+      "changes": "补特殊建筑清除的存档回放测试",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 3,
+      "name": "南北极徽章",
+      "effectAndTiming": "成对磁铁5天、排斥走向",
+      "target": "指定可攻击对手，不能重复配对",
+      "interaction": "普通攻击资格与相机转移；能力值0x400000",
+      "newPcEvidence": {
+        "addresses": "0x491f17；0x492184；0x4922be",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "clones-magnet、v126-item-common",
+      "changes": "以新版原生构造确认mask/value",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 4,
+      "name": "传染伤风纸电话",
+      "effectAndTiming": "对手昏睡3天",
+      "target": "可攻击对手；大雄不能攻击静香",
+      "interaction": "共用目标资格、冲突表及相机；无需命中概率",
+      "newPcEvidence": {
+        "addresses": "0x4923ed；0x4929b4",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "target-items、v126-item-common",
+      "changes": "未发现本范围差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 5,
+      "name": "日期转换仪",
+      "effectAndTiming": "本月提前结算，标记已领取；日期不变",
+      "target": "自己；0x80月结已领标记拒绝重用",
+      "interaction": "清冲突效果；正常月结跳过已领的地产/步行奖励",
+      "newPcEvidence": {
+        "addresses": "0x492bcd；0x492dcf",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "economic-items、monthly",
+      "changes": "复核新版使用门限；完整月结内部数值另有公共证据",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 6,
+      "name": "缩形隧道",
+      "effectAndTiming": "道路隧道持续5天，按方向缩小/恢复",
+      "target": "空闲普通道路，按轴向入口筛选",
+      "interaction": "与大小、头带、分身、机械活动体互动；方向片段已另行新版机器执行",
+      "newPcEvidence": {
+        "addresses": "0x492ff8；0x493971；0x4934a3",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "tunnel、pc-navigation",
+      "changes": "未发现已核查方向/门限差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 7,
+      "name": "咒语相机",
+      "effectAndTiming": "相机记录目标，遇可转移攻击使用；10作为不递减哨兵",
+      "target": "一名可攻击对手",
+      "interaction": "只转移一次、无效目标保留；军队直接效果不走普通目标链",
+      "newPcEvidence": {
+        "addresses": "0x49419a；0x4945b3；0x4946d8",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "target-items、v126-item-common",
+      "changes": "新版构造duration10、mask和值与共同机制核对",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 8,
+      "name": "玩具军队",
+      "effectAndTiming": "5天待命；支付普通地租后直接令地主睡5天并消耗",
+      "target": "实际地主",
+      "interaction": "地主已睡/机械活动体时保留；反向租金不触发",
+      "newPcEvidence": {
+        "addresses": "0x494bd0；0x443bb1（已有新PC租金证据）",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "target-items、special-buildings、effects",
+      "changes": "未发现已核查报复链差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 9,
+      "name": "颠倒笔",
+      "effectAndTiming": "5天租金方向反转",
+      "target": "自己；停靠普通地产时生效",
+      "interaction": "租金免除、地主不能收租优先；军队不因反向租金发动",
+      "newPcEvidence": {
+        "addresses": "0x495267；0x495279；0x443bb1",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "economic-items、v126-item-common",
+      "changes": "新版value0x40000及租金负号分支确认",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 10,
+      "name": "友情药袋",
+      "effectAndTiming": "5天免租与免攻击",
+      "target": "自己",
+      "interaction": "mask0xfffffbdf；新版互斥表决定与机器人小姐/人见人爱替换",
+      "newPcEvidence": {
+        "addresses": "0x4953b7；0x4953c9",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "effects、v126-item-common",
+      "changes": "未发现本范围差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 11,
+      "name": "石头帽",
+      "effectAndTiming": "8天免付租且本人地产不能收租",
+      "target": "自己",
+      "interaction": "mask0xffffffdb；与攻击/效果替换按新版表",
+      "newPcEvidence": {
+        "addresses": "0x495941；0x495953；0x495a3d",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "effects、v126-item-common",
+      "changes": "未发现本范围差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 12,
+      "name": "幸运枪",
+      "effectAndTiming": "8天随机好运/恶运；新PC749/1000好运、251/1000恶运",
+      "target": "自己",
+      "interaction": "好运值0x24000、恶运0x18000，影响租金和仙人；旧存档保持旧阈值",
+      "newPcEvidence": {
+        "addresses": "0x495b30；0x495e9e cmp eax,250 / jle；0x49619f",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json",
+          "research/v126-lucky-shot-assembly.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "v126-items-a：1000机器样本+100条命令/存档/回放",
+      "changes": "修复新版仍使用旧版>=751阈值，改>=251；说明同步",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 13,
+      "name": "可到任何地方大炮",
+      "effectAndTiming": "把本人发射到目标道路；保留合法旧朝向否则抽方向；结束行动",
+      "target": "空闲普通道路，排除特殊区域/占用",
+      "interaction": "不把其他玩家当目标；传送后跟随者重定位",
+      "newPcEvidence": {
+        "addresses": "0x4962a6；0x496423；0x496d10",
+        "files": [
+          "docs/audits/items-2026-11-07-part-a-native.json",
+          "research/v126-items-a-handlers.json",
+          "research/v126-items-a-gates.json",
+          "research/v126-items-a-rules.json"
+        ],
+        "common": "tests/fixtures/v126-item-common.json: native constructors,7744 pair/source/mode conflicts and target cases"
+      },
+      "tests": "road-items、clones-magnet",
+      "changes": "未发现已核查目标门限差异",
+      "remainingScope": "未逐帧核对图像/音频；未对任意多状态叠加与所有地图全流程作穷尽证明。已核对的是所列原生入口、构造/共同规则和指定回归；不是全组合一致性承诺。",
+      "fullPcEquivalence": false
+    }
+  ],
+  "tests": {
+    "command": "node --test tests/v126-items-a.test.mjs tests/land-items.test.mjs tests/economic-items.test.mjs tests/target-items.test.mjs tests/road-items.test.mjs tests/tunnel.test.mjs tests/v126-item-common.test.mjs",
+    "passed": 33
+  }
+}

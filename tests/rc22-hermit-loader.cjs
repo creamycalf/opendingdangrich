@@ -1,0 +1,13 @@
+const {chromium}=require('../app/node_modules/playwright'),fs=require('node:fs'),assert=require('node:assert/strict');let browser;
+(async()=>{const out='test-results/rc22-hermit-loader';fs.mkdirSync(out,{recursive:true});const checks=[];require('../app/node_modules/esbuild').buildSync({entryPoints:['app/src/hermit-view.ts'],bundle:true,format:'esm',outfile:out+'/view.js'});browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+for(const failure of [false,true]){
+ const context=await browser.newContext(),page=await context.newPage();
+ await page.route('**/fixture',r=>r.fulfill({contentType:'text/html',body:'<meta charset="utf-8"><dialog open><div id="content"></div></dialog>'}));
+ await page.route('**/view.js',r=>r.fulfill({contentType:'text/javascript',body:fs.readFileSync(out+'/view.js')}));
+ await page.route('**/assets/pc-hermit/**',r=>{const name=new URL(r.request().url()).pathname.split('/').pop();return failure&&(name==='images.bundle.json'||name==='11235.png')?r.fulfill({status:503,body:'unavailable'}):r.fulfill({contentType:name.endsWith('.json')?'application/json':'image/png',body:fs.readFileSync('app/public/assets/pc-hermit/'+name)});});
+ await page.goto('http://127.0.0.1:5188/fixture');await page.evaluate(()=>{window.earlyDecodes=0;const decode=HTMLImageElement.prototype.decode;HTMLImageElement.prototype.decode=function(){if(!this.complete){window.earlyDecodes++;return Promise.reject(Error('Android decode before load regression'));}return decode.call(this);};});
+ const result=await page.evaluate(async()=>{const v=await import('/view.js');window.soundCalls=[];window.chooseCalls=0;v.mountHermitChoices(document.querySelector('#content'),{onChoose:()=>window.chooseCalls++,onSound:n=>window.soundCalls.push(n)});document.querySelector('dialog').close();try{const a=await v.loadHermitAssets();return {ok:true,count:Object.keys(a.images).length};}catch(e){return {ok:false,error:e.message};}});
+ assert.equal(await page.evaluate(()=>window.earlyDecodes),0);assert.equal(await page.evaluate(()=>window.chooseCalls),0);assert.deepEqual(await page.evaluate(()=>window.soundCalls),[]);
+ if(failure){assert.equal(result.ok,false);assert(result.error.includes('assets/pc-hermit/11235.png'));checks.push('Failed PNG names exact URL; no hidden scene callbacks');}else{assert.equal(result.ok,true);assert.equal(result.count,436);checks.push('All436 original sprites await load before decode; hidden loading scene remains stopped');}
+ await context.close();
+}fs.writeFileSync(out+'/result.json',JSON.stringify({checks},null,2));console.log(checks);await browser.close();})().catch(async e=>{console.error(e);await browser?.close();process.exitCode=1;});

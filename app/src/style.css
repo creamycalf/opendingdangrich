@@ -1,0 +1,137 @@
+*{box-sizing:border-box}html,body{margin:0;height:100%;overscroll-behavior:none;font-family:'Microsoft YaHei',system-ui,sans-serif;color:#242116;background:#000}button{font:inherit;cursor:pointer;touch-action:manipulation;color:inherit}button:focus-visible{outline:3px solid #ffe16b;outline-offset:2px}button:disabled{filter:grayscale(1);opacity:.65}#app{height:100dvh;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}main{width:100%;height:100%;position:relative;overflow:hidden}canvas{width:100%;height:100%;display:block;touch-action:none;background:#000}#loading{position:absolute;inset:0;display:grid;place-items:center;background:#101b2a;color:#fff;z-index:10}
+#classicHud{position:absolute;inset:0;pointer-events:none;image-rendering:pixelated}#characterHud{position:absolute;right:0;bottom:0;width:280px;height:189px;transform:scale(var(--hud-scale));transform-origin:bottom right}.hudFrame{position:absolute;inset:0;width:280px;height:189px;pointer-events:none}#portrait{position:absolute;left:140px;top:17px;width:116px;height:116px;border:0;padding:0;border-radius:50%;overflow:hidden;pointer-events:auto;background:#ffce00}#portrait img{width:100%;height:100%}#cashDigits{position:absolute;right:4px;bottom:8px;display:flex;height:32px}#cashDigits img{width:18px;height:32px}#bells{position:absolute;left:52px;bottom:8px;color:white;font-size:28px;text-shadow:2px 2px blue}#roundPanel{position:absolute;left:8px;bottom:10px;transform:scale(var(--hud-scale));transform-origin:bottom left;color:#006916;font-weight:bold;filter:drop-shadow(1px 1px 0 #000)}#roundPanel>span{font-size:23px;-webkit-text-stroke:1px white}#roundDigits{display:flex;height:91px}#roundDigits img{height:91px;width:auto}
+#commands{position:absolute;right:calc(280px * var(--hud-scale));bottom:8px;display:flex;align-items:flex-end;transform:scale(var(--hud-scale));transform-origin:bottom right;background:url('/assets/ui/1.png') no-repeat bottom right;background-size:100% 49px;padding:0 4px 2px 8px}#commands button{position:relative;pointer-events:auto;display:grid;place-items:center;width:44px;height:48px;padding:0;border:0;background:none}#commands button img{max-width:50px;height:auto;image-rendering:pixelated}#commands button span{position:absolute;bottom:48px;white-space:nowrap;font-size:14px;color:#fff;background:#486900bf;padding:1px 3px}#commands button:active img{transform:translateY(2px)}
+#maptools{position:absolute;right:8px;top:8px;display:flex;gap:3px}#maptools button{border:1px solid #fff8;border-radius:3px;width:44px;height:44px;font-size:22px;color:#fff;background:#1723158c;text-shadow:1px 1px #000}#maptools #overview{font-size:12px}#inspect{position:absolute;left:12px;top:65px;background:#fff6d9f5;border:2px solid #6f592d;padding:12px 44px 12px 14px;max-width:280px}#inspect strong,#inspect small{display:block}#inspect small{margin-top:6px;line-height:1.6}#inspect button{position:absolute;right:0;top:0;border:0;background:none;width:44px;height:44px;font-size:24px}#toast{position:absolute;left:50%;top:64px;transform:translateX(-50%);padding:8px 14px;background:#242114dd;color:white;border:1px solid #f9e8ab;font-size:13px;pointer-events:none;max-width:85%;text-align:center;opacity:0}#toast.show{opacity:1}#routes{position:absolute;bottom:calc(195px * var(--hud-scale,1));left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:2}#routes button{padding:12px;background:#fff3ba;border:2px solid #716426;border-radius:3px;min-height:48px;white-space:nowrap}
+dialog{border:3px double #624e24;border-radius:3px;padding:22px;max-width:min(440px,92vw);width:420px;max-height:85dvh;overflow:auto;background:#fff4cc;color:#342c1c;box-shadow:5px 5px 0 #0008}dialog::backdrop{background:#0008}dialog h2{font-size:21px;margin-top:0}dialog p{line-height:1.8;font-size:14px;white-space:pre-line}dialog button{display:block;min-height:48px;width:100%;padding:10px;border:1px solid #8b753f;border-radius:2px;margin-top:10px;background:#f0dda5}dialog button.primary{background:#f4d262;font-weight:bold}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(orientation:portrait){#commands{right:0;bottom:calc(195px * var(--hud-scale));transform:none;background-size:100% 36px;padding-left:8px}#commands button{width:48px;height:48px}#roundPanel{bottom:18px}#routes{bottom:calc(195px * var(--hud-scale) + 65px)}#maptools{gap:2px}}
+#commands button{width:max(44px,calc(44px / var(--hud-scale)));height:max(48px,calc(44px / var(--hud-scale)))}
+@media(orientation:portrait){#commands button{width:48px;height:48px}}
+#titleScreen{position:absolute;inset:0;z-index:5;background:#dca233 url('/assets/ui/title.png') center/cover no-repeat}#titleScreen[hidden]{display:none}.titleMenu{position:absolute;right:4%;top:50%;transform:translateY(-50%);width:min(290px,87vw);padding:20px;background:#fff2cbef;border:4px double #513812;box-shadow:5px 5px #0005;text-align:center}.titleMenu h1{margin:0 0 4px;font-size:27px;color:#104898;text-shadow:1px 1px white}.titleMenu p{font-size:12px}.titleMenu button{display:block;width:100%;min-height:46px;margin-top:10px;background:#f9dc78;border:2px outset #c59e3d;border-radius:2px;font-weight:bold}.titleMenu small{display:block;margin-top:12px;font-size:12px;color:#6c5728}#turnBanner{position:absolute;top:10px;left:10px;max-width:calc(100% - 300px);color:white;font-size:13px;padding:5px 8px;background:#263314bb;border:1px solid #fff6;pointer-events:none}#lastEvent{position:absolute;top:63px;left:10px;max-width:70%;color:#fff5cf;text-shadow:1px 1px #000;font-size:12px;pointer-events:none}#toast{top:90px}#monthArt{display:block;height:32px;width:auto}#weekdayArt{position:absolute;left:0;bottom:0;height:25px;width:auto}#roundDigits{margin-left:38px}.setupRow{display:grid;grid-template-columns:25px 1fr 80px;gap:7px;margin-bottom:12px;align-items:center}.setupRow small{grid-column:2/4;color:#665b3d;font-size:11px;line-height:1.4}select{font:inherit;min-height:44px;border:1px solid #9e8444;background:#fffbe8;padding:6px;color:#342c1c;border-radius:2px;max-width:100%}#duration{width:100%}.setupNote{font-size:11px!important;line-height:1.5!important}#setupError{color:#9a261e;font-size:12px}#modal{z-index:20}
+@media(orientation:portrait){.titleMenu{right:6.5%;top:auto;bottom:5%;transform:none;width:87%}#titleScreen{background-size:auto 100%;background-position:30% center}#turnBanner{top:61px;max-width:94%}#lastEvent{top:98px;max-width:90%}#toast{top:130px}}
+@media(orientation:landscape){#titleScreen{background-size:contain;background-position:left center}}
+#diceDisplay{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);z-index:4;pointer-events:none;background:#fff4dcf5;border:3px double #6a5128;border-radius:12px;padding:12px 25px;text-align:center;box-shadow:0 5px 20px #0005;color:#352615}#diceDisplay[hidden]{display:none}#diceFace{font-family:Segoe UI Symbol,sans-serif;font-size:86px;line-height:1.1;color:#ad2020}#diceText{display:block;font-size:17px;white-space:nowrap}
+
+#modal.miniModal{width:min(720px,100vw);max-height:100dvh;padding:10px;margin:auto}.miniGame p{margin:5px 0;font-size:12px}.miniTop{display:flex;align-items:center;justify-content:space-between;gap:12px}.miniTop button{width:auto;margin:0;min-width:88px;min-height:44px}.miniGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.miniPlayer{min-width:0;border:2px solid var(--player-color);background:#152333;color:#fff;text-align:center;padding:3px}.miniPlayer>strong{display:block;font-size:12px;line-height:20px}.miniPlayer canvas{display:block;width:100%;height:min(26dvh,220px);object-fit:contain}.miniControls{display:flex;gap:4px}.miniControls button{margin:2px 0 0;min-height:44px;touch-action:none;user-select:none}.miniLeave{margin-top:6px!important;min-height:44px!important}.singleHuman .human{grid-column:1/-1}.singleHuman .human canvas{height:min(44dvh,300px)}.singleHuman .computer{grid-column:1/-1;text-align:left;padding:0 6px}.singleHuman .computer .miniControls{display:none}@media(orientation:landscape){.miniGrid{grid-template-columns:repeat(4,minmax(0,1fr))}.miniPlayer canvas{height:46dvh}.singleHuman .human{grid-column:auto;grid-row:1/4}.singleHuman .human canvas{height:43dvh}.singleHuman .computer{grid-column:2/5}.singleHuman .miniControls button{min-width:44px}}
+
+.miniRace{display:block;width:100%;max-height:44dvh;object-fit:contain;image-rendering:pixelated;background:#273c20}
+
+.audioSettings{display:grid;gap:16px;padding:12px 0}.audioSettings label{display:grid;gap:6px}.audioSettings input,.audioSettings select{min-height:44px;width:100%}
+
+/* PC title scene keeps its 640 x 480 composition at every aspect ratio. */
+#titleScreen{background:#000;display:grid;place-items:center}
+#titleScreen[hidden]{display:none}
+.pcTitleStage{position:absolute;width:640px;height:480px;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--title-scale,1));transform-origin:center;background:url('/assets/pc-front/title.png') center/100% 100% no-repeat;image-rendering:pixelated}
+#titleArt{position:absolute;inset:0;width:640px;height:480px;background:transparent;pointer-events:none}
+#titleGate{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent}
+.pcTitleActions button{position:absolute;left:242px;top:154px;width:157px;height:34px;padding:0;border:0;background:transparent;border-radius:16px}
+.pcTitleActions #continueGame{top:188px}
+.pcTitleActions button:focus-visible,.pcTitleActions button:hover{outline:2px solid #fff;outline-offset:-2px;background:#ffffff20}
+.pcTitleActions button:disabled{background:#0008;opacity:1;filter:none}
+.titleUtilities{position:absolute;bottom:8px;right:8px;display:flex;gap:8px}
+.titleUtilities button{min-height:44px;padding:6px 12px;color:#fff;background:#162947d9;border:1px solid #fff6;border-radius:4px}
+.titleTouchActions{display:none}
+@media(orientation:portrait){.titleTouchActions:not([hidden]){position:absolute;top:calc(50% + 37.5vw + 16px);left:16px;right:16px;display:flex;gap:12px}.titleTouchActions button{flex:1;min-height:48px;border:1px solid #fff8;border-radius:4px;background:#164b8c;color:white;font-size:17px}}
+
+#modal:has(.pcSetup){width:min(720px,96vw);max-width:96vw;background:#b28c49 url('/assets/pc-selection/background.png') center/cover;padding:14px}
+.pcSetup .setupRow{display:none}
+.pcSelection{background:#fff3caac;padding:8px;border-radius:6px}
+.pcPlayerSlots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.pcPlayerSlot button{margin:0 0 5px;padding:3px;min-height:44px;background:#fff7df}
+.pcPlayerSlot button[aria-pressed=true]{outline:3px solid #1355bb;outline-offset:-3px;background:#e0edff}
+.pcPlayerSlot img{display:block;width:100%;max-width:115px;height:auto;margin:auto;image-rendering:pixelated}
+.pcPlayerSlot span{display:block;font-size:12px}
+.pcSelection p{min-height:44px;font-size:13px;line-height:1.5;margin:8px 0}
+.pcCharacterChoices{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}
+.pcCharacterChoices button{margin:0;padding:4px 0;background:#fff8df;min-width:0}
+.pcCharacterChoices img{display:block;max-width:100%;height:68px;object-fit:contain;margin:auto;image-rendering:pixelated}
+.pcCharacterChoices span{display:block;font-size:12px}
+@media(max-width:480px){.pcCharacterChoices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.mapChoices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:12px 0}.mapChoices button{margin:0;min-height:80px;padding:6px;background:#fff6da}.mapChoices img{width:100%;height:70px;object-fit:contain;image-rendering:pixelated}.mapChoices span{display:block;font-size:12px}.mapChoices button[aria-pressed=true]{outline:3px solid #1355bb;outline-offset:-3px;background:#e0edff}#mapPreview[hidden]{display:none!important}@media(max-width:480px){.mapChoices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+#diceDisplay{top:auto;bottom:110px;padding:6px 14px;background:#fff4dce8}#diceFace{font-family:inherit;font-size:30px}#diceText{font-size:14px}
+#diceDisplay.pcSpin{width:1px;height:1px;clip-path:inset(50%);overflow:hidden;border:0;padding:0}
+#bells{display:flex;height:32px}#bells img{width:18px;height:32px}
+body:has(#diceDisplay:not([hidden])) :is(#lastEvent,#turnBanner){visibility:hidden}
+
+/* Keep setup and action selection within the mobile viewport. */
+#modal:has(.pcSetup){max-height:calc(100dvh - 8px);padding:8px}
+#modalContent:has(.pcSetup)>h2,#modalContent:has(.pcSetup)>p{display:none}
+#modal [hidden]{display:none!important}
+.setupTabs,.setupFooter,.dialogPager{display:flex;align-items:center;gap:6px}
+.setupTabs button,.setupFooter button,.dialogPager button,.dialogChoices button{min-width:0;margin:0;padding:4px;min-height:40px}
+.setupTabs{margin-bottom:6px}.setupTabs [aria-pressed=true]{background:#f4d262;font-weight:bold}
+.setupFooter{margin-top:6px}.setupFooter .primary{flex:2}.setupFooter button{flex:1}
+#setupError:empty{display:none}
+.dialogChoices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.dialogPager{margin-top:8px}.dialogPager span{flex:none;font-size:13px}.dialogPager button{flex:1}
+#modalContent:has(>.dialogChoices)>p{max-height:24dvh;overflow:auto}
+#modal:has(.dialogChoices){width:min(640px,96vw);max-width:96vw;max-height:calc(100dvh - 10px)}
+#modalContent:has(.pcSetup) .mapChoices{grid-template-columns:repeat(4,minmax(0,1fr))}
+#modalContent:has(.pcSetup) .mapChoices button{min-height:0}
+#modalContent:has(.pcSetup) .mapChoices img{height:clamp(28px,9dvh,70px)}
+@media (orientation:landscape) and (max-height:520px){
+  #modal{max-height:calc(100dvh - 8px);padding:8px}
+  #modal h2{margin:0 0 4px;font-size:18px}
+  #modal p{margin:4px 0;line-height:1.25}
+  #modalContent:not(:has(form,.miniGame))>p{max-height:40dvh;overflow:auto}
+  #modalContent:has(.dialogChoices)>p{max-height:22dvh}
+  .pcSelection{padding:4px}
+  .pcPlayerSlot img{height:clamp(22px,10dvh,48px);width:auto}
+  .pcPlayerSlot button{min-height:33px;margin:0 0 2px}
+  .pcSelection p{min-height:0;font-size:12px}
+  .pcCharacterChoices img{height:clamp(26px,10dvh,48px)}
+  .pcCharacterChoices button{min-height:0}
+  .mapChoices{margin:4px 0;gap:3px}
+  .mapChoices button{padding:2px}
+  .mapChoices img{display:block}
+  .dialogChoices{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .audioSettings{grid-template-columns:repeat(2,minmax(0,1fr));padding:4px;gap:6px}
+}
+.miniTop{gap:4px;flex-wrap:wrap}.miniTop strong{flex:1}.miniTop .miniLeave{margin:0!important;min-width:0}.miniTop button{padding:3px 6px}.miniTop button[hidden]{display:none!important}@media(orientation:landscape) and (max-height:380px){.miniRace{max-height:36dvh}.miniPlayer canvas,.singleHuman .human canvas{max-height:37dvh}}
+#modal:has(.audioSettings){max-height:calc(100dvh - 8px)}.audioSettings{gap:8px}
+
+/* The original player-selection frame is 640 x 366 above the device legend.
+   Scale its input regions with the scene so portraits remain tappable in portrait. */
+#modalContent .pcSelection{position:relative;padding:0;width:min(100%,calc((100dvh - 128px)*1.7486));aspect-ratio:640/366;margin:0 auto;background:url('/assets/pc-selection/players-stage.png') center/100% 100%}
+#modalContent .pcPlayerSlots{position:absolute;inset:0 2% auto;height:58%;grid-template-columns:repeat(4,1fr);gap:0}
+#modalContent .pcPlayerSlot{position:relative;min-width:0}
+#modalContent .pcPlayerSlot button:first-child{position:absolute;top:22%;left:12%;height:57%;width:76%;padding:0;border:0;border-radius:50%;background:transparent}
+#modalContent .pcPlayerSlot button:first-child img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+#modalContent .pcPlayerSlot button:first-child span,#modalContent .pcCharacterChoices img,#modalContent .pcCharacterChoices span,#modalContent .pcSelection p{display:none}
+#modalContent .pcPlayerSlot button:last-child{position:absolute;bottom:0;left:20%;width:60%;min-height:24px;margin:0;padding:1px 3px;font-size:12px}
+#modalContent .pcCharacterChoices{display:block;position:absolute;inset:0;pointer-events:none}
+#modalContent .pcCharacterChoices button{position:absolute;top:60%;height:34%;width:12.5%;border:0;background:transparent;min-height:0;pointer-events:auto}
+#modalContent .pcCharacterChoices button:focus-visible{outline:2px solid white}
+.pcTerms{display:flex;justify-content:center;flex-wrap:wrap;gap:4px;margin:1em auto}
+#modalContent .pcTerms button{width:clamp(42px,8vw,60px);margin:0;padding:1px;min-height:44px;background:#b28c49;border:2px solid transparent}
+.pcTerms img{display:block;margin:auto;width:100%;max-height:55px;object-fit:contain}
+#modalContent .pcTerms button[aria-pressed=true]{border-color:#ffe36b;box-shadow:0 0 0 2px #54351e}
+
+#modalContent .mapChoices.pcMapDoor{position:relative;display:flex;align-items:stretch;padding:0;width:min(100%,calc((100dvh - 128px)*1.3333));aspect-ratio:4/3;margin:0 auto;background-size:100% 100%;gap:0}
+#modalContent .pcMapDoor button{width:33.333%;padding:0;margin:0;border:0;background:transparent}
+.pcMapDoor>span{position:absolute;inset:auto 0 1%;text-align:center;font-weight:bold;color:#271d10;pointer-events:none}
+.miniResumePanel{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px;border:2px solid #f7d46b;border-radius:8px;background:#24364f;color:#fff;font-size:13px}.miniResumePanel button{flex-shrink:0;width:auto;min-height:48px;margin:0;padding:8px 14px}.miniResumePanel[hidden],.miniStatus[hidden],.miniRetry[hidden]{display:none}.miniGame .miniStatus{padding:5px 8px;border-radius:6px;background:#24364f;color:#ffe295;font-size:13px}.miniGame .miniRetry{min-height:44px;margin:4px 0}
+/* Game surfaces behave as touch controls, while editable names remain selectable. */
+html,body,button,canvas,img{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+input,textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:text}
+img{-webkit-user-drag:none}
+button .actionIcon{display:inline-block;width:28px;height:28px;object-fit:contain;vertical-align:middle;margin-right:8px;flex:none;pointer-events:none;image-rendering:pixelated}
+button img.actionIcon{width:38px;height:38px}
+#modal h2 .actionIcon{display:inline-block;width:48px;height:48px;object-fit:contain;vertical-align:middle;margin-right:8px;image-rendering:pixelated}
+#modal:has(.landOffer) button .actionIcon{display:none}
+@media(orientation:landscape) and (max-height:400px){button img.actionIcon{width:30px;height:30px}button .actionIcon{width:24px;height:24px}#modal h2 .actionIcon{width:32px;height:32px}}
+.setupTabs button .actionIcon{width:20px;height:20px;margin-right:4px}
+.setupFooter button .actionIcon{width:20px;height:20px;margin-right:5px}
+/* Pause is an overlay: it must not push the game and controls below a phone screen. */
+.miniGame{position:relative}
+.miniResumePanel{position:absolute;left:8px;right:8px;top:50%;transform:translateY(-50%);z-index:4;box-shadow:0 3px 16px #0009}
+.playerSummary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.playerSummary article{border:1px solid #b49b61;background:#fffbe8;padding:6px;min-width:0}
+.playerSummary img{width:38px;height:38px;object-fit:contain;float:left;margin:0 6px 3px 0;image-rendering:pixelated}
+.playerSummary strong{font-size:13px;line-height:18px}
+.playerSummary p{font-size:12px;line-height:1.45;margin:4px 0 0;clear:both}
+#modal:has(.playerSummary){width:min(640px,96vw);padding:10px;max-height:calc(100dvh - 8px)}
+#modal:has(.playerSummary) h2{font-size:18px;margin:0 0 6px}
+#modal:has(.playerSummary) button{margin-top:6px}
+@media(orientation:landscape) and (max-height:400px){.playerSummary img{width:32px;height:32px}.playerSummary article{padding:5px}}

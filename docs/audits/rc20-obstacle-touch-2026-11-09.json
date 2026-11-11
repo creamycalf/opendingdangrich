@@ -1,0 +1,22 @@
+{
+  "issue": "用户图1障碍竞速剩8秒，真人P4胖虎13分、电脑约30分，表示加速/防守都不动",
+  "reproduction": {
+    "test": "tests/obstacle-touch-ui.cjs",
+    "seed": 123,
+    "simulation": "原有tickMiniGame运行660ticks；P4每12ticks点按一次加速，其他三人原有AI",
+    "result": "剩余240ticks即8秒；P4 13分，其他30/28/30分。P4 y=3987超出336高视口，world=6870；输入未失效。12次真实触屏全部到达P4，strokes55→67且world继续减小。",
+    "cause": "原共享镜头跟随前方角色，落后真人离开画面；旧界面无实时动作/速度反馈，加速和防守按钮继承白色文字配浅色底也显得禁用。未复现触屏命令丢失。"
+  },
+  "changes": [
+    "超出画面下沿的真人显示标注P4后方的实时动画小窗；只改绘制，保留原camera、位置、碰撞与计分。",
+    "真人状态显示奔跑/防守/受击恢复及原始速度、加速次数，避免画面外按键无反馈。",
+    "单真人竞速控制栏扩展整行；深色按钮文字、按下颜色反馈；提示加速需反复点按，按住不会自动连发。"
+  ],
+  "validation": {
+    "touch": "真实Chromium触屏12次P4加速、CDP触摸按住/松开防守、暂停冻结/恢复输入、受击恢复后再次加速均通过；横竖屏按钮至少140x48，未横向溢出。",
+    "rules": "tests/minigames.test.mjs 17项通过，含MGame04完整原生回放的移动/碰撞/计分/奖励以及每帧保存。",
+    "typescript": "tsc --noEmit通过",
+    "artifacts": ["test-results/rc20-obstacle-touch-report.json", "test-results/rc20-obstacle-touch-p4.png", "test-results/rc20-obstacle-touch-p4-portrait.png"]
+  },
+  "evidenceLimit": "复用既有原PC x86 fixtures验证规则未被改变；本轮未新增新PC全场动态跟踪，也未声称全部小游戏完全等价。APK由root统一构建验证。"
+}

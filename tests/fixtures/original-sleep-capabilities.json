@@ -1,0 +1,152 @@
+{
+  "sourceSha256": "f190b35370d3efe3024b5105a90f85abf07f5915e7b7a431d93b756de03f65f3",
+  "scope": "Original 0x43a2ad sleep mask and 0x4955fa dwarf activation.\nReplace only sprite animation callbacks; mask writes and composition run x86.\n",
+  "mask": 4294963902,
+  "value": 2097152,
+  "cases": [
+    {
+      "active": false,
+      "sleep": false,
+      "base": 0,
+      "after": 0
+    },
+    {
+      "active": false,
+      "sleep": false,
+      "base": 4095,
+      "after": 4095
+    },
+    {
+      "active": false,
+      "sleep": false,
+      "base": 4294967295,
+      "after": 4294967295
+    },
+    {
+      "active": false,
+      "sleep": false,
+      "base": 1056,
+      "after": 1056
+    },
+    {
+      "active": false,
+      "sleep": false,
+      "base": 98304,
+      "after": 98304
+    },
+    {
+      "active": false,
+      "sleep": false,
+      "base": 147456,
+      "after": 147456
+    },
+    {
+      "active": false,
+      "sleep": true,
+      "base": 0,
+      "after": 0
+    },
+    {
+      "active": false,
+      "sleep": true,
+      "base": 4095,
+      "after": 731
+    },
+    {
+      "active": false,
+      "sleep": true,
+      "base": 4294967295,
+      "after": 4294963931
+    },
+    {
+      "active": false,
+      "sleep": true,
+      "base": 1056,
+      "after": 0
+    },
+    {
+      "active": false,
+      "sleep": true,
+      "base": 98304,
+      "after": 98304
+    },
+    {
+      "active": false,
+      "sleep": true,
+      "base": 147456,
+      "after": 147456
+    },
+    {
+      "active": true,
+      "sleep": false,
+      "base": 0,
+      "after": 2097152
+    },
+    {
+      "active": true,
+      "sleep": false,
+      "base": 4095,
+      "after": 2097854
+    },
+    {
+      "active": true,
+      "sleep": false,
+      "base": 4294967295,
+      "after": 4294963902
+    },
+    {
+      "active": true,
+      "sleep": false,
+      "base": 1056,
+      "after": 2097184
+    },
+    {
+      "active": true,
+      "sleep": false,
+      "base": 98304,
+      "after": 2195456
+    },
+    {
+      "active": true,
+      "sleep": false,
+      "base": 147456,
+      "after": 2244608
+    },
+    {
+      "active": true,
+      "sleep": true,
+      "base": 0,
+      "after": 2097152
+    },
+    {
+      "active": true,
+      "sleep": true,
+      "base": 4095,
+      "after": 2097818
+    },
+    {
+      "active": true,
+      "sleep": true,
+      "base": 4294967295,
+      "after": 4294963866
+    },
+    {
+      "active": true,
+      "sleep": true,
+      "base": 1056,
+      "after": 2097152
+    },
+    {
+      "active": true,
+      "sleep": true,
+      "base": 98304,
+      "after": 2195456
+    },
+    {
+      "active": true,
+      "sleep": true,
+      "base": 147456,
+      "after": 2244608
+    }
+  ]
+}

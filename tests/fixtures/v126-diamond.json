@@ -1,0 +1,167 @@
+{
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "entry": "0x43a78d",
+  "scope": "Execute new-PC diamond consumption/redirection helper with explicit world predicates.\nOriginal x86 owns branch ordering, removal and returned target. Only object lookup,\neligibility result, presentation and destructors are fixture stubs.\n",
+  "rows": [
+    {
+      "hasDiamond": false,
+      "good": false,
+      "alive": false,
+      "eligible": false,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": false,
+      "good": false,
+      "alive": false,
+      "eligible": true,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": false,
+      "good": false,
+      "alive": true,
+      "eligible": false,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": false,
+      "good": false,
+      "alive": true,
+      "eligible": true,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": false,
+      "good": true,
+      "alive": false,
+      "eligible": false,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": false,
+      "good": true,
+      "alive": false,
+      "eligible": true,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": false,
+      "good": true,
+      "alive": true,
+      "eligible": false,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": false,
+      "good": true,
+      "alive": true,
+      "eligible": true,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": true,
+      "good": false,
+      "alive": false,
+      "eligible": false,
+      "removed": true,
+      "destroyed": true,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": true,
+      "good": false,
+      "alive": false,
+      "eligible": true,
+      "removed": true,
+      "destroyed": true,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": true,
+      "good": false,
+      "alive": true,
+      "eligible": false,
+      "removed": true,
+      "destroyed": true,
+      "eligibilityCalled": true,
+      "redirected": false
+    },
+    {
+      "hasDiamond": true,
+      "good": false,
+      "alive": true,
+      "eligible": true,
+      "removed": true,
+      "destroyed": true,
+      "eligibilityCalled": true,
+      "redirected": true
+    },
+    {
+      "hasDiamond": true,
+      "good": true,
+      "alive": false,
+      "eligible": false,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": true,
+      "good": true,
+      "alive": false,
+      "eligible": true,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": true,
+      "good": true,
+      "alive": true,
+      "eligible": false,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    },
+    {
+      "hasDiamond": true,
+      "good": true,
+      "alive": true,
+      "eligible": true,
+      "removed": false,
+      "destroyed": false,
+      "eligibilityCalled": false,
+      "redirected": false
+    }
+  ]
+}

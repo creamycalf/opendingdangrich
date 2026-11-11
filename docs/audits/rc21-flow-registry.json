@@ -1,0 +1,134 @@
+{
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "freshEvidence": "research/rc21-root-flow-evidence.json",
+  "priorSameBinaryPseudocode": "docs/audits/v126-ending-audio-rea.json",
+  "registrationFunction": "0x455888",
+  "states": [
+    {
+      "callback": "FUN_00458e79",
+      "state": "100",
+      "parent": "0"
+    },
+    {
+      "callback": "FUN_00457e66",
+      "state": "10",
+      "parent": "0"
+    },
+    {
+      "callback": "FUN_0045a157",
+      "state": "0x6e",
+      "parent": "100"
+    },
+    {
+      "callback": "FUN_0045afaf",
+      "state": "0x78",
+      "parent": "100"
+    },
+    {
+      "callback": "FUN_00460ae4",
+      "state": "0x82",
+      "parent": "100"
+    },
+    {
+      "callback": "FUN_00463bb5",
+      "state": "0x8c",
+      "parent": "100"
+    },
+    {
+      "callback": "FUN_00474197",
+      "state": "0x96",
+      "parent": "100"
+    },
+    {
+      "callback": "FUN_004741ff",
+      "state": "200",
+      "parent": "0x6e"
+    },
+    {
+      "callback": "FUN_00466502",
+      "state": "0xd2",
+      "parent": "0"
+    },
+    {
+      "callback": "FUN_0047431f",
+      "state": "0xd3",
+      "parent": "0"
+    },
+    {
+      "callback": "FUN_0046772d",
+      "state": "0xdc",
+      "parent": "200"
+    },
+    {
+      "callback": "FUN_004743a0",
+      "state": "0xe6",
+      "parent": "200"
+    },
+    {
+      "callback": "FUN_0046bbe0",
+      "state": "0xf0",
+      "parent": "200"
+    },
+    {
+      "callback": "FUN_00474412",
+      "state": "0xfa",
+      "parent": "0xf0"
+    },
+    {
+      "callback": "FUN_00474525",
+      "state": "0x104",
+      "parent": "0xfa"
+    },
+    {
+      "callback": "FUN_00475a8d",
+      "state": "300",
+      "parent": "0x104"
+    },
+    {
+      "callback": "FUN_0046f0e8",
+      "state": "0x10e",
+      "parent": "0x104"
+    },
+    {
+      "callback": "FUN_00470dc9",
+      "state": "0x118",
+      "parent": "0x10e"
+    },
+    {
+      "callback": "FUN_00473ca6",
+      "state": "0x122",
+      "parent": "0x104"
+    },
+    {
+      "callback": "FUN_0047101e",
+      "state": "0x140",
+      "parent": "0x6e"
+    },
+    {
+      "callback": "FUN_0045bafc",
+      "state": "400",
+      "parent": "0x78"
+    },
+    {
+      "callback": "FUN_004605c1",
+      "state": "0x19a",
+      "parent": "0x78"
+    },
+    {
+      "callback": "FUN_0045c732",
+      "state": "0x1a4",
+      "parent": "0x78"
+    },
+    {
+      "callback": "FUN_0045e999",
+      "state": "0x1ae",
+      "parent": "0x78"
+    },
+    {
+      "callback": "FUN_0045f256",
+      "state": "0x1b8",
+      "parent": "0x78"
+    }
+  ],
+  "scope": "State registration inventory only; registration does not establish that an independent UI implements the scene."
+}

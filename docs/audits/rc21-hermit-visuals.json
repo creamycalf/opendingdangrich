@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-09",
+  "source": {
+    "exe": "work/new-pc-v121/Doraemon.exe",
+    "sha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+    "provider": "Ghidra12.1.4 via REA",
+    "resources": "D:/Game/old/Doraemon/Doraemon; hashes in app/public/assets/pc-hermit/catalog.json"
+  },
+  "nativeEvidence": [
+    {
+      "address": "0x455888",
+      "finding": "DAT004cca28 loads Events.dat; DAT004cc8f8 loads sprite1.dat",
+      "file": "research/rc21-hermit-loader-rea.json"
+    },
+    {
+      "address": "0x415d50",
+      "finding": "Construct actor animation0, three animation9 boxes and animation10 arrow. Box positions(240,160),(200,180),(160,200): native0 right,1 middle,2 left.",
+      "file": "research/rc21-hermit-rea.json"
+    },
+    {
+      "address": "0x4166fd",
+      "finding": "Stages0–4 introduction/dialogue and appearance; stage5 changes selection with directions and confirms separately. Selection SFX76 and confirm82. Confirmation resolves good/bad then samples compatible event; box index controls presentation, not preassigned prize.",
+      "file": "research/rc21-hermit-rea.json"
+    },
+    {
+      "address": "0x4166fd",
+      "finding": "Resolved bad event uses animation6, good event7; result dialogue acknowledgement goes through8 before box/actor disappear sequences9/5 and final45-tick wait.",
+      "file": "research/rc21-hermit-rea.json"
+    },
+    {
+      "resource": "events.dat",
+      "finding": "Animation6 sound commands(frame20,15),(63,32); animation7(frame10,11),(63,13). Opcode0x8000 exact source commands retained in catalog."
+    }
+  ],
+  "implementation": {
+    "extractor": "tools/extract_v126_hermit.py",
+    "animations": 11,
+    "sprites": 291,
+    "assets": "app/public/assets/pc-hermit",
+    "components": [
+      "app/src/hermit-view.ts",
+      "app/src/hermit-view.css"
+    ],
+    "selection": "Three real box images, animated original selection arrow, direct touch selection, explicit open confirmation; native indices preserved. No RNG or gameplay mutation in component.",
+    "result": "Existing resolved metadata renders original good/bad animation. Continue plays original close8 and single callback; no reward reroll. onSound emits source animation SFX once across dropped frames.",
+    "lifecycle": "Abort RAF on content removal, closed containing dialog (even when DOM remains attached), or destroy. Also abort after late image load if dialog was closed. Repeated confirmation is ignored."
+  },
+  "validation": {
+    "typecheck": "passed",
+    "isolated": "tests/rc21-hermit-touch.cjs passed320x640/915x412/640x320, graphics pixel presence, touch targets, single callback, both result branches, close and1.5s stalled-frame audio recovery",
+    "artifacts": "test-results/rc21-hermit-touch",
+    "production": "Final lifecycle-fixed dist passed320x640/915x412/640x320: choices preserve complete state, confirm once, event metadata persists, exact reward/RNG save reload and continue. test-results/rc21-hermit-production/result.json",
+    "closedDialog": "Three viewports: drawImage counter stays frozen after close; after SFX15 first cue, subsequent SFX32 never fires. tests/rc21-hermit-touch.cjs",
+    "androidGood": "FinalAPK code52 sha4e0f2a96901ecf1f65657975cb5aa7ab3377fb56e47d3b4018c12ee54fe57173,320x640 CDP touch: event6 good, selection2, precise result save/reload, continue passed. Native and entire localStorage restored and reloaded with exact deepEqual assertions.",
+    "androidBad": "FinalAPK code52 sha4e0f2a96901ecf1f65657975cb5aa7ab3377fb56e47d3b4018c12ee54fe57173,320x640 CDP touch: event24 bad, selection2, unchanged choice state, single confirm, exact result save/reload and continue passed. test-results/rc21-hermit-production-android-seed1/result.json; ADB actual surface android-surface.png visually checked.",
+    "storageRestoration": "Final bad branch script restored its disk-backed pretest-backup.json to native GameSave and every localStorage key, asserted deep equality, reloaded inactive title, asserted deep equality again. Device released to audio_finish after exit0.",
+    "initialAndroidFailure": {
+      "observed": "First bad-branch attempt stalled during page.reload waiting for load, before choice screenshot. Finally reload also timed out, so its in-memory restoration did not run. CDP evaluate stalled and Android shell commands also showed delays. No proof this was caused by the hermit game logic.",
+      "recovery": "No data clear. Native prefs, raw logcat and WebView LevelDB files copied read-only; original local save and settings recovered from WAL sequences6959..6963 before fixture overwrite6965. Same APP force-stopped and reopened; CDP responsive again. Both storage layers restored before rerunning.",
+      "evidence": "test-results/rc21-hermit-production-android-seed1/recovery-evidence.json and recovery-restored.json",
+      "limit": "Recovered localStorage save is complete from original WAL. Historical native restore write only retained3711 characters in logcat; that entire prefix matches recovered local save, but full historical native byte-for-byte equality cannot be proved. Recovery used this matching local original for native too. Subsequent backup/restoration comparisons are complete.",
+      "testHardening": "Future Android fixture tests persist native+all-localStorage backup before mutation; evaluate and DOMContentLoaded reload are bounded to15seconds. Final bad-branch rerun passed and restoration verified."
+    }
+  },
+  "remaining": [
+    "Responsive card layout replaces the PC isometric on-map placement; original pixels are retained.",
+    "Full PC entrance0→dialogue→spell2, disappearing unselected boxes9, spell4, full exit5 and45-tick wait are abbreviated. Component shows actor idle1/3, selection and outcome6/7, close8. No claim of complete frame-for-frame sequence.",
+    "Display timing uses30fps; exact original scheduler timing not measured in this task.",
+    "Original NPC dialogue voice/callback interpretation remains unconfirmed; no new invented voice was assigned.",
+    "Gameplay events and all35 effects are outside this UI task; root owns persisted result metadata and existing gameplay audits."
+  ]
+}

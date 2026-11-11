@@ -1,0 +1,198 @@
+{
+  "sha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "titleResource": 414,
+  "titleState": 130,
+  "titleCallback": "0x460ae4",
+  "rows": [
+    {
+      "pads": 0,
+      "choices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "reset": [
+        4,
+        7,
+        5,
+        6
+      ]
+    },
+    {
+      "pads": 1,
+      "choices": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reset": [
+        0,
+        4,
+        7,
+        5
+      ]
+    },
+    {
+      "pads": 2,
+      "choices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reset": [
+        0,
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "pads": 3,
+      "choices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reset": [
+        0,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "pads": 4,
+      "choices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reset": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "animationToggle": [
+    {
+      "selected": 0,
+      "flags": 164,
+      "tickStride": 0
+    },
+    {
+      "selected": 1,
+      "flags": 165,
+      "tickStride": 1
+    }
+  ],
+  "note": "The primary title controller setup and the board animation switch are separate handlers. Mouse/keyboard/gamepads were not connected during block execution.",
+  "instructions": [
+    [
+      "004570f1  6a64  push 0x64",
+      "004570f3  6882000000  push 0x82",
+      "004570f8  68e40a4600  push 0x460ae4",
+      "004570fd  8b8d08ffffff  mov ecx, dword ptr [ebp - 0xf8]",
+      "00457103  e874ad0200  call 0x481e7c"
+    ],
+    [
+      "00460b47  8b0d4cc74c00  mov ecx, dword ptr [0x4cc74c]",
+      "00460b4d  898d48ffffff  mov dword ptr [ebp - 0xb8], ecx",
+      "00460b53  83bd48ffffff04  cmp dword ptr [ebp - 0xb8], 4",
+      "00460b5a  0f877c010000  ja 0x460cdc",
+      "00460b60  8b9548ffffff  mov edx, dword ptr [ebp - 0xb8]",
+      "00460b66  ff2495e93a4600  jmp dword ptr [edx*4 + 0x463ae9]",
+      "00460b6d  c70530d64c0004000000  mov dword ptr [0x4cd630], 4",
+      "00460b77  c70534d64c0005000000  mov dword ptr [0x4cd634], 5",
+      "00460b81  c70538d64c0006000000  mov dword ptr [0x4cd638], 6",
+      "00460b8b  c7053cd64c0007000000  mov dword ptr [0x4cd63c], 7"
+    ],
+    [
+      "00461d81  a14cc74c00  mov eax, dword ptr [0x4cc74c]",
+      "00461d86  898514ffffff  mov dword ptr [ebp - 0xec], eax",
+      "00461d8c  83bd14ffffff04  cmp dword ptr [ebp - 0xec], 4",
+      "00461d93  0f87e0000000  ja 0x461e79",
+      "00461d99  8b8d14ffffff  mov ecx, dword ptr [ebp - 0xec]",
+      "00461d9f  ff248d1d3b4600  jmp dword ptr [ecx*4 + 0x463b1d]",
+      "00461da6  c70560d34c0004000000  mov dword ptr [0x4cd360], 4",
+      "00461db0  c70564d34c0007000000  mov dword ptr [0x4cd364], 7",
+      "00461dba  c70568d34c0005000000  mov dword ptr [0x4cd368], 5",
+      "00461dc4  c7056cd34c0006000000  mov dword ptr [0x4cd36c], 6",
+      "00461dce  e9a6000000  jmp 0x461e79",
+      "00461dd3  c70560d34c0000000000  mov dword ptr [0x4cd360], 0",
+      "00461ddd  c70564d34c0004000000  mov dword ptr [0x4cd364], 4",
+      "00461de7  c70568d34c0007000000  mov dword ptr [0x4cd368], 7",
+      "00461df1  c7056cd34c0005000000  mov dword ptr [0x4cd36c], 5",
+      "00461dfb  eb7c  jmp 0x461e79",
+      "00461dfd  c70560d34c0000000000  mov dword ptr [0x4cd360], 0",
+      "00461e07  c70564d34c0001000000  mov dword ptr [0x4cd364], 1",
+      "00461e11  c70568d34c0004000000  mov dword ptr [0x4cd368], 4",
+      "00461e1b  c7056cd34c0007000000  mov dword ptr [0x4cd36c], 7",
+      "00461e25  eb52  jmp 0x461e79",
+      "00461e27  c70560d34c0000000000  mov dword ptr [0x4cd360], 0",
+      "00461e31  c70564d34c0001000000  mov dword ptr [0x4cd364], 1",
+      "00461e3b  c70568d34c0002000000  mov dword ptr [0x4cd368], 2",
+      "00461e45  c7056cd34c0004000000  mov dword ptr [0x4cd36c], 4",
+      "00461e4f  eb28  jmp 0x461e79",
+      "00461e51  c70560d34c0000000000  mov dword ptr [0x4cd360], 0",
+      "00461e5b  c70564d34c0001000000  mov dword ptr [0x4cd364], 1",
+      "00461e65  c70568d34c0002000000  mov dword ptr [0x4cd368], 2",
+      "00461e6f  c7056cd34c0003000000  mov dword ptr [0x4cd36c], 3",
+      "00461e79  c7050cd14c0000000000  mov dword ptr [0x4cd10c], 0",
+      "00461e83  eb0f  jmp 0x461e94",
+      "00461e85  8b150cd14c00  mov edx, dword ptr [0x4cd10c]",
+      "00461e8b  83c201  add edx, 1",
+      "00461e8e  89150cd14c00  mov dword ptr [0x4cd10c], edx",
+      "00461e94  833d0cd14c0004  cmp dword ptr [0x4cd10c], 4",
+      "00461e9b  731b  jae 0x461eb8"
+    ],
+    [
+      "0048bb06  85d2  test edx, edx",
+      "0048bb08  7418  je 0x48bb22",
+      "0048bb0a  a134da4c00  mov eax, dword ptr [0x4cda34]",
+      "0048bb0f  0c01  or al, 1",
+      "0048bb11  a334da4c00  mov dword ptr [0x4cda34], eax",
+      "0048bb16  c705fc854c0001000000  mov dword ptr [0x4c85fc], 1",
+      "0048bb20  eb19  jmp 0x48bb3b",
+      "0048bb22  8b0d34da4c00  mov ecx, dword ptr [0x4cda34]",
+      "0048bb28  83e1fe  and ecx, 0xfffffffe",
+      "0048bb2b  890d34da4c00  mov dword ptr [0x4cda34], ecx",
+      "0048bb31  c705fc854c0000000000  mov dword ptr [0x4c85fc], 0"
+    ],
+    [
+      "004773a6  c70534da4c0001000000  mov dword ptr [0x4cda34], 1"
+    ],
+    [
+      "0043c953  a134da4c00  mov eax, dword ptr [0x4cda34]",
+      "0043c958  83e001  and eax, 1",
+      "0043c95b  85c0  test eax, eax",
+      "0043c95d  740c  je 0x43c96b",
+      "0043c95f  c70530c44c0000000000  mov dword ptr [0x4cc430], 0",
+      "0043c969  eb2b  jmp 0x43c996",
+      "0043c96b  c70530c44c0003000000  mov dword ptr [0x4cc430], 3",
+      "0043c975  c70534c44c0000000000  mov dword ptr [0x4cc434], 0",
+      "0043c97f  8b0d10c44c00  mov ecx, dword ptr [0x4cc410]",
+      "0043c985  51  push ecx",
+      "0043c986  e875670400  call 0x483100",
+      "0043c98b  83c404  add esp, 4",
+      "0043c98e  83c001  add eax, 1",
+      "0043c991  a318c44c00  mov dword ptr [0x4cc418], eax"
+    ]
+  ]
+}

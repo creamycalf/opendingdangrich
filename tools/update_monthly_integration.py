@@ -1,0 +1,18 @@
+from pathlib import Path
+root=Path(__file__).resolve().parents[1]
+p=root/'app/src/engine.mjs';s=p.read_text('utf8')
+s=s.replace('cash,bank:cash,eliminated:false','cash,bank:cash,interest:0,walkPoints:0,monthlyClaimed:false,eliminated:false')
+s=s.replace('landPrice(map.cells[q.lot])','landPrice(map.cells[q.lot],g)')
+s=s.replace('g.slowDays??=0;}','g.slowDays??=0;g.inflation??=1;g.interestRate??=INITIAL_INTEREST;for(const p of g.players??[]){p.interest??=0;p.walkPoints??=0;p.monthlyClaimed??=false;}}')
+s=s.replace("'town-flow-19','town-flow-20'].includes", "'town-flow-19','town-flow-20','town-flow-21'].includes")
+s=s.replace("if(!integer(g.slowDays,0,5)","if(!money(g.inflation,1)||!money(g.interestRate)||!integer(g.slowDays,0,5)")
+s=s.replace("!money(p.bank)||", "!money(p.bank)||!money(p.interest)||!money(p.walkPoints)||typeof p.monthlyClaimed!=='boolean'||")
+s=s.replace("'hermit','debt','minigame'].includes", "'hermit','debt','minigame','monthly'].includes")
+s=s.replace("if(q.kind==='minigame'&&!validMiniGame", "if(q.kind==='monthly'&&(!['ready','end'].includes(q.resume)||!integer(q.converter,-1,3)||(q.converter<0?q.resume!=='ready':q.resume!=='end')||!Array.isArray(q.rows)||q.rows.length!==4||q.rows.some((r,i)=>!r||r.who!==i||typeof r.eligible!=='boolean'||!['property','walking','interest','total'].every(k=>money(r[k]))||!['groups','counts'].every(k=>Array.isArray(r[k])&&r[k].length===5&&r[k].every(v=>money(v))))))bad();\n    if(q.kind==='minigame'&&!validMiniGame")
+p.write_text(s,'utf8')
+p=root/'app/src/main.ts';s=p.read_text('utf8').replace('landPrice(c)','landPrice(c,g)').replace('landPrice(map.cells[q.lot])','landPrice(map.cells[q.lot],g)')
+s=s.replace("if(p.control==='human'){renderPrompt();return;}","if(p.control==='human'||g.pending.kind==='monthly'&&g.players.some((q:any)=>q.control==='human')){renderPrompt();return;}")
+s=s.replace("const effect=id==='original-16'", "const effect=id==='original-5'&&p.monthlyClaimed?{allowed:false,replaced:[],reason:'这个月已经使用过日期转换仪'}:id==='original-16'")
+s=s.replace('二十二种道具','二十三种道具')
+p.write_text(s,'utf8')
+p=root/'app/package.json';s=p.read_text('utf8').replace('../tests/economic-items.test.mjs','../tests/economic-items.test.mjs ../tests/monthly.test.mjs');p.write_text(s,'utf8')

@@ -1,0 +1,262 @@
+{
+  "sha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "boundary": "Runs unmodified conversion, race podium and common result arithmetic on synthetic player scores. No graphics or OS.",
+  "blocks": [
+    [
+      "0x41dfa3",
+      "0x41dfca"
+    ],
+    [
+      "0x42051a",
+      "0x420541"
+    ],
+    [
+      "0x4230eb",
+      "0x42314d"
+    ],
+    [
+      "0x424664",
+      "0x42468b"
+    ],
+    [
+      "0x426703",
+      "0x426765"
+    ],
+    [
+      "0x428722",
+      "0x428749"
+    ],
+    [
+      "0x42a3c2",
+      "0x42a3e9"
+    ],
+    [
+      "0x42beb8",
+      "0x42bf06"
+    ]
+  ],
+  "rows": [
+    {
+      "session": {
+        "id": 0,
+        "players": [
+          {
+            "score": 0
+          },
+          {
+            "score": 2
+          },
+          {
+            "score": 5
+          },
+          {
+            "score": 9
+          }
+        ]
+      },
+      "points": [
+        0,
+        660,
+        1650,
+        2970
+      ]
+    },
+    {
+      "session": {
+        "id": 1,
+        "players": [
+          {
+            "score": 0
+          },
+          {
+            "score": 2
+          },
+          {
+            "score": 5
+          },
+          {
+            "score": 9
+          }
+        ]
+      },
+      "points": [
+        0,
+        600,
+        1500,
+        2700
+      ]
+    },
+    {
+      "session": {
+        "id": 2,
+        "players": [
+          {
+            "score": 0,
+            "bonus": 0
+          },
+          {
+            "score": 2,
+            "bonus": 19
+          },
+          {
+            "score": 5,
+            "bonus": 200
+          },
+          {
+            "score": 9,
+            "bonus": 723
+          }
+        ],
+        "finishOrder": [
+          2,
+          1,
+          3
+        ]
+      },
+      "points": [
+        0,
+        3195,
+        5250,
+        3390
+      ]
+    },
+    {
+      "session": {
+        "id": 3,
+        "players": [
+          {
+            "score": 0
+          },
+          {
+            "score": 2
+          },
+          {
+            "score": 5
+          },
+          {
+            "score": 9
+          }
+        ]
+      },
+      "points": [
+        0,
+        210,
+        525,
+        945
+      ]
+    },
+    {
+      "session": {
+        "id": 4,
+        "players": [
+          {
+            "score": 0,
+            "bonus": 0
+          },
+          {
+            "score": 2,
+            "bonus": 19
+          },
+          {
+            "score": 5,
+            "bonus": 200
+          },
+          {
+            "score": 9,
+            "bonus": 723
+          }
+        ],
+        "finishOrder": [
+          2,
+          1,
+          3
+        ]
+      },
+      "points": [
+        0,
+        3195,
+        5250,
+        3390
+      ]
+    },
+    {
+      "session": {
+        "id": 5,
+        "players": [
+          {
+            "score": 0
+          },
+          {
+            "score": 2
+          },
+          {
+            "score": 5
+          },
+          {
+            "score": 9
+          }
+        ]
+      },
+      "points": [
+        0,
+        750,
+        1875,
+        3375
+      ]
+    },
+    {
+      "session": {
+        "id": 6,
+        "players": [
+          {
+            "score": 0
+          },
+          {
+            "score": 2
+          },
+          {
+            "score": 5
+          },
+          {
+            "score": 9
+          }
+        ]
+      },
+      "points": [
+        0,
+        750,
+        1875,
+        3375
+      ]
+    },
+    {
+      "session": {
+        "id": 7,
+        "players": [
+          {
+            "score": 0,
+            "collected": 0
+          },
+          {
+            "score": 2,
+            "collected": 1
+          },
+          {
+            "score": 5,
+            "collected": 3
+          },
+          {
+            "score": 9,
+            "collected": 8
+          }
+        ]
+      },
+      "points": [
+        0,
+        600,
+        1650,
+        3750
+      ]
+    }
+  ]
+}

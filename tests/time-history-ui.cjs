@@ -1,0 +1,13 @@
+const {chromium}=require('../app/node_modules/playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
+(async()=>{const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});try{
+ const E=await import('../app/src/engine.mjs'),H=await import('../app/src/time-history.mjs'),F=await import('../app/src/hermit.mjs'),C=await import('../app/src/commands.mjs');
+ const map=JSON.parse(fs.readFileSync('app/public/assets/maps/4.json')),g=E.createGame(map,{startDate:'2000-04-03',players:E.CHARACTERS.slice(0,4).map(c=>({character:c.id,control:'human'}))});
+ for(let day=2;day<=6;day++){g.round=day;H.checkpoint(g);}const past=structuredClone(H.oldestCheckpoint(g));g.players[0].cash=7000;g.phase='prompt';g.pending={kind:'hermit'};
+ let found=false;for(let seed=0;seed<10000;seed++){const copy=structuredClone(g);copy.seed=seed;if(F.drawHermitEvent(map,copy,n=>E.random(copy,n)).id===33){g.seed=seed;found=true;break;}}assert.ok(found);
+ const p=await b.newPage({viewport:{width:320,height:592},isMobile:true,hasTouch:true}),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.addInitScript(g=>{if(!localStorage.getItem('seeded')){localStorage.setItem('dingdang.touch.v2',JSON.stringify(g));localStorage.setItem('seeded','1');}},g);
+ await p.goto('http://127.0.0.1:5178');await p.waitForFunction(()=>!!window.__game);await p.locator('#continueGame').tap();await p.getByRole('button',{name:'中间的宝箱',exact:true}).tap();await p.waitForFunction(()=>window.__game.snapshot().game.pending?.resume==='ready');
+ const rewind=await p.evaluate(()=>window.__game.snapshot().game);assert.equal(rewind.round,1);assert.deepEqual(rewind.players,past.players);assert.deepEqual(C.replayCommands(map,await p.evaluate(()=>window.__game.replay())),rewind);await p.screenshot({path:'test-results/time-history-ui.png'});
+ await p.getByRole('button',{name:'保存并返回主菜单',exact:true}).tap();await p.reload();await p.waitForFunction(()=>!!window.__game);await p.locator('#continueGame').tap();assert.deepEqual(await p.evaluate(()=>window.__game.snapshot().game),rewind);
+ await p.getByRole('button',{name:'继续',exact:true}).tap();await p.waitForFunction(()=>window.__game.snapshot().game.phase==='ready'&&!window.__game.snapshot().busy);assert.equal(await p.locator('#roll').isEnabled(),true);assert.deepEqual(errors,[]);
+ fs.writeFileSync('test-results/time-history-ui-report.json',JSON.stringify({status:'passed',checks:['natural hermit chest touch rewinds whole game','replay and restored state match','rewind notice survives reload','confirmation returns to touchable roll'],errors},null,2));console.log('Time history touch/reload passed');
+}finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

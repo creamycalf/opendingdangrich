@@ -1,0 +1,15 @@
+.originalEnding{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:240px;background:#000;color:#fff;overflow:hidden}
+.originalEnding canvas{display:block;width:100%;max-height:calc(100dvh - 110px);object-fit:contain;aspect-ratio:4/3;image-rendering:pixelated}
+.originalEnding button{min-height:44px;margin:8px 12px;padding:8px 24px;background:#ffe09b;color:#3a2b10;border:2px solid #76581c;border-radius:6px;font-size:16px}
+.originalEnding button:disabled{visibility:hidden}
+/* Production dialogs share one footer; the original 4:3 scene fits above it. */
+#modal:has(.originalEnding){box-sizing:content-box;width:min(640px,calc(100vw - 28px),calc((100dvh - 82px)*4/3));max-width:none;max-height:calc(100dvh - 18px);padding:4px;overflow:hidden;margin:auto}
+#modalContent:has(>.originalEnding){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;align-items:stretch}
+#modalContent:has(>.originalEnding)>h2{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#modalContent:has(>.originalEnding)>p{display:none}
+#modalContent>.originalEnding{display:contents}
+#modalContent>.originalEnding canvas{grid-column:1/-1;grid-row:1;width:100%;height:auto;max-height:none;aspect-ratio:4/3;background:#000}
+#modalContent:has(>.originalEnding)>button,#modalContent>.originalEnding button{grid-row:2;box-sizing:border-box;width:100%;min-width:0;min-height:44px;height:44px;margin:0;padding:3px 5px;font-size:14px;line-height:18px;border-radius:2px}
+#modalContent:has(>.originalEnding)>button{grid-column:1}
+#modalContent>.originalEnding button{grid-column:2}
+#modalContent:has(>.originalEnding)>button .actionIcon{display:none}

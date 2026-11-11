@@ -1,0 +1,10240 @@
+{
+  "sourceSha256": "f190b35370d3efe3024b5105a90f85abf07f5915e7b7a431d93b756de03f65f3",
+  "scope": "Execute original hermit constructors, masks and counters in isolated x86.\nOnly resource text, sprite allocation, item-name presentation and random draws\nare substituted. No application, OS imports or gameplay UI is executed.\n",
+  "constructors": [
+    {
+      "id": 0,
+      "draw": 0,
+      "draws": [
+        42
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "item": 0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "draw": 500,
+      "draws": [
+        42
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "item": 38,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "draw": 501,
+      "draws": [
+        42
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "item": 39,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "draw": 666,
+      "draws": [
+        42
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "item": 36,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "draw": 667,
+      "draws": [
+        42
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "item": 37,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "draw": 999,
+      "draws": [
+        42
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "item": 33,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 8388608,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 8388608
+        },
+        {
+          "base": 4095,
+          "value": 8392703
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 8389664
+        },
+        {
+          "base": 98304,
+          "value": 8486912
+        },
+        {
+          "base": 147456,
+          "value": 8536064
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 8388608,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 8388608
+        },
+        {
+          "base": 4095,
+          "value": 8392703
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 8389664
+        },
+        {
+          "base": 98304,
+          "value": 8486912
+        },
+        {
+          "base": 147456,
+          "value": 8536064
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 8388608,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 8388608
+        },
+        {
+          "base": 4095,
+          "value": 8392703
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 8389664
+        },
+        {
+          "base": 98304,
+          "value": 8486912
+        },
+        {
+          "base": 147456,
+          "value": 8536064
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 8388608,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 8388608
+        },
+        {
+          "base": 4095,
+          "value": 8392703
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 8389664
+        },
+        {
+          "base": 98304,
+          "value": 8486912
+        },
+        {
+          "base": 147456,
+          "value": 8536064
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 8388608,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 8388608
+        },
+        {
+          "base": 4095,
+          "value": 8392703
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 8389664
+        },
+        {
+          "base": 98304,
+          "value": 8486912
+        },
+        {
+          "base": 147456,
+          "value": 8536064
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 8388608,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 8388608
+        },
+        {
+          "base": 4095,
+          "value": 8392703
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 8389664
+        },
+        {
+          "base": 98304,
+          "value": 8486912
+        },
+        {
+          "base": 147456,
+          "value": 8536064
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 16384,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 16384
+        },
+        {
+          "base": 4095,
+          "value": 20479
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 17440
+        },
+        {
+          "base": 98304,
+          "value": 114688
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 16384,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 16384
+        },
+        {
+          "base": 4095,
+          "value": 20479
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 17440
+        },
+        {
+          "base": 98304,
+          "value": 114688
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 16384,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 16384
+        },
+        {
+          "base": 4095,
+          "value": 20479
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 17440
+        },
+        {
+          "base": 98304,
+          "value": 114688
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 16384,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 16384
+        },
+        {
+          "base": 4095,
+          "value": 20479
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 17440
+        },
+        {
+          "base": 98304,
+          "value": 114688
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 16384,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 16384
+        },
+        {
+          "base": 4095,
+          "value": 20479
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 17440
+        },
+        {
+          "base": 98304,
+          "value": 114688
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 16384,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 16384
+        },
+        {
+          "base": 4095,
+          "value": 20479
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 17440
+        },
+        {
+          "base": 98304,
+          "value": 114688
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 147456,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 147456
+        },
+        {
+          "base": 4095,
+          "value": 151551
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 148512
+        },
+        {
+          "base": 98304,
+          "value": 245760
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 147456,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 147456
+        },
+        {
+          "base": 4095,
+          "value": 151551
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 148512
+        },
+        {
+          "base": 98304,
+          "value": 245760
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 147456,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 147456
+        },
+        {
+          "base": 4095,
+          "value": 151551
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 148512
+        },
+        {
+          "base": 98304,
+          "value": 245760
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 147456,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 147456
+        },
+        {
+          "base": 4095,
+          "value": 151551
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 148512
+        },
+        {
+          "base": 98304,
+          "value": 245760
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 147456,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 147456
+        },
+        {
+          "base": 4095,
+          "value": 151551
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 148512
+        },
+        {
+          "base": 98304,
+          "value": 245760
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4095,
+      "value": 147456,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 147456
+        },
+        {
+          "base": 4095,
+          "value": 151551
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 148512
+        },
+        {
+          "base": 98304,
+          "value": 245760
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294967263,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4063
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967263
+        },
+        {
+          "base": 1056,
+          "value": 1024
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294967263,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4063
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967263
+        },
+        {
+          "base": 1056,
+          "value": 1024
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294967263,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4063
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967263
+        },
+        {
+          "base": 1056,
+          "value": 1024
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294967263,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4063
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967263
+        },
+        {
+          "base": 1056,
+          "value": 1024
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294967263,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4063
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967263
+        },
+        {
+          "base": 1056,
+          "value": 1024
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294967263,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4063
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967263
+        },
+        {
+          "base": 1056,
+          "value": 1024
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294966271,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3071
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966271
+        },
+        {
+          "base": 1056,
+          "value": 32
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294966271,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3071
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966271
+        },
+        {
+          "base": 1056,
+          "value": 32
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294966271,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3071
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966271
+        },
+        {
+          "base": 1056,
+          "value": 32
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294966271,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3071
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966271
+        },
+        {
+          "base": 1056,
+          "value": 32
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294966271,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3071
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966271
+        },
+        {
+          "base": 1056,
+          "value": 32
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": true,
+      "mask": 4294966271,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3071
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966271
+        },
+        {
+          "base": 1056,
+          "value": 32
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "draw": 0,
+      "draws": [
+        10
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "rate": 0.009999999776482582,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "draw": 500,
+      "draws": [
+        10
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "rate": 0.009999999776482582,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "draw": 501,
+      "draws": [
+        10
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "rate": 0.019999999552965164,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "draw": 666,
+      "draws": [
+        10
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "rate": 0.07000000029802322,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "draw": 667,
+      "draws": [
+        10
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "rate": 0.07999999821186066,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "draw": 999,
+      "draws": [
+        10
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "rate": 0.10000000149011612,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": true,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967294,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4094
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967294
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967294,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4094
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967294
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967294,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4094
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967294
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967294,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4094
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967294
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967294,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4094
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967294
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967294,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4094
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967294
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967293,
+      "value": 0,
+      "all": false,
+      "compensation": 700.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4093
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967293
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967293,
+      "value": 0,
+      "all": false,
+      "compensation": 700.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4093
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967293
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967293,
+      "value": 0,
+      "all": false,
+      "compensation": 700.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4093
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967293
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967293,
+      "value": 0,
+      "all": false,
+      "compensation": 700.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4093
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967293
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967293,
+      "value": 0,
+      "all": false,
+      "compensation": 700.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4093
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967293
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967293,
+      "value": 0,
+      "all": false,
+      "compensation": 700.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4093
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967293
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967291,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4091
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967291
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967291,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4091
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967291
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967291,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4091
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967291
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967291,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4091
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967291
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967291,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4091
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967291
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967291,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4091
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967291
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967287,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4087
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967287
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967287,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4087
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967287
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967287,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4087
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967287
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967287,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4087
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967287
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967287,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4087
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967287
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967287,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4087
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967287
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967279,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4079
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967279
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967279,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4079
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967279
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967279,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4079
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967279
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967279,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4079
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967279
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967279,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4079
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967279
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967279,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4079
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967279
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967231,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4031
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967231
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967231,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4031
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967231
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967231,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4031
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967231
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967231,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4031
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967231
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967231,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4031
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967231
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967231,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4031
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967231
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "draw": 0,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967039,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3839
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967039
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "draw": 500,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967039,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3839
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967039
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "draw": 501,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967039,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3839
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967039
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "draw": 666,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967039,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3839
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967039
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "draw": 667,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967039,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3839
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967039
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "draw": 999,
+      "draws": [],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294967039,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3839
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967039
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "draw": 0,
+      "draws": [],
+      "duration": 4,
+      "remaining": 4,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "draw": 500,
+      "draws": [],
+      "duration": 4,
+      "remaining": 4,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "draw": 501,
+      "draws": [],
+      "duration": 4,
+      "remaining": 4,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "draw": 666,
+      "draws": [],
+      "duration": 4,
+      "remaining": 4,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "draw": 667,
+      "draws": [],
+      "duration": 4,
+      "remaining": 4,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "draw": 999,
+      "draws": [],
+      "duration": 4,
+      "remaining": 4,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294966974,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3774
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966974
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294966974,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3774
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966974
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294966974,
+      "value": 0,
+      "all": true,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3774
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966974
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294966974,
+      "value": 0,
+      "all": true,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3774
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966974
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294966974,
+      "value": 0,
+      "all": true,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3774
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966974
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4294966974,
+      "value": 0,
+      "all": true,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 3774
+        },
+        {
+          "base": 4294967295,
+          "value": 4294966974
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 98304,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 98304
+        },
+        {
+          "base": 4095,
+          "value": 102399
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 99360
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 245760
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 98304,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 98304
+        },
+        {
+          "base": 4095,
+          "value": 102399
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 99360
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 245760
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 98304,
+      "all": true,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 98304
+        },
+        {
+          "base": 4095,
+          "value": 102399
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 99360
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 245760
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 98304,
+      "all": true,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 98304
+        },
+        {
+          "base": 4095,
+          "value": 102399
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 99360
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 245760
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 98304,
+      "all": true,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 98304
+        },
+        {
+          "base": 4095,
+          "value": 102399
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 99360
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 245760
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 98304,
+      "all": true,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 98304
+        },
+        {
+          "base": 4095,
+          "value": 102399
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 99360
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 245760
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 32768,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 32768
+        },
+        {
+          "base": 4095,
+          "value": 36863
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 33824
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 180224
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 32768,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 32768
+        },
+        {
+          "base": 4095,
+          "value": 36863
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 33824
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 180224
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 32768,
+      "all": true,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 32768
+        },
+        {
+          "base": 4095,
+          "value": 36863
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 33824
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 180224
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 32768,
+      "all": true,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 32768
+        },
+        {
+          "base": 4095,
+          "value": 36863
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 33824
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 180224
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 32768,
+      "all": true,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 32768
+        },
+        {
+          "base": 4095,
+          "value": 36863
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 33824
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 180224
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 5,
+      "remaining": 5,
+      "good": false,
+      "mask": 4095,
+      "value": 32768,
+      "all": true,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 32768
+        },
+        {
+          "base": 4095,
+          "value": 36863
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 33824
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 180224
+        }
+      ],
+      "ticks": [
+        {
+          "alive": true,
+          "remaining": 4
+        },
+        {
+          "alive": true,
+          "remaining": 3
+        },
+        {
+          "alive": true,
+          "remaining": 2
+        },
+        {
+          "alive": true,
+          "remaining": 1
+        },
+        {
+          "alive": false,
+          "remaining": 0
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 800.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 2000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "draw": 0,
+      "draws": [
+        20
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 200.0,
+      "rate": 0.24000000953674316,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "draw": 500,
+      "draws": [
+        20
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 200.0,
+      "rate": 0.24000000953674316,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "draw": 501,
+      "draws": [
+        20
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 200.0,
+      "rate": 0.25200000405311584,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "draw": 666,
+      "draws": [
+        20
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 200.0,
+      "rate": 0.31200000643730164,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "draw": 667,
+      "draws": [
+        20
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 200.0,
+      "rate": 0.3240000009536743,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "draw": 999,
+      "draws": [
+        20
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 200.0,
+      "rate": 0.46800002455711365,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "draw": 0,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "draw": 500,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "draw": 501,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "draw": 666,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "draw": 667,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "draw": 999,
+      "draws": [
+        1000
+      ],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": true,
+      "compensation": 500.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 100.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 100.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 100.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 100.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 100.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 100.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 0.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "draw": 0,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "draw": 500,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "draw": 501,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "draw": 666,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "draw": 667,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "draw": 999,
+      "draws": [],
+      "duration": 0,
+      "remaining": 0,
+      "good": false,
+      "mask": 4095,
+      "value": 0,
+      "all": false,
+      "compensation": 1000.0,
+      "capabilities": [
+        {
+          "base": 0,
+          "value": 0
+        },
+        {
+          "base": 4095,
+          "value": 4095
+        },
+        {
+          "base": 4294967295,
+          "value": 4294967295
+        },
+        {
+          "base": 1056,
+          "value": 1056
+        },
+        {
+          "base": 98304,
+          "value": 98304
+        },
+        {
+          "base": 147456,
+          "value": 147456
+        }
+      ]
+    }
+  ],
+  "cashConstants": {
+    "0x4b65dc": 1000.0,
+    "0x4b6944": -500.0
+  }
+}

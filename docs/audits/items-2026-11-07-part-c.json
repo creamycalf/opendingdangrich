@@ -1,0 +1,400 @@
+{
+  "date": "2026-11-07",
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "scope": "IDs28-41 independent app; no VM changes",
+  "rows": [
+    {
+      "id": 28,
+      "name": "護身符",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967295,
+        "0x78": 131072
+      },
+      "effectAndTiming": "5 owner-turn duration, value 0x20000; charm survives event use",
+      "target": "self",
+      "interaction": "hermit good/bad selection uses capability; no one-shot consumption",
+      "implementation": "app/src/hermit.mjs",
+      "tests": "hermit/protection",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 29,
+      "name": "盲點星星",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 8,
+        "0x70": 8,
+        "0x74": 4294967259,
+        "0x78": 0
+      },
+      "effectAndTiming": "8 turns; mask ffffffdb clears rent payment and collection bits",
+      "target": "self",
+      "interaction": "both own income and own outgoing rent suppressed",
+      "implementation": "app/src/effects.mjs",
+      "tests": "effects/protection",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 30,
+      "name": "交換布",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826128,
+        "0x6c": 0,
+        "0x70": 0,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "instant; swaps position and direction at native animation marker 0x6f",
+      "target": "other eligible player",
+      "interaction": "native49d7be calls both conflict cleanup, position/direction setters; retains wealth/inventory",
+      "implementation": "app/src/engine.mjs",
+      "tests": "protection",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 31,
+      "name": "失物回歸機器",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967295,
+        "0x78": 524288
+      },
+      "effectAndTiming": "5 turns; value 0x80000; native49dbf1 attaches to user",
+      "target": "self",
+      "interaction": "fine protection applies via common capability, not blanket immunity to every cash loss",
+      "implementation": "app/src/effects.mjs",
+      "tests": "protection",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 32,
+      "name": "一分為二刀",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4095,
+        "0x78": 0
+      },
+      "effectAndTiming": "5 turns; one follower, native49e1db",
+      "target": "self; requires valid follower road",
+      "interaction": "places one follower behind actor and registers linked actor; clone interactions use same owner",
+      "implementation": "app/src/clones.mjs",
+      "tests": "clones-magnet",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 33,
+      "name": "處境掉換槍",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826128,
+        "0x6c": 0,
+        "0x70": 0,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "instant; native49ee9e position/direction,49f67f four financial fields,42 inventory counts,property lists",
+      "target": "other eligible player",
+      "interaction": "native43a6fc/43a73b swaps +28,+2c,+120,+30; special property actor owner updates in49f67f",
+      "implementation": "app/src/engine.mjs",
+      "tests": "swap",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 34,
+      "name": "倒霉咪錶",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 8,
+        "0x70": 8,
+        "0x74": 4294967295,
+        "0x78": 1048576
+      },
+      "effectAndTiming": "8 turns; value0x100000; native49fec3 attaches self",
+      "target": "self",
+      "interaction": "hermit bad-event compensation; specific compensation table remains existing evidence",
+      "implementation": "app/src/hermit.mjs",
+      "tests": "hermit",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 35,
+      "name": "怨恨頭帶",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826160,
+        "0x6c": 8,
+        "0x70": 8,
+        "0x74": 4294967295,
+        "0x78": 98304
+      },
+      "effectAndTiming": "8 turns;value0x18000; new4a0296 rejects already-small targets before common attack gate",
+      "target": "other eligible non-small player",
+      "interaction": "headband affects navigation/encounters; common conflicts newly corrected by root",
+      "implementation": "app/src/effects.mjs",
+      "tests": "target-items",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 36,
+      "name": "空氣槍",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 3,
+        "0x70": 3,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "3 turns; native4a0b43..4a0b99 exact2000 probability samples",
+      "target": "other eligible player",
+      "interaction": "Nobita100%, otherwise draw700..999 hit; failed shot consumed; reflected actual target gets correct timer",
+      "implementation": "app/src/effects.mjs",
+      "tests": "target-items/effects",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "2000 native samples exact",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 37,
+      "name": "隨意門",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826128,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "5 turns; placement handler4a1c57 inserts road object with selected direction",
+      "target": "free ordinary road satisfying original axes and exclusion checks",
+      "interaction": "existing pc-v126-road-direction fixture covers crossings; random destination PRNG not byte-identical PC generator",
+      "implementation": "app/src/road-items.mjs",
+      "tests": "road-items/pc-navigation",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 38,
+      "name": "竹青蜒",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 3847,
+        "0x78": 2097152
+      },
+      "effectAndTiming": "5 turns;maskf07 value200000;4a314f attaches self",
+      "target": "self; new-PC blocks active mechanical dwarf",
+      "interaction": "flying ignores road interactions/encounters and walking reward, masks buy/upgrade/shop/etc",
+      "implementation": "app/src/effects.mjs",
+      "tests": "effects/movement-flow",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 39,
+      "name": "縮小電筒",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 5,
+        "0x70": 5,
+        "0x74": 4294966974,
+        "0x78": 0
+      },
+      "effectAndTiming": "5 turns;maskfffffebe;4a37dd common attack plus non-small gate;4a3ac7 clears small on expiry",
+      "target": "other eligible non-small player",
+      "interaction": "half-step movement and expiry state; attachment on target4a39ba",
+      "implementation": "app/src/effects.mjs",
+      "tests": "target-items/movement-flow",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 40,
+      "name": "無敵砲台",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 10,
+        "0x70": 10,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "permanent: constructor10, native tick does not decrement >=10;4a3d3c writes level1 kind3",
+      "target": "own empty property only, native4a3c6d",
+      "interaction": "cannon is persistent property; restoration downgrades level1 to0, preserves owner",
+      "implementation": "app/src/special-buildings.mjs",
+      "tests": "special-buildings",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    },
+    {
+      "id": 41,
+      "name": "自制導彈",
+      "status": "audited-native-slices-and-product-regression",
+      "nativeConstructor": {
+        "0x68": 17826096,
+        "0x6c": 10,
+        "0x70": 10,
+        "0x74": 4294967295,
+        "0x78": 0
+      },
+      "effectAndTiming": "permanent: constructor10;4a4d6a writes level1 kind2",
+      "target": "own empty property only, native4a4c9b",
+      "interaction": "missile ownership swaps with property list; target/one-camera interactions retained",
+      "implementation": "app/src/special-buildings.mjs",
+      "tests": "special-buildings",
+      "persistence": "product JSON restore preserves effect source/counter and owner/property/road state; covered by regression; native save binary not compared",
+      "probability": "deterministic application after selection; random downstream events are separate",
+      "newPcEvidence": [
+        "items-2026-11-07-part-c-native.json",
+        "items-2026-11-07-part-c-rea*.json",
+        "../../tests/fixtures/v126-item-common.json"
+      ],
+      "fullPcEquivalence": false,
+      "remainingScope": "Full PC UI/save-load sequence and every downstream event combination not executed in this audit."
+    }
+  ],
+  "actualNativeExecution": {
+    "constructors": 14,
+    "airProbabilitySamples": 2000,
+    "counterBoundaries": 9,
+    "note": "Unicorn uses new-PC image. Constructor allocation/free/debug and probability RNG/character flag accessor substituted. Renderer and OS not emulated."
+  },
+  "staticEvidence": "REA Ghidra12.1.4 exact new-PC routines; original pseudocode retained in accompanying JSON files. Prefix relocation/first-ret matches only mapping aids, not full equivalence.",
+  "confirmedDifferences": [
+    {
+      "items": [
+        30,
+        33,
+        38
+      ],
+      "detail": "New-PC conflict table differs: swap cloth clears army8; situation gun clears headband35; dwarf14/flight38 block",
+      "owner": "root",
+      "fixture": "tests/fixtures/v126-item-common.json"
+    }
+  ],
+  "productChangesByThisAgent": [],
+  "newTests": [
+    "tests/v126-items-part-c.test.mjs"
+  ],
+  "regressionLog": "test-results/items-part-c-tests.txt",
+  "limitations": [
+    "No claim of all42-item complete equivalence.",
+    "Root owns shared conflict table correction; no duplicate engine changes made.",
+    "Existing older fixtures not relabelled as new-PC runtime."
+  ]
+}

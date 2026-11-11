@@ -1,0 +1,65 @@
+{
+  "revision": "rc24",
+  "scope": "Original hermit image loading concurrency only; no sprite, animation, reward, save schema or game rules changed",
+  "change": "Final solution: one catalog plus manifest and original-PNG binary bundle; bounded16 Blob image decodes retain onload→decode. File-per-image8/16 benchmark remains intermediate investigation only.",
+  "desktopEvidence": {
+    "file": "test-results/rc24-hermit-loader-benchmark/result.json",
+    "method": "Six alternating8/16 fresh Chrome contexts using actual bundled loader, original436PNG and local HTTP Cache-Control:no-store; src-to-load/decode instrumented separately; full436 canvas RGBA hashes identical across all runs",
+    "medianMs": {
+      "8": 257.19999998807907,
+      "16": 207.19999998807907
+    },
+    "limits": "Desktop HTTP is not Android Capacitor interception; cannot claim the same speedup on phone. Individual16-worker run overlaps baseline noise."
+  },
+  "baseline": {
+    "apkSha256": "f34190973842a62caee4e6e3ce6f0a08e7bd1f19a57cbe03dbdef66c9ffaaca7",
+    "samples": [
+      "test-results/rc23-hermit-production-android/result.json",
+      "test-results/rc23-hermit-production-android-seed1/result.json"
+    ],
+    "firstLoadMs": [
+      12754,
+      13946
+    ],
+    "firstDialogueMs": [
+      15831,
+      17085
+    ],
+    "reloadLoadMs": [
+      12479,
+      12433
+    ],
+    "preserved": true,
+    "resourceSample": {
+      "file": "test-results/rc23-hermit-production-android/failure-1794292538239.json",
+      "pngCount": 436,
+      "medianResponseDurationMs": 100.4,
+      "p95ResponseDurationMs": 195.4,
+      "sumResponseDurationMs": 46302.4,
+      "firstToLastResponseEndMs": 12348.8,
+      "interpretation": "Original WebView asset requests have substantial per-image overhead. Resource Timing cannot separate decode/frame scheduling, so optional HERMIT_PROFILE instrumentation measures both on final APK."
+    }
+  },
+  "tests": [
+    "rc22-hermit-loader:436 decode-after-load, missing URL, hidden scene cancellation passed",
+    "rc23-hermit-pause:all stages good/bad, hidden load, repeated visibility, HUD cancellation passed",
+    "tsc --noEmit passed"
+  ],
+  "native": "Await final APK after audio agent handoff; no device accessed for desktop comparison.",
+  "bundleEvidence": {
+    "file": "test-results/rc24-hermit-bundle/result.json",
+    "bytes": 406871,
+    "images": 436,
+    "normalRequests": 3,
+    "checks": [
+      "all436 original PNG bytes exactly preserved in slices",
+      "all436 canvas RGBA hashes match independent-file baseline",
+      "onload before decode",
+      "successful and failed Blob URLs all revoked",
+      "manifest unavailable fallback succeeds",
+      "corrupt PNG fails without fallback; retry after resource fix succeeds",
+      "cache shared across callers"
+    ]
+  },
+  "productionBrowser": "Earlier rc24 production result used16 file workers, pending replacement with final bundle production test"
+}

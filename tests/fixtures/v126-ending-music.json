@@ -1,0 +1,37 @@
+{
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "scope": "Execute verified new-PC music call slices, trapping audio API before playback.",
+  "rows": [
+    {
+      "scene": "humanCertificate",
+      "address": "0x46f12e",
+      "track": 4,
+      "flags": 2
+    },
+    {
+      "scene": "noHumanWinner",
+      "address": "0x473cd5",
+      "track": 6,
+      "flags": 0
+    },
+    {
+      "scene": "minigameResult",
+      "address": "0x419e30",
+      "track": 11,
+      "flags": 0
+    },
+    {
+      "scene": "title",
+      "address": "0x458f0a",
+      "track": 2,
+      "flags": 2
+    },
+    {
+      "scene": "monthlyResults",
+      "address": "0x484987",
+      "track": 10,
+      "flags": 2
+    }
+  ],
+  "limitations": "Native push/call argument slices only, not full scene execution. Stage identity supported by accompanying Ghidra evidence."
+}

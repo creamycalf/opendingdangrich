@@ -1,0 +1,7 @@
+.pcControls .pcDeviceGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}
+.pcDeviceGrid label{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.2rem .5rem;min-width:0}
+.pcDeviceGrid img{height:36px;max-width:100%;object-fit:contain;justify-self:start;image-rendering:pixelated}
+.pcDeviceGrid select{grid-column:1/-1;width:100%;min-width:0;min-height:38px;font:inherit}
+.pcControls footer{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.5rem}
+.pcControls footer button{min-height:40px}
+@media(max-height:400px){.pcDeviceGrid img{height:23px}.pcControls p{margin:3px 0}.pcDeviceGrid select{min-height:32px}}

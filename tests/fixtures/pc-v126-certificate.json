@@ -1,0 +1,306 @@
+{
+  "sha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "entry": "0x46ff0a..0x46ffd1",
+  "rows": [
+    {
+      "assets": -10000.0,
+      "days": 0,
+      "grade": "E"
+    },
+    {
+      "assets": -1.0,
+      "days": 0,
+      "grade": "E"
+    },
+    {
+      "assets": -0.5,
+      "days": 0,
+      "grade": "E"
+    },
+    {
+      "assets": 0.0,
+      "days": 0,
+      "grade": "E"
+    },
+    {
+      "assets": 299.9989929199219,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 300.0,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 399.9989929199219,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 400.0,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 499.9989929199219,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 500.0,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 599.9990234375,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 600.0,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 899.9990234375,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 900.0,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": 10000.0,
+      "days": 0,
+      "grade": "S"
+    },
+    {
+      "assets": -10000.0,
+      "days": 1,
+      "grade": "E"
+    },
+    {
+      "assets": -1.0,
+      "days": 1,
+      "grade": "E"
+    },
+    {
+      "assets": -0.5,
+      "days": 1,
+      "grade": "E"
+    },
+    {
+      "assets": 0.0,
+      "days": 1,
+      "grade": "E"
+    },
+    {
+      "assets": 299.9989929199219,
+      "days": 1,
+      "grade": "E"
+    },
+    {
+      "assets": 300.0,
+      "days": 1,
+      "grade": "D"
+    },
+    {
+      "assets": 399.9989929199219,
+      "days": 1,
+      "grade": "D"
+    },
+    {
+      "assets": 400.0,
+      "days": 1,
+      "grade": "C"
+    },
+    {
+      "assets": 499.9989929199219,
+      "days": 1,
+      "grade": "C"
+    },
+    {
+      "assets": 500.0,
+      "days": 1,
+      "grade": "B"
+    },
+    {
+      "assets": 599.9990234375,
+      "days": 1,
+      "grade": "B"
+    },
+    {
+      "assets": 600.0,
+      "days": 1,
+      "grade": "A"
+    },
+    {
+      "assets": 899.9990234375,
+      "days": 1,
+      "grade": "A"
+    },
+    {
+      "assets": 900.0,
+      "days": 1,
+      "grade": "S"
+    },
+    {
+      "assets": 10000.0,
+      "days": 1,
+      "grade": "S"
+    },
+    {
+      "assets": -20000.0,
+      "days": 2,
+      "grade": "E"
+    },
+    {
+      "assets": -2.0,
+      "days": 2,
+      "grade": "E"
+    },
+    {
+      "assets": -1.0,
+      "days": 2,
+      "grade": "E"
+    },
+    {
+      "assets": 0.0,
+      "days": 2,
+      "grade": "E"
+    },
+    {
+      "assets": 599.9979858398438,
+      "days": 2,
+      "grade": "E"
+    },
+    {
+      "assets": 600.0,
+      "days": 2,
+      "grade": "D"
+    },
+    {
+      "assets": 799.9979858398438,
+      "days": 2,
+      "grade": "D"
+    },
+    {
+      "assets": 800.0,
+      "days": 2,
+      "grade": "C"
+    },
+    {
+      "assets": 999.9979858398438,
+      "days": 2,
+      "grade": "C"
+    },
+    {
+      "assets": 1000.0,
+      "days": 2,
+      "grade": "B"
+    },
+    {
+      "assets": 1199.998046875,
+      "days": 2,
+      "grade": "B"
+    },
+    {
+      "assets": 1200.0,
+      "days": 2,
+      "grade": "A"
+    },
+    {
+      "assets": 1799.998046875,
+      "days": 2,
+      "grade": "A"
+    },
+    {
+      "assets": 1800.0,
+      "days": 2,
+      "grade": "S"
+    },
+    {
+      "assets": 20000.0,
+      "days": 2,
+      "grade": "S"
+    },
+    {
+      "assets": -3650000.0,
+      "days": 365,
+      "grade": "E"
+    },
+    {
+      "assets": -365.0,
+      "days": 365,
+      "grade": "E"
+    },
+    {
+      "assets": -182.5,
+      "days": 365,
+      "grade": "E"
+    },
+    {
+      "assets": 0.0,
+      "days": 365,
+      "grade": "E"
+    },
+    {
+      "assets": 109499.6328125,
+      "days": 365,
+      "grade": "E"
+    },
+    {
+      "assets": 109500.0,
+      "days": 365,
+      "grade": "D"
+    },
+    {
+      "assets": 145999.640625,
+      "days": 365,
+      "grade": "D"
+    },
+    {
+      "assets": 146000.0,
+      "days": 365,
+      "grade": "C"
+    },
+    {
+      "assets": 182499.640625,
+      "days": 365,
+      "grade": "C"
+    },
+    {
+      "assets": 182500.0,
+      "days": 365,
+      "grade": "B"
+    },
+    {
+      "assets": 218999.640625,
+      "days": 365,
+      "grade": "B"
+    },
+    {
+      "assets": 219000.0,
+      "days": 365,
+      "grade": "A"
+    },
+    {
+      "assets": 328499.625,
+      "days": 365,
+      "grade": "A"
+    },
+    {
+      "assets": 328500.0,
+      "days": 365,
+      "grade": "S"
+    },
+    {
+      "assets": 3650000.0,
+      "days": 365,
+      "grade": "S"
+    }
+  ]
+}

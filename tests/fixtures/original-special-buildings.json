@@ -1,0 +1,3654 @@
+{
+  "sourceSha256": "f190b35370d3efe3024b5105a90f85abf07f5915e7b7a431d93b756de03f65f3",
+  "scope": "Execute x86 construction gates and impact, missile eligibility and sale quote.\nActual factories/map/list/masks and arithmetic run unchanged. Rendering, world\nactor insertion and land-list lookup are substituted; no OS/GUI is executed.\nMissile flight and camera animation are reviewed separately, not emulated here.\n",
+  "construction": [
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 0,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 1,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 2,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 3,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 4,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 5,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 6,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 7,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 8,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 9,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 10,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 11,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 12,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 13,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 14,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": -1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 0,
+      "item": 40,
+      "allowed": true
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 0,
+      "item": 41,
+      "allowed": true
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 0,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 0,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 0,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 1,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 1,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 2,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 2,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 3,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 3,
+      "item": 41,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 4,
+      "item": 40,
+      "allowed": false
+    },
+    {
+      "mask": 15,
+      "owner": 1,
+      "level": 4,
+      "item": 41,
+      "allowed": false
+    }
+  ],
+  "mutations": [
+    {
+      "item": 40,
+      "level": 1,
+      "kind": 3,
+      "listKind": 3,
+      "listLevel": 1,
+      "actorInserted": true
+    },
+    {
+      "item": 41,
+      "level": 1,
+      "kind": 2,
+      "listKind": 2,
+      "listLevel": 1,
+      "actorInserted": true
+    }
+  ],
+  "sales": [
+    {
+      "kind": 2,
+      "level": 1,
+      "amount": 75
+    },
+    {
+      "kind": 3,
+      "level": 1,
+      "amount": 75
+    }
+  ],
+  "targets": [
+    {
+      "alive": false,
+      "protected": false,
+      "nobita": false,
+      "shizuka": false,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": false,
+      "nobita": false,
+      "shizuka": false,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": false,
+      "nobita": false,
+      "shizuka": true,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": false,
+      "nobita": false,
+      "shizuka": true,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": false,
+      "nobita": true,
+      "shizuka": false,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": false,
+      "nobita": true,
+      "shizuka": false,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": false,
+      "nobita": true,
+      "shizuka": true,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": false,
+      "nobita": true,
+      "shizuka": true,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": true,
+      "nobita": false,
+      "shizuka": false,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": true,
+      "nobita": false,
+      "shizuka": false,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": true,
+      "nobita": false,
+      "shizuka": true,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": true,
+      "nobita": false,
+      "shizuka": true,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": true,
+      "nobita": true,
+      "shizuka": false,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": true,
+      "nobita": true,
+      "shizuka": false,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": true,
+      "nobita": true,
+      "shizuka": true,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": false,
+      "protected": true,
+      "nobita": true,
+      "shizuka": true,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": false,
+      "nobita": false,
+      "shizuka": false,
+      "sleep": false,
+      "allowed": true
+    },
+    {
+      "alive": true,
+      "protected": false,
+      "nobita": false,
+      "shizuka": false,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": false,
+      "nobita": false,
+      "shizuka": true,
+      "sleep": false,
+      "allowed": true
+    },
+    {
+      "alive": true,
+      "protected": false,
+      "nobita": false,
+      "shizuka": true,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": false,
+      "nobita": true,
+      "shizuka": false,
+      "sleep": false,
+      "allowed": true
+    },
+    {
+      "alive": true,
+      "protected": false,
+      "nobita": true,
+      "shizuka": false,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": false,
+      "nobita": true,
+      "shizuka": true,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": false,
+      "nobita": true,
+      "shizuka": true,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": true,
+      "nobita": false,
+      "shizuka": false,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": true,
+      "nobita": false,
+      "shizuka": false,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": true,
+      "nobita": false,
+      "shizuka": true,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": true,
+      "nobita": false,
+      "shizuka": true,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": true,
+      "nobita": true,
+      "shizuka": false,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": true,
+      "nobita": true,
+      "shizuka": false,
+      "sleep": true,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": true,
+      "nobita": true,
+      "shizuka": true,
+      "sleep": false,
+      "allowed": false
+    },
+    {
+      "alive": true,
+      "protected": true,
+      "nobita": true,
+      "shizuka": true,
+      "sleep": true,
+      "allowed": false
+    }
+  ]
+}

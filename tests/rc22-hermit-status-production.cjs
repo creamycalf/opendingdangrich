@@ -1,0 +1,17 @@
+const {chromium}=require('../app/node_modules/playwright'),fs=require('node:fs'),assert=require('node:assert/strict');let browser;
+(async()=>{
+const out='test-results/rc22-hermit-status-production';fs.mkdirSync(out,{recursive:true});const checks=[],errors=[];const E=await import('../app/src/engine.mjs'),map=JSON.parse(fs.readFileSync('app/public/assets/maps-v126/4.json'));map.jail=JSON.parse(fs.readFileSync('app/public/assets/flow-assets.json')).jail;
+browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+for(const viewport of [{width:320,height:640},{width:915,height:412},{width:640,height:320}]){
+ const g=E.createGame(map,{seed:72,startDate:'2000-04-03',players:['doraemon','nobita','shizuka','gian'].map(character=>({character,control:'human'}))});g.players[0].events=[{id:6,remaining:3}];
+ const context=await browser.newContext({viewport,isMobile:true,hasTouch:true}),page=await context.newPage();page.setDefaultTimeout(15000);page.on('pageerror',e=>errors.push(e.message));await context.addInitScript(game=>{if(!localStorage.getItem('fixture-seeded')){localStorage.setItem('dingdang.touch.v2',JSON.stringify(game));localStorage.setItem('fixture-seeded','yes');}},g);
+ await page.goto('http://127.0.0.1:5185');await page.waitForFunction(()=>!!window.__game);await page.locator('#titleGate').tap();await page.getByRole('button',{name:'大富翁',exact:true}).tap();await page.locator('#continueGame').tap();await page.waitForFunction(()=>window.__game.snapshot().active);
+ const card=page.locator('.hermitStatusCard[data-event="6"]');await card.waitFor();await page.waitForFunction(()=>Array.from(document.querySelector('.hermitStatusCard canvas').getContext('2d').getImageData(0,0,96,80).data).some((v,i)=>i%4===3&&v));const before=await page.evaluate(()=>window.__game.snapshot().game);
+ const rect=await card.boundingBox();assert(rect.width>=44&&rect.height>=44&&rect.x>=0&&rect.y>=0&&rect.y+rect.height<=viewport.height);assert(await card.evaluate(e=>{const r=e.getBoundingClientRect();return e.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}));
+ await page.screenshot({path:out+'/board-'+viewport.width+'x'+viewport.height+'.png'});await card.tap();await page.locator('#modal[open]').waitFor();const text=await page.locator('#modalContent').innerText();assert(text.includes('免交租')&&text.includes('3')&&text.includes('好运'));assert(await page.locator('.hermitStatusView').isHidden());assert.deepEqual(await page.evaluate(()=>window.__game.snapshot().game),before);
+ await page.screenshot({path:out+'/inspect-'+viewport.width+'x'+viewport.height+'.png'});
+ const buttons=page.locator('#modalContent button');assert.equal(await buttons.count(),1);await buttons.first().tap();await page.waitForFunction(()=>!document.querySelector('#modal').open);await card.waitFor();assert.deepEqual(await page.evaluate(()=>window.__game.snapshot().game),before);
+ assert(await page.locator('#roll').evaluate(e=>{const r=e.getBoundingClientRect();return e.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}));checks.push({viewport,originalIcon:true,inspectNameCategoryRemaining:true,inspectionNoRuleChange:true,returnRestoresStatus:true,diceUnobstructed:true});await context.close();
+}
+assert.deepEqual(errors,[]);fs.writeFileSync(out+'/result.json',JSON.stringify({checks,errors},null,2));console.log(JSON.stringify({checks,errors}));await browser.close();
+})().catch(async e=>{console.error(e);await browser?.close();process.exitCode=1;});

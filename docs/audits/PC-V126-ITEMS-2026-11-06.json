@@ -1,0 +1,431 @@
+{
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "rows": [
+    {
+      "id": 0,
+      "name": "复原光线",
+      "implemented": true,
+      "evidence": "research/propertyKinds.json；tests/fixtures/original-land-items.json",
+      "tests": "tests/land-items.test.mjs",
+      "scope": "地产降级/清除归属；新PC特殊建筑降级路径未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 1,
+      "name": "机器人小姐",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 2,
+      "name": "时间布",
+      "implemented": true,
+      "evidence": "research/propertyKinds.json；tests/fixtures/original-land-items.json",
+      "tests": "tests/land-items.test.mjs",
+      "scope": "地产降级/清除归属；新PC特殊建筑降级路径未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 3,
+      "name": "南北极徽章",
+      "implemented": true,
+      "evidence": "research/cloneGates.json；research/attackRedirect.json",
+      "tests": "tests/clones-magnet.test.mjs",
+      "scope": "磁铁配对、排斥、反射；新PC实际相遇流程未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 4,
+      "name": "传染伤风纸电话",
+      "implemented": true,
+      "evidence": "research/attackRedirect.json；research/sleepTransferDetails.json；research/rentRetaliation26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs",
+      "scope": "攻击/转移/睡眠旧证据；新PC全角色命中及连锁未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 5,
+      "name": "日期转换仪",
+      "implemented": true,
+      "evidence": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json；research/resumed-rentFull.json",
+      "tests": "tests/economic-items.test.mjs；tests/target-items.test.mjs",
+      "scope": "经济/交换/日期效果已有实现与旧证据；新PC对应道具入口未逐一重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 6,
+      "name": "缩形隧道",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-road-items.json；research/pc-v126-road-direction.json",
+      "tests": "tests/tunnel.test.mjs；tests/pc-navigation.test.mjs",
+      "scope": "新PC门/隧道方向片段已对照；变小状态全部交互未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 7,
+      "name": "咒语相机",
+      "implemented": true,
+      "evidence": "research/attackRedirect.json；research/sleepTransferDetails.json；research/rentRetaliation26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs",
+      "scope": "攻击/转移/睡眠旧证据；新PC全角色命中及连锁未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 8,
+      "name": "玩具军队",
+      "implemented": true,
+      "evidence": "research/attackRedirect.json；research/sleepTransferDetails.json；research/rentRetaliation26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs",
+      "scope": "攻击/转移/睡眠旧证据；新PC全角色命中及连锁未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 9,
+      "name": "颠倒笔",
+      "implemented": true,
+      "evidence": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json；research/resumed-rentFull.json",
+      "tests": "tests/economic-items.test.mjs；tests/target-items.test.mjs",
+      "scope": "经济/交换/日期效果已有实现与旧证据；新PC对应道具入口未逐一重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 10,
+      "name": "友情药袋",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 11,
+      "name": "石头帽",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 12,
+      "name": "幸运枪",
+      "implemented": true,
+      "evidence": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json；research/resumed-rentFull.json",
+      "tests": "tests/economic-items.test.mjs；tests/target-items.test.mjs",
+      "scope": "经济/交换/日期效果已有实现与旧证据；新PC对应道具入口未逐一重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 13,
+      "name": "可到任何地方大炮",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-road-items.json；research/pc-v126-road-direction.json",
+      "tests": "tests/road-items.test.mjs；tests/pc-navigation.test.mjs",
+      "scope": "道路目标和新PC门方向片段；新PC完整传送链未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 14,
+      "name": "机械小矮人",
+      "implemented": true,
+      "evidence": "research/itemsFlightSmallGhost.json；research/sleepFlags26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs；tests/movement-flow.test.mjs",
+      "scope": "飞行/缩小/机械体旧证据；新PC买地权限与回体连锁未全覆盖",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 15,
+      "name": "狸猫套装",
+      "implemented": true,
+      "evidence": "research/v126-clone-arrival-controller.json；research/v126-clone-rent-controller.json",
+      "tests": "tests/pc-clone-arrival.test.mjs；tests/economic-items.test.mjs",
+      "scope": "本轮确证并修复：自己地产也转入租金分支，款项交给施术者；相机反射后的同源极端组合未验证",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 16,
+      "name": "疯狂时间器",
+      "implemented": true,
+      "evidence": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json；research/resumed-rentFull.json",
+      "tests": "tests/economic-items.test.mjs；tests/target-items.test.mjs",
+      "scope": "经济/交换/日期效果已有实现与旧证据；新PC对应道具入口未逐一重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 17,
+      "name": "恶运钻石",
+      "implemented": true,
+      "evidence": "research/attackRedirect.json；research/sleepTransferDetails.json；research/rentRetaliation26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs",
+      "scope": "攻击/转移/睡眠旧证据；新PC全角色命中及连锁未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 18,
+      "name": "隐形眼药水",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 19,
+      "name": "人见人爱丸",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 20,
+      "name": "储钱蜜蜂",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 21,
+      "name": "搬迁地图",
+      "implemented": true,
+      "evidence": "research/propertyKinds.json；research/specialPropertyRules.json",
+      "tests": "tests/property.test.mjs",
+      "scope": "建筑搬迁与特殊建筑排除旧证据；新PC两地点UI未全覆盖",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 22,
+      "name": "蜗牛屋",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 23,
+      "name": "灵魂守卫",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 24,
+      "name": "分身药水",
+      "implemented": true,
+      "evidence": "research/clonesLifecycle.json；tests/fixtures/original-clone-placement.json；research/v126-clone-arrival-controller.json",
+      "tests": "tests/clones-magnet.test.mjs；tests/pc-clone-arrival.test.mjs",
+      "scope": "本轮新PC确证逐个本体/分身停靠；新地图双购地、拒绝后继续、双租金及存档回放通过；三分身新PC整机录像/传送交互仍未覆盖",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 25,
+      "name": "失忆棒",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 26,
+      "name": "睡意枪",
+      "implemented": true,
+      "evidence": "research/attackRedirect.json；research/sleepTransferDetails.json；research/rentRetaliation26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs",
+      "scope": "攻击/转移/睡眠旧证据；新PC全角色命中及连锁未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 27,
+      "name": "朋友圈",
+      "implemented": true,
+      "evidence": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json；research/resumed-rentFull.json",
+      "tests": "tests/economic-items.test.mjs；tests/target-items.test.mjs",
+      "scope": "经济/交换/日期效果已有实现与旧证据；新PC对应道具入口未逐一重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 28,
+      "name": "护身符",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 29,
+      "name": "盲点星星",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 30,
+      "name": "交换布",
+      "implemented": true,
+      "evidence": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json；research/resumed-rentFull.json",
+      "tests": "tests/economic-items.test.mjs；tests/target-items.test.mjs",
+      "scope": "经济/交换/日期效果已有实现与旧证据；新PC对应道具入口未逐一重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 31,
+      "name": "失物回归机器",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-item-flags.json；tests/fixtures/original-effect-clock.json",
+      "tests": "tests/effects.test.mjs",
+      "scope": "状态位、互斥、持续期旧版夹具；新PC全组合未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 32,
+      "name": "一分为二刀",
+      "implemented": true,
+      "evidence": "research/clonesLifecycle.json；tests/fixtures/original-clone-placement.json；research/v126-clone-arrival-controller.json",
+      "tests": "tests/clones-magnet.test.mjs；tests/pc-clone-arrival.test.mjs",
+      "scope": "本轮新PC确证逐个本体/分身停靠；新地图双购地、拒绝后继续、双租金及存档回放通过；三分身新PC整机录像/传送交互仍未覆盖",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 33,
+      "name": "处境掉换枪",
+      "implemented": true,
+      "evidence": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json；research/resumed-rentFull.json",
+      "tests": "tests/economic-items.test.mjs；tests/target-items.test.mjs",
+      "scope": "经济/交换/日期效果已有实现与旧证据；新PC对应道具入口未逐一重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 34,
+      "name": "倒霉咪表",
+      "implemented": true,
+      "evidence": "rea-analysis/wa.exe-ec35d2f7d4b2e39f/evidence/economic-item-details.json；research/resumed-rentFull.json",
+      "tests": "tests/economic-items.test.mjs；tests/target-items.test.mjs",
+      "scope": "经济/交换/日期效果已有实现与旧证据；新PC对应道具入口未逐一重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 35,
+      "name": "怨恨头带",
+      "implemented": true,
+      "evidence": "research/attackRedirect.json；research/sleepTransferDetails.json；research/rentRetaliation26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs",
+      "scope": "攻击/转移/睡眠旧证据；新PC全角色命中及连锁未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 36,
+      "name": "空气枪",
+      "implemented": true,
+      "evidence": "research/attackRedirect.json；research/sleepTransferDetails.json；research/rentRetaliation26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs",
+      "scope": "攻击/转移/睡眠旧证据；新PC全角色命中及连锁未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 37,
+      "name": "任意门",
+      "implemented": true,
+      "evidence": "tests/fixtures/original-road-items.json；research/pc-v126-road-direction.json",
+      "tests": "tests/road-items.test.mjs；tests/pc-navigation.test.mjs",
+      "scope": "道路目标和新PC门方向片段；新PC完整传送链未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 38,
+      "name": "竹蜻蜓",
+      "implemented": true,
+      "evidence": "research/itemsFlightSmallGhost.json；research/sleepFlags26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs；tests/movement-flow.test.mjs",
+      "scope": "飞行/缩小/机械体旧证据；新PC买地权限与回体连锁未全覆盖",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 39,
+      "name": "缩小电筒",
+      "implemented": true,
+      "evidence": "research/itemsFlightSmallGhost.json；research/sleepFlags26.json",
+      "tests": "tests/target-items.test.mjs；tests/effects.test.mjs；tests/movement-flow.test.mjs",
+      "scope": "飞行/缩小/机械体旧证据；新PC买地权限与回体连锁未全覆盖",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 40,
+      "name": "无敌炮台",
+      "implemented": true,
+      "evidence": "research/specialPropertyRules.json；research/v126-clone-arrival-controller.json",
+      "tests": "tests/special-buildings.test.mjs",
+      "scope": "新PC落地入口可辨识特殊建筑；建造/命中整条链新PC未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    },
+    {
+      "id": 41,
+      "name": "自制导弹",
+      "implemented": true,
+      "evidence": "research/specialPropertyRules.json；research/v126-clone-arrival-controller.json",
+      "tests": "tests/special-buildings.test.mjs",
+      "scope": "新PC落地入口可辨识特殊建筑；建造/命中整条链新PC未重测",
+      "fullPcEquivalence": false,
+      "touchUiPassed": true
+    }
+  ],
+  "touchUiRegression": {
+    "report": "test-results/rc16-all-items-ui-report.json",
+    "passedItems": 42,
+    "pageErrors": 0,
+    "scope": "actual touch use, original-asset animation, product-command replay and restore; not original PC behavioral equivalence"
+  }
+}

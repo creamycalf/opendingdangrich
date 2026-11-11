@@ -1,0 +1,35 @@
+{
+  "scope": "RC18后选人声音专项；不是全部原版流程等价证明",
+  "source": {
+    "binary": "work/new-pc-v121/Doraemon.exe",
+    "sha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+    "selectionCallback": "0x46772d",
+    "voiceHelper": "0x4aaadd",
+    "voiceTable": "0x4c88fc",
+    "evidence": ["research/audio-selection-v126-native.json", "research/audio-selection-v126-voice-helper.json", "research/audio-selection-v126-table.json"]
+  },
+  "observations": [
+    "选择状态1时左右移动至有效可用角色调用SFX 0x4d/77，无角色语音；越界未移动时不播该声。",
+    "选择状态1确认Ready调用0x4aaadd(table[选择下标],0,0x3b)，即bank0/59；状态变为2。",
+    "0x4aaadd按character*4+bank定位资源，找到片段才配置并播放声道；没有借用其他角色的回退。",
+    "0x4c88fc七项为0,1,2,6,3,4,5，对应哆啦A梦/大雄/哆啦美/黄哆啦/静香/小夫/胖虎。",
+    "加入玩家及最后Yes确认调用SFX82；取消调用SFX74；最后Yes/No切换调用SFX89。",
+    "选择回调没有直接音乐切换调用。沿用标题曲属于按场景链路的推断，未做本次PC动态全链录音。",
+    "新PC实际voice.dat中六名常规角色bank0/59存在，解压WAV SHA256与现有普通话catalog逐项相同；character6条目不存在。现有粤语catalog亦仅有常规六角色。"
+  ],
+  "touchAdaptation": [
+    "触屏角色卡点选合并原版移动和Ready：换角色先SFX77再该角色bank0/59；重按当前角色仅Ready语音。",
+    "黄哆啦没有语音替代，换角仅移动音效。",
+    "四玩家槽与真人/电脑切换是触屏配置控件，仅发送语义事件，音频规则返回空。",
+    "初始化、被动refresh和角色交换导致的另一个槽变化不播第二条语音。",
+    "最终确认由主流程验证通过后调用selectionAudio({type:'confirm'})，返回SFX82。"
+  ],
+  "implementation": ["app/src/pc-selection.ts", "app/src/selection-audio.mjs"],
+  "validation": {
+    "nativeResourceAudit": "tools/audit_selection_audio.py，读取新PC EXE表及新voice.dat，无修改原件",
+    "unit": "tests/selection-audio.test.mjs，4项通过",
+    "touch": "tests/selection-touch-ui.cjs，真实Chromium touch事件，7类检查通过；test-results/selection-touch-ui-report.json",
+    "limits": "组件事件验证；本agent未宣称完成整包安卓音频听测。main.ts音频连接及APK由root集成验收。"
+  },
+  "fullPcEquivalence": false
+}

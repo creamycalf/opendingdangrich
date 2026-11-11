@@ -1,0 +1,10 @@
+/* A sole touch player gets the full control row, regardless of PC seat. */
+.miniGrid.singleRaceHuman{grid-template-columns:repeat(3,minmax(0,1fr))}
+.singleRaceHuman .computer{order:0;padding:2px}
+.singleRaceHuman .computer .miniControls{display:none}
+.singleRaceHuman .human{order:1;grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:2px 8px}
+.singleRaceHuman .human .miniControls{grid-column:1/-1}
+.miniRaceFeedback{display:block;font-size:12px;line-height:1.4}
+.miniControls button{flex:1;min-width:0;color:#30291a;background:#f9dc78;border:2px solid #ae8228}
+.miniControls button:active:not(:disabled){background:#d5ae40;border-color:#5d4111}
+.singleRaceHuman .miniControls button{min-height:48px;font-size:17px;white-space:nowrap}

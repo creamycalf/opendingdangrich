@@ -1,0 +1,3100 @@
+{
+  "date": "2026-11-07",
+  "part": "b",
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "oldEvidenceSha256": "f190b35370d3efe3024b5105a90f85abf07f5915e7b7a431d93b756de03f65f3",
+  "provider": "Ghidra 12.1.4 + Unicorn x86 32-bit + Capstone read-only PE",
+  "scope": "逐项核对激活/关键消费函数与实现；保留未覆盖的仙人子类、视觉/动画时间点边界，不用构造器或UI通过替代完整语义证明。",
+  "evidence": [
+    "research/items-b-native-match-20261107.json",
+    "research/items-b-critical-success-20261107.json",
+    "research/items-b-effects-20261107.json",
+    "research/items-b-activation-20261107.json",
+    "research/items-b-consumers-20261107.json",
+    "tests/fixtures/v126-item-common.json"
+  ],
+  "tests": {
+    "passed": 32,
+    "command": "node --test tests/items-part-b.test.mjs tests/target-items.test.mjs tests/protection.test.mjs tests/economic-items.test.mjs tests/building-swap.test.mjs tests/clones-magnet.test.mjs tests/pc-clone-arrival.test.mjs",
+    "newNativeMaskCases": 490,
+    "newNativeSleepCases": 32
+  },
+  "items": [
+    {
+      "id": 14,
+      "name": "机械小矮人",
+      "addresses": [
+        "0x438bc6",
+        "0x438dc9",
+        "0x497242"
+      ],
+      "observed": "睡眠时保存本体，创建代行体，醒来删代行体并恢复本体；待命计数99不递减。",
+      "comparison": "effects.mjs:fallAsleep/wakePlayer；原Tools 113–120姿势；新PC与竹蜻蜓双向禁止并存由root公共表修正。",
+      "test": "tests/clones-magnet.test.mjs",
+      "status": "confirmed_common_table_difference_fixed_by_root",
+      "constructor": {
+        "id": 14,
+        "vtable": "0x4bac08",
+        "duration": 99,
+        "mask": "0xffffffff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x48eed0",
+          "0x4": "0x48ef60",
+          "0x8": "0x4904e3",
+          "0xc": "0x490732",
+          "0x10": "0x4909a3",
+          "0x14": "0x49709c",
+          "0x18": "0x4a6120",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x497242",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x496f15",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x496f27",
+          "0x68": "0x496f6b",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4095
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "name": "狸猫套装",
+      "addresses": [
+        "0x4975e1",
+        "0x443bb1"
+      ],
+      "observed": "攻击状态挂目标；先判行人免租和真实地主不能收租，再改收款人为套装施用者；使用收款人加倍能力，地产租金基值保留。",
+      "comparison": "effects.mjs:rentRecipient；engine.mjs:chargeDestinationRent，含自己地产及分身。",
+      "test": "tests/economic-items.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 15,
+        "vtable": "0x4bac7c",
+        "duration": 5,
+        "mask": "0xffffffff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x497428",
+          "0x4": "0x4975c8",
+          "0x8": "0x4900c0",
+          "0xc": "0x4975e1",
+          "0x10": "0x49031c",
+          "0x14": "0x49767e",
+          "0x18": "0x4a61e0",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x4973b3",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4095
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "name": "疯狂时间器",
+      "addresses": [
+        "0x497824",
+        "0x497961",
+        "0x4978cd"
+      ],
+      "observed": "启动全局每日轮数2、剩余5天；状态寿命读全局剩余日数，非普通人物倒计时。",
+      "comparison": "engine.mjs slowDays/dayCycle；本轮未重执行全局日历循环，沿用原日历机码夹具。",
+      "test": "tests/economic-items.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 16,
+        "vtable": "0x4bacf0",
+        "duration": 5,
+        "mask": "0xffffffff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x49004a",
+          "0x4": "0x48ef60",
+          "0x8": "0x4900c0",
+          "0xc": "0x497824",
+          "0x10": "0x49031c",
+          "0x14": "0x49038b",
+          "0x18": "0x4a6190",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x497961",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x4977e8",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4095
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "name": "恶运钻石",
+      "addresses": [
+        "0x497c5f"
+      ],
+      "observed": "选定对手后挂施用者本人，持续8次时钟，保存转移目标。",
+      "comparison": "engine.mjs REDIRECT_ITEMS；hermit.mjs消费与转移；旧原仙人细分夹具覆盖坏事件，当前新PC只核对激活挂载/期限，未宣称全部仙人子类新旧一致。",
+      "test": "tests/target-items.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 17,
+        "vtable": "0x4bad64",
+        "duration": 8,
+        "mask": "0xffffffff",
+        "value": "0x2000",
+        "methods": {
+          "0x0": "0x497aa6",
+          "0x4": "0x497c46",
+          "0x8": "0x4900c0",
+          "0xc": "0x497c5f",
+          "0x10": "0x49031c",
+          "0x14": "0x49038b",
+          "0x18": "0x4a61e0",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x497a31",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 8192
+          },
+          {
+            "base": 4095,
+            "after": 12287
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 8193
+          },
+          {
+            "base": 2,
+            "after": 8194
+          },
+          {
+            "base": 4,
+            "after": 8196
+          },
+          {
+            "base": 8,
+            "after": 8200
+          },
+          {
+            "base": 16,
+            "after": 8208
+          },
+          {
+            "base": 32,
+            "after": 8224
+          },
+          {
+            "base": 64,
+            "after": 8256
+          },
+          {
+            "base": 128,
+            "after": 8320
+          },
+          {
+            "base": 256,
+            "after": 8448
+          },
+          {
+            "base": 512,
+            "after": 8704
+          },
+          {
+            "base": 1024,
+            "after": 9216
+          },
+          {
+            "base": 2048,
+            "after": 10240
+          },
+          {
+            "base": 4096,
+            "after": 12288
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 24576
+          },
+          {
+            "base": 32768,
+            "after": 40960
+          },
+          {
+            "base": 65536,
+            "after": 73728
+          },
+          {
+            "base": 131072,
+            "after": 139264
+          },
+          {
+            "base": 262144,
+            "after": 270336
+          },
+          {
+            "base": 524288,
+            "after": 532480
+          },
+          {
+            "base": 1048576,
+            "after": 1056768
+          },
+          {
+            "base": 2097152,
+            "after": 2105344
+          },
+          {
+            "base": 4194304,
+            "after": 4202496
+          },
+          {
+            "base": 8388608,
+            "after": 8396800
+          },
+          {
+            "base": 16777216,
+            "after": 16785408
+          },
+          {
+            "base": 33554432,
+            "after": 33562624
+          },
+          {
+            "base": 67108864,
+            "after": 67117056
+          },
+          {
+            "base": 134217728,
+            "after": 134225920
+          },
+          {
+            "base": 268435456,
+            "after": 268443648
+          },
+          {
+            "base": 536870912,
+            "after": 536879104
+          },
+          {
+            "base": 1073741824,
+            "after": 1073750016
+          },
+          {
+            "base": 2147483648,
+            "after": 2147491840
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "name": "隐形眼药水",
+      "addresses": [
+        "0x497e43",
+        "0x48f524",
+        "0x443bb1"
+      ],
+      "observed": "五天清除能力位0x20免租，激活时将角色可见性设为1。",
+      "comparison": "effects.mjs免租已匹配；角色视觉透明度没有在此专项逐帧校验。",
+      "test": "tests/protection.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 18,
+        "vtable": "0x4badd8",
+        "duration": 5,
+        "mask": "0xffffffdf",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x49004a",
+          "0x4": "0x48ef60",
+          "0x8": "0x4900c0",
+          "0xc": "0x497e43",
+          "0x10": "0x49031c",
+          "0x14": "0x497efb",
+          "0x18": "0x4a6210",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x497ff0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x497e31",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x497fba",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4063
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967263
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 0
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "人见人爱丸",
+      "addresses": [
+        "0x4980e9",
+        "0x48f524",
+        "0x48f317"
+      ],
+      "observed": "五天清除0x400，被攻击选择回调拒绝。",
+      "comparison": "effects.mjs:canBeAttacked，互斥由root新PC全表验证。",
+      "test": "tests/protection.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 19,
+        "vtable": "0x4bae4c",
+        "duration": 5,
+        "mask": "0xfffffbff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x49004a",
+          "0x4": "0x48ef60",
+          "0x8": "0x4900c0",
+          "0xc": "0x4980e9",
+          "0x10": "0x49031c",
+          "0x14": "0x49038b",
+          "0x18": "0x4a61e0",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x4980d7",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 3071
+          },
+          {
+            "base": 4294967295,
+            "after": 4294966271
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 0
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "储钱蜜蜂",
+      "addresses": [
+        "0x4984ca",
+        "0x498567",
+        "0x48f524"
+      ],
+      "observed": "五天添加0x80000征罚保护；额外回调为表情/动画与台词，不是额外现金奖惩。",
+      "comparison": "effects.mjs:protectedFromFine；此专项不声称原蜜蜂全部动画帧已复刻。",
+      "test": "tests/protection.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 20,
+        "vtable": "0x4baec0",
+        "duration": 5,
+        "mask": "0xffffffff",
+        "value": "0x80000",
+        "methods": {
+          "0x0": "0x48eed0",
+          "0x4": "0x48ef60",
+          "0x8": "0x49825d",
+          "0xc": "0x4984ca",
+          "0x10": "0x48f1a1",
+          "0x14": "0x498567",
+          "0x18": "0x4a6240",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x49824b",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 524288
+          },
+          {
+            "base": 4095,
+            "after": 528383
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 524289
+          },
+          {
+            "base": 2,
+            "after": 524290
+          },
+          {
+            "base": 4,
+            "after": 524292
+          },
+          {
+            "base": 8,
+            "after": 524296
+          },
+          {
+            "base": 16,
+            "after": 524304
+          },
+          {
+            "base": 32,
+            "after": 524320
+          },
+          {
+            "base": 64,
+            "after": 524352
+          },
+          {
+            "base": 128,
+            "after": 524416
+          },
+          {
+            "base": 256,
+            "after": 524544
+          },
+          {
+            "base": 512,
+            "after": 524800
+          },
+          {
+            "base": 1024,
+            "after": 525312
+          },
+          {
+            "base": 2048,
+            "after": 526336
+          },
+          {
+            "base": 4096,
+            "after": 528384
+          },
+          {
+            "base": 8192,
+            "after": 532480
+          },
+          {
+            "base": 16384,
+            "after": 540672
+          },
+          {
+            "base": 32768,
+            "after": 557056
+          },
+          {
+            "base": 65536,
+            "after": 589824
+          },
+          {
+            "base": 131072,
+            "after": 655360
+          },
+          {
+            "base": 262144,
+            "after": 786432
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1572864
+          },
+          {
+            "base": 2097152,
+            "after": 2621440
+          },
+          {
+            "base": 4194304,
+            "after": 4718592
+          },
+          {
+            "base": 8388608,
+            "after": 8912896
+          },
+          {
+            "base": 16777216,
+            "after": 17301504
+          },
+          {
+            "base": 33554432,
+            "after": 34078720
+          },
+          {
+            "base": 67108864,
+            "after": 67633152
+          },
+          {
+            "base": 134217728,
+            "after": 134742016
+          },
+          {
+            "base": 268435456,
+            "after": 268959744
+          },
+          {
+            "base": 536870912,
+            "after": 537395200
+          },
+          {
+            "base": 1073741824,
+            "after": 1074266112
+          },
+          {
+            "base": 2147483648,
+            "after": 2148007936
+          }
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "name": "搬迁地图",
+      "addresses": [
+        "0x498ea1",
+        "0x498f46"
+      ],
+      "observed": "两处不同坐标，均需有主且kind1；交换16字节土地所有权记录和建筑记录坐标/外形；地价不随楼交换。",
+      "comparison": "property-items.mjs仅owners/levels/kind；已核对主状态，原建筑外形字段另有视觉差异范围，未伪造字段。",
+      "test": "tests/building-swap.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 21,
+        "vtable": "0x4baf34",
+        "duration": 0,
+        "mask": "0xffffffff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x498b8c",
+          "0x4": "0x48ef60",
+          "0x8": "0x498f46",
+          "0xc": "0x499a82",
+          "0x10": "0x48f1a1",
+          "0x14": "0x48f22a",
+          "0x18": "0x4a6270",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x498b04",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x498ea1",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4095
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "蜗牛屋",
+      "addresses": [
+        "0x499c30",
+        "0x48f524"
+      ],
+      "observed": "五天清除0x800，免仙人事件。",
+      "comparison": "effects.mjs:affectedByHermit；hermitCompatible检查0x800。",
+      "test": "tests/protection.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 22,
+        "vtable": "0x4bafa8",
+        "duration": 5,
+        "mask": "0xfffff7ff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x49004a",
+          "0x4": "0x48ef60",
+          "0x8": "0x4900c0",
+          "0xc": "0x499c30",
+          "0x10": "0x49031c",
+          "0x14": "0x499ccd",
+          "0x18": "0x4a61e0",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x499c1e",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 2047
+          },
+          {
+            "base": 4294967295,
+            "after": 4294965247
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 0
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "name": "灵魂守卫",
+      "addresses": [
+        "0x499ec6",
+        "0x48f524"
+      ],
+      "observed": "五天清除0x40/0x20/0x400/0x800并添加0x80000，即禁商店、免租免攻击免仙人免征罚。",
+      "comparison": "effects.mjs掩码与新PC490条样本一致；原8a–91动画循环仅取证不称逐帧一致。",
+      "test": "tests/protection.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 23,
+        "vtable": "0x4bb01c",
+        "duration": 5,
+        "mask": "0xfffff39f",
+        "value": "0x80000",
+        "methods": {
+          "0x0": "0x48eed0",
+          "0x4": "0x48ef60",
+          "0x8": "0x4904e3",
+          "0xc": "0x490732",
+          "0x10": "0x4909a3",
+          "0x14": "0x499ec6",
+          "0x18": "0x4a6120",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x49a0cd",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x499eb4",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x49a193",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 524288
+          },
+          {
+            "base": 4095,
+            "after": 525215
+          },
+          {
+            "base": 4294967295,
+            "after": 4294964127
+          },
+          {
+            "base": 1,
+            "after": 524289
+          },
+          {
+            "base": 2,
+            "after": 524290
+          },
+          {
+            "base": 4,
+            "after": 524292
+          },
+          {
+            "base": 8,
+            "after": 524296
+          },
+          {
+            "base": 16,
+            "after": 524304
+          },
+          {
+            "base": 32,
+            "after": 524288
+          },
+          {
+            "base": 64,
+            "after": 524288
+          },
+          {
+            "base": 128,
+            "after": 524416
+          },
+          {
+            "base": 256,
+            "after": 524544
+          },
+          {
+            "base": 512,
+            "after": 524800
+          },
+          {
+            "base": 1024,
+            "after": 524288
+          },
+          {
+            "base": 2048,
+            "after": 524288
+          },
+          {
+            "base": 4096,
+            "after": 528384
+          },
+          {
+            "base": 8192,
+            "after": 532480
+          },
+          {
+            "base": 16384,
+            "after": 540672
+          },
+          {
+            "base": 32768,
+            "after": 557056
+          },
+          {
+            "base": 65536,
+            "after": 589824
+          },
+          {
+            "base": 131072,
+            "after": 655360
+          },
+          {
+            "base": 262144,
+            "after": 786432
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1572864
+          },
+          {
+            "base": 2097152,
+            "after": 2621440
+          },
+          {
+            "base": 4194304,
+            "after": 4718592
+          },
+          {
+            "base": 8388608,
+            "after": 8912896
+          },
+          {
+            "base": 16777216,
+            "after": 17301504
+          },
+          {
+            "base": 33554432,
+            "after": 34078720
+          },
+          {
+            "base": 67108864,
+            "after": 67633152
+          },
+          {
+            "base": 134217728,
+            "after": 134742016
+          },
+          {
+            "base": 268435456,
+            "after": 268959744
+          },
+          {
+            "base": 536870912,
+            "after": 537395200
+          },
+          {
+            "base": 1073741824,
+            "after": 1074266112
+          },
+          {
+            "base": 2147483648,
+            "after": 2148007936
+          }
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "name": "分身药水",
+      "addresses": [
+        "0x49ad26"
+      ],
+      "observed": "建立3个跟随节点；优先背后道路，阻塞时按合法方向抽签；复制后仍需按各自实际停靠点结算。",
+      "comparison": "clones.mjs、engine.mjs visitAt；原摆放机码4684例和独立买地/租金回归覆盖。",
+      "test": "tests/pc-clone-arrival.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 24,
+        "vtable": "0x4bb090",
+        "duration": 5,
+        "mask": "0xffffffff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x49004a",
+          "0x4": "0x48ef60",
+          "0x8": "0x49ab6f",
+          "0xc": "0x49ad26",
+          "0x10": "0x49b7db",
+          "0x14": "0x49038b",
+          "0x18": "0x4a62c0",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x49aa4e",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x49bf52",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x49a50a",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x49a9b8",
+          "0x68": "0x49a6b1",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4095
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "name": "失忆棒",
+      "addresses": [
+        "0x49c2a1",
+        "0x48f524",
+        "0x443bb1"
+      ],
+      "observed": "目标五天清除收租能力4；租金入口在收款人转移之前检查真实地主能力。",
+      "comparison": "effects.mjs:canCollectRent；免收租与狸猫转移顺序已有回归。",
+      "test": "tests/protection.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 25,
+        "vtable": "0x4bb104",
+        "duration": 5,
+        "mask": "0xfffffffb",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x49c0e8",
+          "0x4": "0x49c288",
+          "0x8": "0x4900c0",
+          "0xc": "0x49c2a1",
+          "0x10": "0x49031c",
+          "0x14": "0x49038b",
+          "0x18": "0x4a61e0",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x49c073",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4091
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967291
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 0
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "name": "睡意枪",
+      "addresses": [
+        "0x49c8b4",
+        "0x49c999"
+      ],
+      "observed": "来源阶段只需存活且睡眠或小矮人代行；接收阶段需不同来源、互斥/攻击可用并限制大雄攻击静香；唤醒来源后接收方睡五天。",
+      "comparison": "已修canTakeSleep错误的大雄→静香来源限制；32条新PC原指令用例验证。说明同步。",
+      "test": "tests/items-part-b.test.mjs",
+      "status": "confirmed_difference_fixed",
+      "constructor": {
+        "id": 26,
+        "vtable": "0x4bb178",
+        "duration": 5,
+        "mask": "0xffffffff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x49c541",
+          "0x4": "0x49c788",
+          "0x8": "0x49c999",
+          "0xc": "0x49cd81",
+          "0x10": "0x48f1a1",
+          "0x14": "0x48f22a",
+          "0x18": "0x4a6240",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x49c512",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x49c3fe",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x49c8b4"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4095
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "name": "朋友圈",
+      "addresses": [
+        "0x49d11e",
+        "0x48f317"
+      ],
+      "observed": "五天攻击状态附着目标；攻击者身上朋友圈原施用者不可成为其攻击目标，单向保护，不改变租金。",
+      "comparison": "effects.mjs:canAttackPlayer；通用新PC门限由root4680例验证。",
+      "test": "tests/economic-items.test.mjs",
+      "status": "scoped_semantics_checked",
+      "constructor": {
+        "id": 27,
+        "vtable": "0x4bb1ec",
+        "duration": 5,
+        "mask": "0xffffffff",
+        "value": "0x0",
+        "methods": {
+          "0x0": "0x49cfae",
+          "0x4": "0x49d099",
+          "0x8": "0x4900c0",
+          "0xc": "0x49d11e",
+          "0x10": "0x49031c",
+          "0x14": "0x49038b",
+          "0x18": "0x4a61e0",
+          "0x1c": "0x48ec3a",
+          "0x20": "0x48ec68",
+          "0x24": "0x48ee44",
+          "0x28": "0x48f4d3",
+          "0x2c": "0x4a5ef0",
+          "0x30": "0x4a5f10",
+          "0x34": "0x48f4e0",
+          "0x38": "0x48f524",
+          "0x3c": "0x48f579",
+          "0x40": "0x48f58b",
+          "0x44": "0x48f5d1",
+          "0x48": "0x49cf39",
+          "0x4c": "0x48f5f2",
+          "0x50": "0x48f64b",
+          "0x54": "0x48f676",
+          "0x58": "0x48f69b",
+          "0x5c": "0x48f744",
+          "0x60": "0x48f940",
+          "0x64": "0x48fbb5",
+          "0x68": "0x48fc90",
+          "0x6c": "0x4a5f30",
+          "0x70": "0x48f317"
+        },
+        "masks": [
+          {
+            "base": 0,
+            "after": 0
+          },
+          {
+            "base": 4095,
+            "after": 4095
+          },
+          {
+            "base": 4294967295,
+            "after": 4294967295
+          },
+          {
+            "base": 1,
+            "after": 1
+          },
+          {
+            "base": 2,
+            "after": 2
+          },
+          {
+            "base": 4,
+            "after": 4
+          },
+          {
+            "base": 8,
+            "after": 8
+          },
+          {
+            "base": 16,
+            "after": 16
+          },
+          {
+            "base": 32,
+            "after": 32
+          },
+          {
+            "base": 64,
+            "after": 64
+          },
+          {
+            "base": 128,
+            "after": 128
+          },
+          {
+            "base": 256,
+            "after": 256
+          },
+          {
+            "base": 512,
+            "after": 512
+          },
+          {
+            "base": 1024,
+            "after": 1024
+          },
+          {
+            "base": 2048,
+            "after": 2048
+          },
+          {
+            "base": 4096,
+            "after": 4096
+          },
+          {
+            "base": 8192,
+            "after": 8192
+          },
+          {
+            "base": 16384,
+            "after": 16384
+          },
+          {
+            "base": 32768,
+            "after": 32768
+          },
+          {
+            "base": 65536,
+            "after": 65536
+          },
+          {
+            "base": 131072,
+            "after": 131072
+          },
+          {
+            "base": 262144,
+            "after": 262144
+          },
+          {
+            "base": 524288,
+            "after": 524288
+          },
+          {
+            "base": 1048576,
+            "after": 1048576
+          },
+          {
+            "base": 2097152,
+            "after": 2097152
+          },
+          {
+            "base": 4194304,
+            "after": 4194304
+          },
+          {
+            "base": 8388608,
+            "after": 8388608
+          },
+          {
+            "base": 16777216,
+            "after": 16777216
+          },
+          {
+            "base": 33554432,
+            "after": 33554432
+          },
+          {
+            "base": 67108864,
+            "after": 67108864
+          },
+          {
+            "base": 134217728,
+            "after": 134217728
+          },
+          {
+            "base": 268435456,
+            "after": 268435456
+          },
+          {
+            "base": 536870912,
+            "after": 536870912
+          },
+          {
+            "base": 1073741824,
+            "after": 1073741824
+          },
+          {
+            "base": 2147483648,
+            "after": 2147483648
+          }
+        ]
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": 14,
+      "name": "机械小矮人",
+      "effectAndTiming": "睡眠时保存本体，创建代行体，醒来删代行体并恢复本体；待命计数99不递减。",
+      "target": "自身",
+      "interaction": "effects.mjs:fallAsleep/wakePlayer；原Tools 113–120姿势；新PC与竹蜻蜓双向禁止并存由root公共表修正。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x438bc6",
+          "0x438dc9",
+          "0x497242"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/clones-magnet.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "root修新PC竹蜻蜓互斥表",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 15,
+      "name": "狸猫套装",
+      "effectAndTiming": "攻击状态挂目标；先判行人免租和真实地主不能收租，再改收款人为套装施用者；使用收款人加倍能力，地产租金基值保留。",
+      "target": "合法攻击目标",
+      "interaction": "effects.mjs:rentRecipient；engine.mjs:chargeDestinationRent，含自己地产及分身。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x4975e1",
+          "0x443bb1"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/economic-items.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 16,
+      "name": "疯狂时间器",
+      "effectAndTiming": "启动全局每日轮数2、剩余5天；状态寿命读全局剩余日数，非普通人物倒计时。",
+      "target": "自身",
+      "interaction": "engine.mjs slowDays/dayCycle；本轮未重执行全局日历循环，沿用原日历机码夹具。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x497824",
+          "0x497961",
+          "0x4978cd"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/economic-items.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 17,
+      "name": "恶运钻石",
+      "effectAndTiming": "选定对手后挂施用者本人，持续8次时钟，保存转移目标。",
+      "target": "选择攻击目标，状态挂施用者",
+      "interaction": "engine.mjs REDIRECT_ITEMS；hermit.mjs消费与转移；旧原仙人细分夹具覆盖坏事件，当前新PC只核对激活挂载/期限，未宣称全部仙人子类新旧一致。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x497c5f"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/target-items.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "本轮未逐一执行全部仙人子类重定向路径；已有旧PC夹具与新激活依据，不能宣称全子类一致",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 18,
+      "name": "隐形眼药水",
+      "effectAndTiming": "五天清除能力位0x20免租，激活时将角色可见性设为1。",
+      "target": "自身",
+      "interaction": "effects.mjs免租已匹配；角色视觉透明度没有在此专项逐帧校验。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x497e43",
+          "0x48f524",
+          "0x443bb1"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 19,
+      "name": "人见人爱丸",
+      "effectAndTiming": "五天清除0x400，被攻击选择回调拒绝。",
+      "target": "自身",
+      "interaction": "effects.mjs:canBeAttacked，互斥由root新PC全表验证。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x4980e9",
+          "0x48f524",
+          "0x48f317"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 20,
+      "name": "储钱蜜蜂",
+      "effectAndTiming": "五天添加0x80000征罚保护；额外回调为表情/动画与台词，不是额外现金奖惩。",
+      "target": "自身",
+      "interaction": "effects.mjs:protectedFromFine；此专项不声称原蜜蜂全部动画帧已复刻。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x4984ca",
+          "0x498567",
+          "0x48f524"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 21,
+      "name": "搬迁地图",
+      "effectAndTiming": "两处不同坐标，均需有主且kind1；交换16字节土地所有权记录和建筑记录坐标/外形；地价不随楼交换。",
+      "target": "两处不同有主kind1建筑",
+      "interaction": "property-items.mjs仅owners/levels/kind；已核对主状态，原建筑外形字段另有视觉差异范围，未伪造字段。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x498ea1",
+          "0x498f46"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/building-swap.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 22,
+      "name": "蜗牛屋",
+      "effectAndTiming": "五天清除0x800，免仙人事件。",
+      "target": "自身",
+      "interaction": "effects.mjs:affectedByHermit；hermitCompatible检查0x800。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x499c30",
+          "0x48f524"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 23,
+      "name": "灵魂守卫",
+      "effectAndTiming": "五天清除0x40/0x20/0x400/0x800并添加0x80000，即禁商店、免租免攻击免仙人免征罚。",
+      "target": "自身",
+      "interaction": "effects.mjs掩码与新PC490条样本一致；原8a–91动画循环仅取证不称逐帧一致。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x499ec6",
+          "0x48f524"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 24,
+      "name": "分身药水",
+      "effectAndTiming": "建立3个跟随节点；优先背后道路，阻塞时按合法方向抽签；复制后仍需按各自实际停靠点结算。",
+      "target": "自身",
+      "interaction": "clones.mjs、engine.mjs visitAt；原摆放机码4684例和独立买地/租金回归覆盖。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x49ad26"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/pc-clone-arrival.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 25,
+      "name": "失忆棒",
+      "effectAndTiming": "目标五天清除收租能力4；租金入口在收款人转移之前检查真实地主能力。",
+      "target": "合法攻击目标",
+      "interaction": "effects.mjs:canCollectRent；免收租与狸猫转移顺序已有回归。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x49c2a1",
+          "0x48f524",
+          "0x443bb1"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/protection.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 26,
+      "name": "睡意枪",
+      "effectAndTiming": "来源阶段只需存活且睡眠或小矮人代行；接收阶段需不同来源、互斥/攻击可用并限制大雄攻击静香；唤醒来源后接收方睡五天。",
+      "target": "来源活着且睡眠/小矮人；接收者攻击合法且非来源",
+      "interaction": "已修canTakeSleep错误的大雄→静香来源限制；32条新PC原指令用例验证。说明同步。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x49c8b4",
+          "0x49c999"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/items-part-b.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "修复来源阶段错误角色限制并更新说明",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    },
+    {
+      "id": 27,
+      "name": "朋友圈",
+      "effectAndTiming": "五天攻击状态附着目标；攻击者身上朋友圈原施用者不可成为其攻击目标，单向保护，不改变租金。",
+      "target": "合法攻击目标",
+      "interaction": "effects.mjs:canAttackPlayer；通用新PC门限由root4680例验证。",
+      "newPcEvidence": {
+        "addresses": [
+          "0x49d11e",
+          "0x48f317"
+        ],
+        "files": [
+          "research/items-b-native-match-20261107.json",
+          "research/items-b-critical-success-20261107.json",
+          "research/items-b-effects-20261107.json",
+          "research/items-b-activation-20261107.json",
+          "research/items-b-consumers-20261107.json"
+        ]
+      },
+      "tests": [
+        "tests/economic-items.test.mjs",
+        "tests/items-part-b.test.mjs"
+      ],
+      "changes": "无需修改核心规则",
+      "remainingScope": "原完整动画时间点/语音/视觉未逐帧对照；规则覆盖以对应函数和测试范围为准",
+      "fullPcEquivalence": false
+    }
+  ]
+}

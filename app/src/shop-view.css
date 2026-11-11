@@ -1,0 +1,39 @@
+/* Keep navigation and the transaction button outside the scrollable effect text. */
+#modal:has(.shopCatalog){width:min(840px,98vw);max-width:98vw;height:min(610px,calc(100dvh - 12px));max-height:calc(100dvh - 12px);padding:10px;overflow:hidden}
+#modalContent:has(.shopCatalog){height:100%;display:flex;flex-direction:column;gap:5px;min-height:0}
+#modalContent:has(.shopCatalog)>h2{font-size:18px;margin:0;line-height:1.2}
+#modalContent:has(.shopCatalog)>p{font-size:12px;line-height:1.2;margin:0;flex:none;max-height:none;overflow:visible}
+#modal .shopCatalog{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:10px;flex:1;min-height:0}
+#modal .shopListing{display:flex;flex-direction:column;min-height:0;gap:5px}
+#modal .shopItems{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:minmax(108px,max-content);overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;align-content:start;gap:5px;flex:1;min-height:0}
+#modal .shopItem{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;margin:0;padding:3px;min-height:44px;min-width:0;background:#fff9e5;border:2px solid #b69c5f}
+#modal .shopItem[aria-pressed=true]{background:#ffdf76;border-color:#185c92;box-shadow:inset 0 0 0 1px #185c92}
+#modal .shopItem img{height:clamp(26px,8dvh,60px);width:64px;max-width:100%;object-fit:contain;image-rendering:pixelated}
+#modal .shopItem span{font-size:12px;font-weight:bold;line-height:1.2}
+#modal .shopItem small{font-size:10px;line-height:1.2;white-space:nowrap}
+#modal .shopPager,#modal .shopFooter{display:flex;align-items:center;gap:5px;flex:none}
+#modal .shopPager button,#modal .shopFooter button{margin:0;min-height:44px;padding:3px;flex:1}
+#modal .shopPager span{font-size:12px;white-space:nowrap}
+#modal .shopDetail{display:flex;flex-direction:column;min-height:0;min-width:0;padding:7px;border:1px solid #b69c5f;background:#fffbe9}
+#modal .shopDetailTop{display:flex;align-items:center;gap:8px;flex:none}
+#modal .shopArt{height:58px;width:64px;object-fit:contain;image-rendering:pixelated;flex:none}
+#modal .shopDetail h3{margin:0;font-size:17px}
+#modal .shopDescription{margin:5px 0;min-height:0;flex:1;overflow:auto;overscroll-behavior:contain;font-size:13px;line-height:1.6;white-space:pre-line;touch-action:pan-y}
+#modal .shopStatus{font-size:11px;line-height:1.3;flex:none}
+#modal .shopTransact{min-height:44px;flex:none;margin:5px 0 0;padding:5px;font-size:13px}
+@media(max-width:480px){
+ #modal .shopCatalog{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(130px,1.25fr) minmax(150px,1fr);gap:6px}
+ #modal .shopDetailTop{float:left}
+ #modal .shopArt{height:42px;width:48px}
+}
+@media(orientation:landscape) and (max-height:400px){
+ #modal:has(.shopCatalog){padding:5px}
+ #modal .shopDetail{padding:4px}
+ #modal .shopDetailTop{gap:4px}
+ #modal .shopArt{height:32px;width:40px}
+ #modal .shopDetail h3{font-size:15px}
+ #modal .shopDescription{font-size:12px;line-height:1.45;margin:3px 0}
+ #modal .shopItem img{height:24px}
+}
+
+#modal .shopCatalog,#modal .shopCatalog *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}

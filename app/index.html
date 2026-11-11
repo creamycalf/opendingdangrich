@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"><meta name="theme-color" content="#000000"><title>叮当大富翁 · 触屏版</title></head>
+<body><div id="app"><main>
+<canvas id="board" aria-label="游戏地图，支持拖动和双指缩放"></canvas>
+<div id="loading">正在打开大雄的小镇…</div>
+<div id="turnBanner"></div><div id="lastEvent" aria-live="polite"></div>
+<div id="diceDisplay" hidden role="status" aria-live="polite"><div id="diceFace" aria-hidden="true"></div><strong id="diceText"></strong></div>
+<div id="maptools"><button id="pause" aria-label="暂停与菜单">Ⅱ</button><button id="home" aria-label="回到当前角色">◎</button><button id="zoomIn" aria-label="放大地图">＋</button><button id="zoomOut" aria-label="缩小地图">－</button><button id="overview">全图</button></div>
+<aside id="inspect" hidden></aside><div id="toast" role="status"></div><div id="routes"></div>
+<div id="classicHud">
+<div id="roundPanel"><img id="monthArt" alt="月份"><div id="roundDigits"></div><img id="weekdayArt" alt="星期"></div>
+<nav id="commands" aria-label="游戏操作">
+<button id="roll" aria-label="掷骰出发" title="掷骰出发"><img src="assets/ui/178.png" alt=""><span>掷骰子</span></button>
+<button id="items" aria-label="四次元口袋" title="四次元口袋"><img id="itemsArt" src="assets/ui/201.png" alt=""></button>
+<button id="menu" aria-label="游戏菜单" title="游戏菜单"><img src="assets/ui/214.png" alt=""></button>
+<button id="mapButton" aria-label="查看全图" title="查看全图"><img src="assets/ui/190.png" alt=""></button>
+<button id="stats" aria-label="玩家信息" title="玩家信息"><img src="assets/ui/218.png" alt=""></button>
+</nav>
+<div id="characterHud">
+<button id="portrait" aria-label="当前玩家信息"><img id="portraitArt" src="assets/ui/portrait-26.png" alt="哆啦A梦"></button>
+<img class="hudFrame" src="assets/ui/0.png" alt="">
+<span id="bells" title="步行积分" aria-label="步行积分">—</span>
+<div id="cashDigits" aria-label="豆沙包"></div>
+</div></div>
+<div class="sr-only"><span id="round"></span><span id="status" role="status"></span><div id="players"></div></div>
+<section id="titleScreen" hidden aria-label="主菜单"><div class="pcTitleStage"><canvas id="titleArt" width="640" height="480" aria-hidden="true"></canvas><button id="titleGate" aria-label="点击进入游戏"><span class="sr-only">点击进入游戏</span></button><div class="pcTitleActions" hidden><button id="newGame" aria-label="开始新游戏"><span class="sr-only">开始新游戏</span></button><button id="continueGame" aria-label="继续游戏"><span class="sr-only">继续游戏</span></button></div></div><div class="titleUtilities"><button id="soundSettings">声音设置</button><button id="instructions">玩法说明</button></div></section>
+</main></div><dialog id="modal"><div id="modalContent"></div></dialog><script type="module" src="/src/main.ts"></script></body></html>

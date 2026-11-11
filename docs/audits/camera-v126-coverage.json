@@ -1,0 +1,98 @@
+{
+  "sourceSha256": "b99f70be2a703b7f20e5d7dbf6d29f2ffca86303f4be420bf9fb334cbe792eb1",
+  "date": "2026-11-07",
+  "scope": "new-PC camera reflection selection, not all gameplay permutations",
+  "nativeExecution": {
+    "itemCallbackSamples": 840,
+    "itemIds": [
+      3,
+      4,
+      7,
+      15,
+      17,
+      25,
+      26,
+      27,
+      30,
+      33,
+      35,
+      36,
+      39
+    ],
+    "missileSamples": 120,
+    "missileProductRepresentableSamples": 110,
+    "excludedProductSamples": "10 synthetic states set both Nobita and Shizuka identity bits on one actor; native outputs retained but product character enum cannot represent them",
+    "statusSequences": [
+      [],
+      [
+        1
+      ],
+      [
+        19
+      ],
+      [
+        7
+      ],
+      [
+        35
+      ],
+      [
+        39
+      ],
+      [
+        8,
+        19
+      ],
+      [
+        19,
+        8
+      ],
+      [
+        7,
+        35
+      ],
+      [
+        35,
+        7
+      ]
+    ],
+    "sourceModes": [
+      "same source",
+      "different source"
+    ],
+    "destinations": [
+      "attacker",
+      "selected victim",
+      "third actor"
+    ],
+    "sleepGun": "recipient callback executed with donor equal and different from reflected destination",
+    "limitations": [
+      "UI selection, camera lookup/removal notification and rendering calls substituted; actual factory/conflict/capability/target callbacks executed from b99f image.",
+      "Multi-state sequences verify ordering gates; they include synthetic stress states and are not a claim all can coexist through normal play.",
+      "No native Windows save binary comparison; product save/replay regression only."
+    ]
+  },
+  "confirmedChange": {
+    "file": "app/src/special-buildings.mjs",
+    "behavior": "Successful missile reflection consumes selected victim camera; invalid redirected target preserves it; no recursive camera chain.",
+    "native": "0x445ae6 calls camera event then0x48f40c then0x43b2d0 before storing redirected target. Native target gate0x44ed7e."
+  },
+  "unchangedVerified": "13 item selection callbacks including nonreflecting 27/30/33 match product in840 samples. Sleep-gun donor equality suppresses reflection. Same-source and order-dependent conflicts agree.",
+  "evidence": [
+    "tests/fixtures/v126-camera.json",
+    "tools/audit_camera_v126.py",
+    "docs/audits/camera-v126-selection.json",
+    "docs/audits/camera-v126-missile-sleep.json"
+  ],
+  "regression": {
+    "tests": 16,
+    "passed": 16,
+    "log": "test-results/v126-camera-tests.txt",
+    "files": [
+      "tests/v126-camera.test.mjs",
+      "tests/special-buildings.test.mjs",
+      "tests/target-items.test.mjs"
+    ]
+  },
+  "fullPcEquivalence": false
+}

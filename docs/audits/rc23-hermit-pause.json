@@ -1,0 +1,65 @@
+{
+  "revision": "rc23",
+  "date": "2026-11-10",
+  "scope": "Hermit choice/result presentation visibility timing and board status feedback cancellation",
+  "baseline": {
+    "reproduced": "Isolated real hermit component: a pending requestAnimationFrame delivered after 60 seconds hidden used absolute elapsed time, changed canvas and skipped enter timing. Regression assertion failed before source change.",
+    "productionDistinction": "main.backgroundPause opens the pause menu and disposes the scene. In that existing route the scene restarts on Continue; isolated retained-scene jump is not claimed as a reproduced production failure."
+  },
+  "changes": [
+    "Visibility-aware lifecycle clock excludes each hidden interval; no rendering, sound or confirmation/continuation callback while hidden. Repeated visibility events do not double-count time.",
+    "Loading a scene while hidden starts its first frame only when visible. Hidden button callbacks are ignored. Actual dialog closure/removal cancels pending callbacks and removes visibility listeners.",
+    "HUD visibilitychange cancels pending status-removal feedback immediately, preserving existing active:false/modal/dice cancellation behavior and preventing delayed expiry audio after return.",
+    "Original onload/onerror then decode image loader and eight concurrent workers remain unchanged. No engine, rules or save format changes."
+  ],
+  "validation": {
+    "component": "test-results/rc23-hermit-pause/result.json",
+    "originalLoader": "test-results/rc22-hermit-loader/result.json",
+    "lifecycle": "test-results/rc22-hermit-lifecycle/result.json",
+    "statusTouch": "test-results/rc22-hermit-status-touch/result.json",
+    "typescript": "tsc -p app/tsconfig.json --noEmit passed",
+    "production": "test-results/rc23-hermit-production/result.json: three viewports, actual main dingdangPause handler; choice and settled-result leave interrupted, old scene disposed, game snapshot unchanged through pause and resume, save/reload and status inspection passed",
+    "android": {
+      "apkSha256": "f34190973842a62caee4e6e3ce6f0a08e7bd1f19a57cbe03dbdef66c9ffaaca7",
+      "versionCode": 54,
+      "good": "test-results/rc23-hermit-production-android/result.json",
+      "bad": "test-results/rc23-hermit-production-android-seed1/result.json",
+      "actualActions": [
+        "Android HOME and MainActivity foreground during choice and settled result departure; original main pause menu replaces scene",
+        "Continue resumes presentation with exact game snapshot unchanged",
+        "Good event6/bad event24 result survives save and reload without RNG/reward reapplication",
+        "Good current-player status display fixture retains event6 remaining5; native touch inspect and back leaves state unchanged"
+      ],
+      "restoration": "Both independent runs restored original native GameSave and every localStorage entry, then reloaded and checked exact equality; restoredAndReloadVerified true in both results",
+      "visual": "ADB surface screenshots used; inspected pause menu and status explanation; no CDP screenshot used for native canvas evidence",
+      "timingsMs": {
+        "good": {
+          "assetsReady": 12754,
+          "firstDialogue": 15831,
+          "reloadAssetsReady": 12479
+        },
+        "bad": {
+          "assetsReady": 13946,
+          "firstDialogue": 17085,
+          "reloadAssetsReady": 12433
+        }
+      },
+      "initialTimeouts": [
+        {
+          "evidence": "test-results/rc23-hermit-production-android/failure-1794292364358.json",
+          "reason": "Old combined 15s wait expired during enter; native screenshot already shows original entering actor. No assets/decode error."
+        },
+        {
+          "evidence": "test-results/rc23-hermit-production-android/failure-1794292538239.json",
+          "reason": "Result reload again exceeded old combined 15s wait; 437 resources complete by performance responseEnd19086.8ms, diagnostic now21838.2ms during normal reveal. No failed image requests."
+        }
+      ],
+      "testBudgetCorrection": "Separated image-loading maximum30s from greeting/reveal maximum5s, recorded actual loading duration; no source change or artifact rebuild between failures and passing native runs."
+    }
+  },
+  "limitations": [
+    "Component regression controls RAF/time/visibility for deterministic 60-second suspension; it is not an Android runtime performance measurement.",
+    "Production browser and final Android background/foreground evidence recorded separately after final package build.",
+    "On this emulator, first original sprite load took 12.754–13.946 seconds and first greeting15.831–17.085 seconds; reload sprite load12.433–12.479 seconds. This change does not claim to solve load performance. Initial uniform15-second test limits were insufficient; failures retained."
+  ]
+}

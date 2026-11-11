@@ -1,0 +1,21 @@
+{
+  "name": "dingdang-touch",
+  "private": true,
+  "version": "1.0.0-rc24",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "test": "node ../tools/test-rules.cjs"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/android": "^7.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "typescript": "^5.7.0",
+    "@capacitor/cli": "^7.0.0",
+    "playwright": "^1.50.0"
+  }
+}
