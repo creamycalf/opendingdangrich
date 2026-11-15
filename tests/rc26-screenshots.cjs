@@ -1,0 +1,5 @@
+const {chromium}=require('../app/node_modules/playwright');
+const fs=require('fs');
+(async()=>{fs.mkdirSync('docs/screenshots',{recursive:true});const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});const p=await b.newPage({viewport:{width:960,height:540},hasTouch:true});await p.goto('http://127.0.0.1:5186',{waitUntil:'domcontentloaded',timeout:120000});await p.waitForFunction(()=>!!window.__game);await p.screenshot({path:'docs/screenshots/rc26-title.png'});await p.locator('#titleGate').tap();await p.getByRole('button',{name:'大富翁',exact:true}).tap();await p.locator('#newGame').tap();await p.waitForTimeout(500);await p.screenshot({path:'docs/screenshots/rc26-characters.png'});await p.getByRole('button',{name:'确定角色',exact:true}).tap();await p.waitForTimeout(500);await p.screenshot({path:'docs/screenshots/rc26-maps.png'});const r=await p.locator('#modal').boundingBox();if(r.width!==960||r.height!==540)throw Error(JSON.stringify(r));await b.close();})();
+
+

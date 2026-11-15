@@ -135,3 +135,7 @@ button img.actionIcon{width:38px;height:38px}
 #modal:has(.playerSummary) h2{font-size:18px;margin:0 0 6px}
 #modal:has(.playerSummary) button{margin-top:6px}
 @media(orientation:landscape) and (max-height:400px){.playerSummary img{width:32px;height:32px}.playerSummary article{padding:5px}}
+
+#modal:has(.pcSetup){position:fixed;inset:0;margin:0;width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border:0;border-radius:0;padding:8px}#modalContent:has(.pcSetup){height:100%}.pcSetup{height:100%;display:flex;flex-direction:column;justify-content:space-between}.setupTabs,.setupFooter{flex-shrink:0}.miniControls button{touch-action:none;user-select:none;-webkit-user-select:none}
+
+.pcTitleStage{transform:translate(-50%,-50%) scale(var(--title-scale-x,1),var(--title-scale-y,1))}

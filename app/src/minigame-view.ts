@@ -26,7 +26,7 @@ export async function mountMiniGame(host:HTMLElement,options:Options){
   const top=document.createElement('div');top.className='miniTop';const timer=document.createElement('strong');timer.id='miniTimer';
   const pause=document.createElement('button');pause.textContent=paused?'继续小游戏':'暂停';pause.id='miniPause';top.append(timer,pause);root.append(top);
   const hint=document.createElement('p');hint.textContent=id===7?'弹簧压到底时点击蓄力，飞起后点击抓取。以最高高度计分。':id===5?'看上方手势，换拳后出拳。石头胜剪刀，布胜石头，剪刀胜布。':id===4?'点击加速；按住防守可避开障碍，但会减速。':id===2?'交替点击左右按钮加速。连续按同一边不能加速。':id===3?'左右交替点击放大玩偶。每 4 次有效点击记 1 分。':'看上方目标，点击下方左／右按钮选择相同图案。';root.append(hint);
-  if(id===4)hint.textContent='反复点按加速（按住不会连续加速）；按住防守，松手解除。落后画面时，下方小窗显示你的动作。';
+  if(id===4)hint.textContent='按住加速即可连续奔跑；按住防守，松手解除。落后画面时，下方小窗显示你的动作。';
   if(id===0)hint.textContent='按住左右按钮移动，接住豆沙包，避开炸弹。';
   if(id===1)hint.textContent='点击左右按钮切换手臂，模仿上方领队。小心假动作！';
   const resumePanel=document.createElement('div');resumePanel.className='miniResumePanel';
@@ -49,7 +49,7 @@ export async function mountMiniGame(host:HTMLElement,options:Options){
     }
     const row=document.createElement('div');row.className='miniControls';buttons[i]=[];
     if(player.control==='human')for(const [label,input] of [['左',4],['右',8]] as const){
-      const b=document.createElement('button');b.textContent=id===7?(input===4?'蓄力':'抓取'):id===5?(input===4?'出拳':'换拳'):id===4?(input===4?'加速':'防守'):label;b.setAttribute('aria-label',player.name+'选'+label);b.onpointerdown=e=>{e.preventDefault();if(!b.disabled){inputs[i]=input;if(id===0||(id===4&&input===8)){held[i]=input;b.setPointerCapture(e.pointerId);}};};
+      const b=document.createElement('button');b.textContent=id===7?(input===4?'蓄力':'抓取'):id===5?(input===4?'出拳':'换拳'):id===4?(input===4?'按住加速':'按住防守'):label;b.setAttribute('aria-label',player.name+'选'+label);b.onpointerdown=e=>{e.preventDefault();if(!b.disabled){inputs[i]=input;if(id===0||id===4){held[i]=input;b.setPointerCapture(e.pointerId);}};};
       const release=()=>{if(held[i]===input)held[i]=0;};b.onpointerup=b.onpointercancel=release;b.onlostpointercapture=release;b.onclick=e=>{if(e.detail===0&&!b.disabled)inputs[i]=input;};buttons[i].push(b);row.append(b);
     }
     card.append(row);grid.append(card);
@@ -177,7 +177,7 @@ export async function mountMiniGame(host:HTMLElement,options:Options){
         accumulator+=elapsed;
         while(accumulator>=1000/30){
           const previous=options.read().pending.session;
-          const physical=devices.sample();options.tick(inputs.map((n,i)=>held[i]||n||physical[i]));inputs.fill(0);accumulator-=1000/30;ticks++;
+          const physical=devices.sample();options.tick(inputs.map((n,i)=>(id===4&&held[i]===4?(ticks%4===0?4:0):held[i])||n||physical[i]));inputs.fill(0);accumulator-=1000/30;ticks++;
           for(const event of miniAnimationAudio(previous,options.read().pending.session,catalog))void audio.play(event);
           if(options.read().pending.session.stage==='result'){dispose();void options.save().then(options.finish).catch(options.error);return;}
           if(ticks%30===0)void checkpoint();

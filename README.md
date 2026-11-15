@@ -68,3 +68,32 @@ RC18：[安装包](releases/1.0.0-rc18/DingdangTouch-1.0.0-rc18.apk)。修正导
 浏览器测试需5178开发服务。安卓测试仅操作专用DingdangTest/emulator-5580；InternalOnly构建不会覆盖releases。工具链路径见docs/WORKING-STATE.md。
 
 原始输入在originals和work，D盘原件未改。格式调查参考doraemon-monopoly-localization，架构参考rich4-renew-app；未引入其运行时代码。源码授权不代替原素材权利。
+
+## RC26：全屏开局与触屏跑步
+
+安装包在 [GitHub Releases](https://github.com/creamycalf/opendingdangrich/releases/tag/v1.0.0-rc26)，下载 `DingdangTouch-1.0.0-rc26.apk` 后在安卓手机安装。已有版本请直接覆盖安装，保留存档；不要先卸载。此包使用现有测试签名，适合用户测试，并非应用商店发行签名。
+
+### 本次更新
+
+- 开始画面随屏幕宽高铺满显示；原版 4:3 美术随比例拉伸。
+- 选人物、地图、年期使用全屏设置页，底部保留上一步和确认按钮。
+- 障碍竞速新增按住加速：持续触摸会发送有间隔的按键脉冲，不修改原版计分规则。按住防守可以躲避障碍，但会减速；松开解除。
+
+### 跑步怎么操作
+
+障碍竞速请操作标有你角色名字的按钮区域，**按住加速不要松手**，上方速度和加速次数会变化。遇到障碍时松开加速，再按住防守。撞到障碍有恢复时间；落后时看赛道下方的角色小窗。暂停或切到后台后，需要点击继续小游戏。
+
+另一个“交替按键竞速”规则不同：左右按钮轮流点击，连续点击同一边无效。它没有障碍竞速的按住辅助。
+
+### 界面截图
+
+![开始画面](docs/screenshots/rc26-title.png)
+![全屏选人](docs/screenshots/rc26-characters.png)
+![全屏选图](docs/screenshots/rc26-maps.png)
+![障碍竞速触屏操作](docs/screenshots/rc26-running.png)
+
+### 验证与范围
+
+本次执行浏览器触屏回归：障碍竞速单人/四人点按和按住加速、暂停、存档恢复、旋转及确定性回放；验证横屏设置页尺寸覆盖视口。截图为浏览器运行实拍。仍需实体安卓手机测试性能和多指触控；本次不是全部玩法与 PC 逐项一致性的认证。
+
+源代码构建需要 Node.js、JDK 21、Android SDK，以及本地原版资源导出。运行 `cd app`、`npm ci`，随后从仓库根目录运行 `tools/build-android.ps1 -Offline -InternalOnly`（离线模式需已有 Gradle 缓存）。游戏资源不在源码仓库中；安装包通过 Release 附件提供。

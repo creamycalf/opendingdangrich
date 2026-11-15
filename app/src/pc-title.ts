@@ -34,7 +34,7 @@ export async function mountPcTitle(root:HTMLElement, showRanking:()=>void, exitG
  }
  root.append(shortcuts);
  let frame=0,epoch=0,disposed=false,finishOpen:(()=>void)|undefined;
- function size(){stage.style.setProperty('--title-scale',String(Math.min(root.clientWidth/640,root.clientHeight/480)));}
+ function size(){stage.style.setProperty('--title-scale-x',String(root.clientWidth/640));stage.style.setProperty('--title-scale-y',String(root.clientHeight/480));}
  const resizeObserver=new ResizeObserver(size);resizeObserver.observe(root);
  function sprite(id:string,x:number,y:number){ctx.drawImage(pictures[id],x,y);}
  function animation(id:number,tick:number,x:number,y:number){
